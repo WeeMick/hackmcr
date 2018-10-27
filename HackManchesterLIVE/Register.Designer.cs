@@ -41,6 +41,10 @@
             this.ageUpDown = new System.Windows.Forms.NumericUpDown();
             this.backBtn = new System.Windows.Forms.Button();
             this.registerBtn = new System.Windows.Forms.Button();
+            this.nameErrorLbl = new System.Windows.Forms.Label();
+            this.emailErrorLbl = new System.Windows.Forms.Label();
+            this.passwordErrorLbl = new System.Windows.Forms.Label();
+            this.cPasswordErrorLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ageUpDown)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,6 +114,7 @@
             // 
             this.passwordTb.Location = new System.Drawing.Point(124, 268);
             this.passwordTb.Name = "passwordTb";
+            this.passwordTb.PasswordChar = '*';
             this.passwordTb.Size = new System.Drawing.Size(200, 33);
             this.passwordTb.TabIndex = 8;
             // 
@@ -117,6 +122,7 @@
             // 
             this.cPasswordTb.Location = new System.Drawing.Point(124, 334);
             this.cPasswordTb.Name = "cPasswordTb";
+            this.cPasswordTb.PasswordChar = '*';
             this.cPasswordTb.Size = new System.Drawing.Size(200, 33);
             this.cPasswordTb.TabIndex = 9;
             // 
@@ -129,9 +135,9 @@
             // 
             // ageUpDown
             // 
-            this.ageUpDown.Location = new System.Drawing.Point(129, 153);
+            this.ageUpDown.Location = new System.Drawing.Point(124, 153);
             this.ageUpDown.Name = "ageUpDown";
-            this.ageUpDown.Size = new System.Drawing.Size(194, 33);
+            this.ageUpDown.Size = new System.Drawing.Size(199, 33);
             this.ageUpDown.TabIndex = 11;
             this.ageUpDown.Value = new decimal(new int[] {
             20,
@@ -157,12 +163,49 @@
             this.registerBtn.TabIndex = 12;
             this.registerBtn.Text = "Register";
             this.registerBtn.UseVisualStyleBackColor = true;
+            this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
+            // 
+            // nameErrorLbl
+            // 
+            this.nameErrorLbl.AutoSize = true;
+            this.nameErrorLbl.Location = new System.Drawing.Point(124, 122);
+            this.nameErrorLbl.Name = "nameErrorLbl";
+            this.nameErrorLbl.Size = new System.Drawing.Size(0, 25);
+            this.nameErrorLbl.TabIndex = 14;
+            // 
+            // emailErrorLbl
+            // 
+            this.emailErrorLbl.AutoSize = true;
+            this.emailErrorLbl.Location = new System.Drawing.Point(124, 240);
+            this.emailErrorLbl.Name = "emailErrorLbl";
+            this.emailErrorLbl.Size = new System.Drawing.Size(0, 25);
+            this.emailErrorLbl.TabIndex = 15;
+            // 
+            // passwordErrorLbl
+            // 
+            this.passwordErrorLbl.AutoSize = true;
+            this.passwordErrorLbl.Location = new System.Drawing.Point(124, 304);
+            this.passwordErrorLbl.Name = "passwordErrorLbl";
+            this.passwordErrorLbl.Size = new System.Drawing.Size(0, 25);
+            this.passwordErrorLbl.TabIndex = 16;
+            // 
+            // cPasswordErrorLbl
+            // 
+            this.cPasswordErrorLbl.AutoSize = true;
+            this.cPasswordErrorLbl.Location = new System.Drawing.Point(124, 370);
+            this.cPasswordErrorLbl.Name = "cPasswordErrorLbl";
+            this.cPasswordErrorLbl.Size = new System.Drawing.Size(0, 25);
+            this.cPasswordErrorLbl.TabIndex = 17;
             // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 615);
+            this.Controls.Add(this.cPasswordErrorLbl);
+            this.Controls.Add(this.passwordErrorLbl);
+            this.Controls.Add(this.emailErrorLbl);
+            this.Controls.Add(this.nameErrorLbl);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.registerBtn);
             this.Controls.Add(this.ageUpDown);
@@ -177,7 +220,7 @@
             this.Controls.Add(this.nameLbl);
             this.Controls.Add(this.titleLbl);
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Register";
             this.Text = "Register";
             ((System.ComponentModel.ISupportInitialize)(this.ageUpDown)).EndInit();
@@ -201,5 +244,9 @@
         private System.Windows.Forms.NumericUpDown ageUpDown;
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.Button registerBtn;
+        private System.Windows.Forms.Label nameErrorLbl;
+        private System.Windows.Forms.Label emailErrorLbl;
+        private System.Windows.Forms.Label passwordErrorLbl;
+        private System.Windows.Forms.Label cPasswordErrorLbl;
     }
 }
