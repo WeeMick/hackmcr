@@ -52,6 +52,12 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddShifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddShifts.Designer.cs">
+      <DependentUpon>AddShifts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewShifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewShifts.Designer.cs">
+      <DependentUpon>ViewShifts.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddShifts.resx">
+      <DependentUpon>AddShifts.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Tips.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +96,7 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Users.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +115,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ViewShifts.resx">
+      <DependentUpon>ViewShifts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tips.resx">
       <DependentUpon>Tips.cs</DependentUpon>
     </EmbeddedResource>

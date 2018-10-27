@@ -18,6 +18,14 @@ namespace HackManchesterLIVE
             InitializeComponent();
         }
 
+        private void Tips_Load(object sender, EventArgs e)
+        {
+            home.tipLbl.Text = tip1Lbl.Text + " " + tip1timeLbl.Text;
+            DateTime now = DateTime.Now();
+            
+
+        }
+
         private void homeBtn_Click(object sender, EventArgs e)
         {
             {
@@ -30,5 +38,11 @@ namespace HackManchesterLIVE
                 this.Hide();
             }
         }
+
+        public String timeToString(DateTime time) {
+            String stringTime = time.ToString("hh:mm");
+            return stringTime;
+        }
+
     }
 }

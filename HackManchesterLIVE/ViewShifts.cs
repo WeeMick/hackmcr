@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AddTrips
+namespace HackManchesterLIVE
 {
     public partial class ViewShifts : Form
     {
         public ViewShifts()
         {
             InitializeComponent();
+        }
+
+        private void ViewShifts_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
