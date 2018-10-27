@@ -284,25 +284,27 @@
 
         #endregion
 
-        private System.Windows.Forms.Button homeBtn;
-        private System.Windows.Forms.Button tomorrowBtn;
-        private System.Windows.Forms.Label todayLbl;
-        private System.Windows.Forms.Label currentTimeLbl;
-        private System.Windows.Forms.Label tip1Lbl;
-        private System.Windows.Forms.Label tip2lbl;
-        private System.Windows.Forms.Label tip3Lbl;
-        private System.Windows.Forms.Label tip4Lbl;
-        private System.Windows.Forms.Label tip5Lbl;
-        private System.Windows.Forms.Label tip6Lbl;
-        private System.Windows.Forms.Label tip1timeLbl;
-        private System.Windows.Forms.Label tip2timeLbl;
-        private System.Windows.Forms.Label tip3timeLbl;
-        private System.Windows.Forms.Label tip4timeLbl;
-        private System.Windows.Forms.Label tip5timeLbl;
-        private System.Windows.Forms.Label tip6timeLbl;
-        private System.Windows.Forms.Label tip7Lbl;
-        private System.Windows.Forms.Label tip7timeLbl;
-        private System.Windows.Forms.Label tip8Lbl;
-        private System.Windows.Forms.Label tip8timeLbl;
+        public System.Windows.Forms.Button homeBtn;
+        public System.Windows.Forms.Button tomorrowBtn;
+        public System.Windows.Forms.Label todayLbl;
+        public System.Windows.Forms.Label currentTimeLbl;
+        public System.Windows.Forms.Label tip1Lbl;
+        public System.Windows.Forms.Label tip2lbl;
+        public System.Windows.Forms.Label tip3Lbl;
+        public System.Windows.Forms.Label tip4Lbl;
+        public System.Windows.Forms.Label tip5Lbl;
+        public System.Windows.Forms.Label tip6Lbl;
+        public System.Windows.Forms.Label tip1timeLbl;
+        public System.Windows.Forms.Label tip2timeLbl;
+        public System.Windows.Forms.Label tip3timeLbl;
+        public System.Windows.Forms.Label tip4timeLbl;
+        public System.Windows.Forms.Label tip5timeLbl;
+        public System.Windows.Forms.Label tip6timeLbl;
+        public System.Windows.Forms.Label tip7Lbl;
+        public System.Windows.Forms.Label tip7timeLbl;
+        public System.Windows.Forms.Label tip8Lbl;
+        public System.Windows.Forms.Label tip8timeLbl;
     }
+
+   
 }
