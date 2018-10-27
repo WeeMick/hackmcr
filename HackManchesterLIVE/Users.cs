@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 namespace HackManchesterLIVE
 {
 
-    class Users
+    public class Users
     {
         string name;
         int age;
         string email;
         string password;
+        Boolean isShiftWorker;
 
         public Users(string name, int age, string email, string password)
             {
@@ -20,7 +21,31 @@ namespace HackManchesterLIVE
             this.age = age;
             this.email = email;
             this.password = password;
-
+            isShiftWorker = false;
             }
+
+        public string getEmail()
+        {
+            return email;
+        }
+
+        public string getPassword()
+        {
+            return password;
+        }
+
+        public void setShiftWorker(Boolean isShiftWorker)
+        {
+            if (isShiftWorker == true)
+            {
+                this.isShiftWorker = true;
+            }
+            else
+            {
+                this.isShiftWorker = false;
+            }
+        }
+
+        
     }
 }

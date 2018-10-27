@@ -43,6 +43,9 @@ namespace HackManchesterLIVE
             
             home.Show();
             this.Hide();
+
+
+            
         }
     }
 }
