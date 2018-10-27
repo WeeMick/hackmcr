@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace HackManchesterLIVE
 {
 
-    class Users
+    public class Users
     {
         string name;
         int age;
