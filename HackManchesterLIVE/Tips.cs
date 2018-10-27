@@ -20,7 +20,8 @@ namespace HackManchesterLIVE
 
         private void Tips_Load(object sender, EventArgs e)
         {
-            home.tipsLbl.Text = tip1Lbl.Text + " " + tip1timeLbl.Text;
+            String tipsTransfer = tip1Lbl.Text + " " + tip1timeLbl.Text;
+            home.tipsLbl.Text = tipsTransfer;
             DateTime now = DateTime.Now;
             
 
