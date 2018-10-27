@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AddTrips
+namespace AddShifts
 {
     public partial class AddShifts : Form
     {

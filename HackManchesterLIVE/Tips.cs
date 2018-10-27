@@ -20,8 +20,8 @@ namespace HackManchesterLIVE
 
         private void Tips_Load(object sender, EventArgs e)
         {
-            home.tipLbl.Text = tip1Lbl.Text + " " + tip1timeLbl.Text;
-            DateTime now = DateTime.Now();
+            home.tipsLbl.Text = tip1Lbl.Text + " " + tip1timeLbl.Text;
+            DateTime now = DateTime.Now;
             
 
         }
@@ -32,7 +32,7 @@ namespace HackManchesterLIVE
                 if (home == null)
                 {
                     home = new Home();
-                    home.formClosed += delegate { home = null; };
+                    home.FormClosed += delegate { home = null; };
                 }
                 home.Show();
                 this.Hide();
