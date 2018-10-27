@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.addShifsBtn = new System.Windows.Forms.Button();
             this.viewShiftsBtn = new System.Windows.Forms.Button();
             this.todaysTipsBtn = new System.Windows.Forms.Button();
@@ -75,22 +76,28 @@
             // 
             // profilePicBox
             // 
-            this.profilePicBox.Location = new System.Drawing.Point(306, 2);
+            this.profilePicBox.Image = ((System.Drawing.Image)(resources.GetObject("profilePicBox.Image")));
+            this.profilePicBox.Location = new System.Drawing.Point(331, 2);
             this.profilePicBox.Name = "profilePicBox";
-            this.profilePicBox.Size = new System.Drawing.Size(78, 50);
+            this.profilePicBox.Size = new System.Drawing.Size(53, 50);
+            this.profilePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.profilePicBox.TabIndex = 3;
             this.profilePicBox.TabStop = false;
+            this.profilePicBox.Click += new System.EventHandler(this.profilePicBox_Click_1);
             // 
             // bottelPicBox
             // 
+            this.bottelPicBox.Image = ((System.Drawing.Image)(resources.GetObject("bottelPicBox.Image")));
             this.bottelPicBox.Location = new System.Drawing.Point(306, 467);
             this.bottelPicBox.Name = "bottelPicBox";
             this.bottelPicBox.Size = new System.Drawing.Size(67, 124);
+            this.bottelPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bottelPicBox.TabIndex = 4;
             this.bottelPicBox.TabStop = false;
             // 
             // profileComBox
             // 
+            this.profileComBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.profileComBox.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.profileComBox.FormattingEnabled = true;
             this.profileComBox.Items.AddRange(new object[] {
@@ -101,22 +108,22 @@
             this.profileComBox.Size = new System.Drawing.Size(133, 46);
             this.profileComBox.TabIndex = 5;
             this.profileComBox.Text = "Profile";
+            this.profileComBox.SelectedIndexChanged += new System.EventHandler(this.profileComBox_SelectedIndexChanged_1);
             // 
             // welcomeLbl
             // 
-            this.welcomeLbl.Location = new System.Drawing.Point(24, 9);
+            this.welcomeLbl.Location = new System.Drawing.Point(12, 9);
             this.welcomeLbl.Name = "welcomeLbl";
-            this.welcomeLbl.Size = new System.Drawing.Size(276, 39);
+            this.welcomeLbl.Size = new System.Drawing.Size(288, 39);
             this.welcomeLbl.TabIndex = 6;
-            this.welcomeLbl.Text = "label1";
+            this.welcomeLbl.Click += new System.EventHandler(this.welcomeLbl_Click);
             // 
             // tipsLbl
             // 
             this.tipsLbl.Location = new System.Drawing.Point(12, 467);
             this.tipsLbl.Name = "tipsLbl";
-            this.tipsLbl.Size = new System.Drawing.Size(276, 39);
+            this.tipsLbl.Size = new System.Drawing.Size(276, 124);
             this.tipsLbl.TabIndex = 7;
-            this.tipsLbl.Text = "label2";
             // 
             // Home
             // 
@@ -134,6 +141,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Home";
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Home_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.profilePicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottelPicBox)).EndInit();
             this.ResumeLayout(false);

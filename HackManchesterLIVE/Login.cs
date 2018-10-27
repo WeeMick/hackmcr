@@ -14,6 +14,7 @@ namespace HackManchesterLIVE
     {
 
         public Home home;
+        public StartScreen startScreen;
         public Login()
         {
             InitializeComponent();
@@ -21,9 +22,15 @@ namespace HackManchesterLIVE
 
         private void backBtn_Click(object sender, EventArgs e)
         {
+            if (startScreen == null) {
+                    startScreen = new StartScreen();
+                startScreen.FormClosed += delegate { startScreen = null; };
+            }
+            startScreen.Show();
             this.Hide();
-            StartScreen sc = new StartScreen();
-            sc.ShowDialog();
+
+            
+            
         }
 
         private void loginBtn_Click(object sender, EventArgs e)
@@ -33,6 +40,7 @@ namespace HackManchesterLIVE
                 home.FormClosed += delegate { home = null; };
             }
 
+            
             home.Show();
             this.Hide();
         }
