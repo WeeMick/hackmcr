@@ -1,4 +1,4 @@
-﻿namespace AddTrips
+﻿namespace HackManchesterLIVE
 {
     partial class AddShifts
     {

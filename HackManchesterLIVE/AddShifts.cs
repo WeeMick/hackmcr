@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AddShifts
+namespace HackManchesterLIVE
 {
     public partial class AddShifts : Form
     {
