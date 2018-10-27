@@ -54,6 +54,7 @@ namespace HackManchesterLIVE
                 tips = new Tips();
                 tips.FormClosed += delegate { tips = null; };
             }
+            tips.home = this;
             tips.Show();
             this.Hide();
         }

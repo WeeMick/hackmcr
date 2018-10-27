@@ -12,23 +12,41 @@ namespace HackManchesterLIVE
 {
     public partial class StartScreen : Form
     {
+
+        public Register register;
+        public Login login;
         public StartScreen()
+        
         {
             InitializeComponent();
         }
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Login login = new Login();
+            if (login == null)
+            {
+
+                login = new Login();
+                login.FormClosed += delegate { login = null; };
+            }
+            login.startScreen = this;
             login.Show();
+            this.Hide();
         }
 
         private void registerBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Register register = new Register();
+            
+
+            if (register == null)
+            {
+                register = new Register();
+                register.FormClosed += delegate { register = null; };
+                
+            }
+            register.startScreen = this;
             register.Show();
+            this.Hide();
         }
     }
 }
