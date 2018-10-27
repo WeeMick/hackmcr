@@ -82,7 +82,7 @@
             this.currentTimeLbl.Size = new System.Drawing.Size(124, 28);
             this.currentTimeLbl.TabIndex = 3;
             this.currentTimeLbl.Text = "Current Time";
-            this.currentTimeLbl.Paint += new System.Windows.Forms.PaintEventHandler(this.Tips_Paint);
+            
             // 
             // tip1Lbl
             // 

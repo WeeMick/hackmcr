@@ -148,7 +148,7 @@
         private System.Windows.Forms.PictureBox profilePicBox;
         private System.Windows.Forms.PictureBox bottelPicBox;
         private System.Windows.Forms.ComboBox profileComBox;
-        private System.Windows.Forms.Label welcomeLbl;
-        private System.Windows.Forms.Label tipsLbl;
+        public System.Windows.Forms.Label welcomeLbl;
+        public System.Windows.Forms.Label tipsLbl;
     }
 }
