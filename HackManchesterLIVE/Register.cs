@@ -12,9 +12,11 @@ namespace HackManchesterLIVE
 {
     public partial class Register : Form
     {
+        AppData appData = new AppData();
         public Register()
         {
             InitializeComponent();
+            
         }
 
         private void backBtn_Click(object sender, EventArgs e)
@@ -65,7 +67,8 @@ namespace HackManchesterLIVE
             {
                 cPasswordErrorLbl.Hide();
             }
-
+            
+            appData.addUser(new Users(nameTb.Text, Convert.ToInt32(ageUpDown.Value), emailTb.Text, passwordTb.Text));
             
         }
     }
