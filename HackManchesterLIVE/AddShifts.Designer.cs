@@ -47,6 +47,7 @@
             this.finishDateTb.TabIndex = 43;
             this.finishDateTb.Text = "Finish Date";
             this.finishDateTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.finishDateTb.Enter += new System.EventHandler(this.finishDateTb_Enter);
             // 
             // startDateTb
             // 
@@ -59,6 +60,7 @@
             this.startDateTb.TabIndex = 42;
             this.startDateTb.Text = "Start Date";
             this.startDateTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.startDateTb.Enter += new System.EventHandler(this.startDateTb_Enter);
             // 
             // finishTimeTb
             // 
@@ -71,6 +73,7 @@
             this.finishTimeTb.TabIndex = 44;
             this.finishTimeTb.Text = "Finish Time";
             this.finishTimeTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.finishTimeTb.Enter += new System.EventHandler(this.finishTimeTb_Enter);
             // 
             // startTimeTb
             // 
@@ -84,6 +87,7 @@
             this.startTimeTb.TabIndex = 41;
             this.startTimeTb.Text = "Start Time";
             this.startTimeTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.startTimeTb.Enter += new System.EventHandler(this.startTimeTb_Enter);
             // 
             // addShiftLbl
             // 
@@ -97,6 +101,7 @@
             this.addShiftLbl.TabIndex = 39;
             this.addShiftLbl.Text = "Add shift";
             this.addShiftLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.addShiftLbl.Click += new System.EventHandler(this.addShiftLbl_Click);
             // 
             // homeBtn
             // 
@@ -109,6 +114,7 @@
             this.homeBtn.TabIndex = 40;
             this.homeBtn.Text = "Home";
             this.homeBtn.UseVisualStyleBackColor = false;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
             // AddShifts
             // 
@@ -123,6 +129,7 @@
             this.Controls.Add(this.homeBtn);
             this.Name = "AddShifts";
             this.Text = "AddShifts";
+            this.Load += new System.EventHandler(this.AddShifts_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,11 +137,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox finishDateTb;
-        private System.Windows.Forms.TextBox startDateTb;
-        private System.Windows.Forms.TextBox finishTimeTb;
-        private System.Windows.Forms.TextBox startTimeTb;
-        private System.Windows.Forms.Label addShiftLbl;
-        private System.Windows.Forms.Button homeBtn;
+        public System.Windows.Forms.TextBox finishDateTb;
+        public System.Windows.Forms.TextBox startDateTb;
+        public System.Windows.Forms.TextBox finishTimeTb;
+        public System.Windows.Forms.TextBox startTimeTb;
+        public System.Windows.Forms.Label addShiftLbl;
+        public System.Windows.Forms.Button homeBtn;
     }
 }
