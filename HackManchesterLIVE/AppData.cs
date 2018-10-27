@@ -22,7 +22,28 @@ namespace HackManchesterLIVE
         {
             userList.Add(user);
         }
-         
+
+        public void addToDict(Users user, string email)
+        {
+            userDict.Add(user, email);
+        }
+
+
+        public bool validLogin(Users user, string password)
+        {
+            if (userDict.ContainsKey(user) && user.getPassword().Equals(password))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+
+
 
     }
 }

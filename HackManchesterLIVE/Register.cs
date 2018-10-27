@@ -12,7 +12,9 @@ namespace HackManchesterLIVE
 {
     public partial class Register : Form
     {
+        public StartScreen startScreen;
         AppData appData = new AppData();
+        public Home home;
         public Register()
         {
             InitializeComponent();
@@ -21,7 +23,7 @@ namespace HackManchesterLIVE
 
         private void backBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             StartScreen sc = new StartScreen();
             sc.ShowDialog();
         }
@@ -67,9 +69,20 @@ namespace HackManchesterLIVE
             {
                 cPasswordErrorLbl.Hide();
             }
-            
-            appData.addUser(new Users(nameTb.Text, Convert.ToInt32(ageUpDown.Value), emailTb.Text, passwordTb.Text));
-            
+
+            Users user1 = new Users(nameTb.Text, Convert.ToInt32(ageUpDown.Value), emailTb.Text, passwordTb.Text);
+            appData.addUser(user1);
+            appData.addToDict(user1, user1.getEmail());
+
+
+            if (home == null) {
+                home = new Home();
+                home.FormClosed += delegate { home = null; };
+            }
+
+            home.Show();
+            home.welcomeLbl.Text = "Welcome " + nameTb.Text;
+            this.Hide();
         }
     }
 }
