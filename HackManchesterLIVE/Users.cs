@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace HackManchesterLIVE
 {
 
-    class Users
+    public class Users
     {
-        string name;
-        int age;
-        string email;
-        string password;
+        public string name;
+        public int age;
+        public string email;
+        public string password;
 
         public Users(string name, int age, string email, string password)
             {

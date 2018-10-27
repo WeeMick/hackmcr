@@ -61,7 +61,12 @@ namespace HackManchesterLIVE
 
         private void Home_Load(object sender, EventArgs e)
         {
-            
+            if (tips == null)
+            {
+                tips = new Tips();
+                tips.FormClosed += delegate { tips = null; };
+            }
+            tipsLbl.Text = tips.tip1Lbl.Text;
         }
 
         private void profilePicBox_Click(object sender, EventArgs e)
