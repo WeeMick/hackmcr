@@ -12,7 +12,7 @@ namespace HackManchesterLIVE
 {
     public partial class Home : Form
     {
-        public AddShifts addShifts;
+        public AddShifts addShifts = new AddShifts();
         public ViewShifts viewShifts;
         public Tips tips;
         public Home()
