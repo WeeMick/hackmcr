@@ -31,7 +31,7 @@
             this.homeBtn = new System.Windows.Forms.Button();
             this.tomorrowBtn = new System.Windows.Forms.Button();
             this.todayLbl = new System.Windows.Forms.Label();
-            this.c = new System.Windows.Forms.Label();
+            this.currentTimeLbl = new System.Windows.Forms.Label();
             this.tip1Lbl = new System.Windows.Forms.Label();
             this.tip2lbl = new System.Windows.Forms.Label();
             this.tip3Lbl = new System.Windows.Forms.Label();
@@ -74,14 +74,15 @@
             this.todayLbl.TabIndex = 2;
             this.todayLbl.Text = "Today\'s Tips";
             // 
-            // c
+            // currentTimeLbl
             // 
-            this.c.AutoSize = true;
-            this.c.Location = new System.Drawing.Point(243, 17);
-            this.c.Name = "c";
-            this.c.Size = new System.Drawing.Size(124, 28);
-            this.c.TabIndex = 3;
-            this.c.Text = "Current Time";
+            this.currentTimeLbl.AutoSize = true;
+            this.currentTimeLbl.Location = new System.Drawing.Point(243, 17);
+            this.currentTimeLbl.Name = "currentTimeLbl";
+            this.currentTimeLbl.Size = new System.Drawing.Size(124, 28);
+            this.currentTimeLbl.TabIndex = 3;
+            this.currentTimeLbl.Text = "Current Time";
+            this.currentTimeLbl.Paint += new System.Windows.Forms.PaintEventHandler(this.Tips_Paint);
             // 
             // tip1Lbl
             // 
@@ -220,7 +221,7 @@
             this.Controls.Add(this.tip3Lbl);
             this.Controls.Add(this.tip2lbl);
             this.Controls.Add(this.tip1Lbl);
-            this.Controls.Add(this.c);
+            this.Controls.Add(this.currentTimeLbl);
             this.Controls.Add(this.todayLbl);
             this.Controls.Add(this.tomorrowBtn);
             this.Controls.Add(this.homeBtn);
@@ -228,6 +229,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Tips";
             this.Text = "Current Time";
+            this.Load += new System.EventHandler(this.Tips_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,7 +240,7 @@
         private System.Windows.Forms.Button homeBtn;
         private System.Windows.Forms.Button tomorrowBtn;
         private System.Windows.Forms.Label todayLbl;
-        private System.Windows.Forms.Label c;
+        private System.Windows.Forms.Label currentTimeLbl;
         private System.Windows.Forms.Label tip1Lbl;
         private System.Windows.Forms.Label tip2lbl;
         private System.Windows.Forms.Label tip3Lbl;
