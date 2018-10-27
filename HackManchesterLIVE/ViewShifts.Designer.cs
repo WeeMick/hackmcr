@@ -33,8 +33,6 @@
             this.startDateLbl = new System.Windows.Forms.Label();
             this.finishTimeLbl = new System.Windows.Forms.Label();
             this.startTimeLbl = new System.Windows.Forms.Label();
-            this.nextBtn = new System.Windows.Forms.Button();
-            this.prevBtn = new System.Windows.Forms.Button();
             this.editShiftBtn = new System.Windows.Forms.Button();
             this.countdownLbl = new System.Windows.Forms.Label();
             this.shiftInfoLbl = new System.Windows.Forms.Label();
@@ -57,58 +55,38 @@
             // finishDateLbl
             // 
             this.finishDateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.finishDateLbl.Location = new System.Drawing.Point(47, 377);
+            this.finishDateLbl.Location = new System.Drawing.Point(29, 378);
             this.finishDateLbl.Name = "finishDateLbl";
-            this.finishDateLbl.Size = new System.Drawing.Size(289, 49);
+            this.finishDateLbl.Size = new System.Drawing.Size(325, 49);
             this.finishDateLbl.TabIndex = 45;
             this.finishDateLbl.Text = "Finish Date:";
             // 
             // startDateLbl
             // 
             this.startDateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.startDateLbl.Location = new System.Drawing.Point(47, 325);
+            this.startDateLbl.Location = new System.Drawing.Point(29, 326);
             this.startDateLbl.Name = "startDateLbl";
-            this.startDateLbl.Size = new System.Drawing.Size(289, 49);
+            this.startDateLbl.Size = new System.Drawing.Size(325, 49);
             this.startDateLbl.TabIndex = 44;
             this.startDateLbl.Text = "Start Date:";
             // 
             // finishTimeLbl
             // 
             this.finishTimeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.finishTimeLbl.Location = new System.Drawing.Point(47, 274);
+            this.finishTimeLbl.Location = new System.Drawing.Point(29, 275);
             this.finishTimeLbl.Name = "finishTimeLbl";
-            this.finishTimeLbl.Size = new System.Drawing.Size(289, 49);
+            this.finishTimeLbl.Size = new System.Drawing.Size(325, 49);
             this.finishTimeLbl.TabIndex = 43;
             this.finishTimeLbl.Text = "Finish Time:";
             // 
             // startTimeLbl
             // 
             this.startTimeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.startTimeLbl.Location = new System.Drawing.Point(47, 217);
+            this.startTimeLbl.Location = new System.Drawing.Point(29, 218);
             this.startTimeLbl.Name = "startTimeLbl";
-            this.startTimeLbl.Size = new System.Drawing.Size(289, 49);
+            this.startTimeLbl.Size = new System.Drawing.Size(325, 49);
             this.startTimeLbl.TabIndex = 42;
             this.startTimeLbl.Text = "Start Time:";
-            // 
-            // nextBtn
-            // 
-            this.nextBtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextBtn.Location = new System.Drawing.Point(341, 281);
-            this.nextBtn.Name = "nextBtn";
-            this.nextBtn.Size = new System.Drawing.Size(40, 40);
-            this.nextBtn.TabIndex = 41;
-            this.nextBtn.Text = ">";
-            this.nextBtn.UseVisualStyleBackColor = true;
-            // 
-            // prevBtn
-            // 
-            this.prevBtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prevBtn.Location = new System.Drawing.Point(1, 281);
-            this.prevBtn.Name = "prevBtn";
-            this.prevBtn.Size = new System.Drawing.Size(40, 40);
-            this.prevBtn.TabIndex = 40;
-            this.prevBtn.Text = "<";
-            this.prevBtn.UseVisualStyleBackColor = true;
             // 
             // editShiftBtn
             // 
@@ -119,6 +97,7 @@
             this.editShiftBtn.TabIndex = 39;
             this.editShiftBtn.Text = "Edit shift";
             this.editShiftBtn.UseVisualStyleBackColor = true;
+            this.editShiftBtn.Click += new System.EventHandler(this.editShiftBtn_Click);
             // 
             // countdownLbl
             // 
@@ -151,8 +130,6 @@
             this.Controls.Add(this.startDateLbl);
             this.Controls.Add(this.finishTimeLbl);
             this.Controls.Add(this.startTimeLbl);
-            this.Controls.Add(this.nextBtn);
-            this.Controls.Add(this.prevBtn);
             this.Controls.Add(this.editShiftBtn);
             this.Controls.Add(this.countdownLbl);
             this.Name = "ViewShifts";
@@ -168,8 +145,6 @@
         private System.Windows.Forms.Label startDateLbl;
         private System.Windows.Forms.Label finishTimeLbl;
         private System.Windows.Forms.Label startTimeLbl;
-        private System.Windows.Forms.Button nextBtn;
-        private System.Windows.Forms.Button prevBtn;
         private System.Windows.Forms.Button editShiftBtn;
         private System.Windows.Forms.Label countdownLbl;
         private System.Windows.Forms.Label shiftInfoLbl;

@@ -24,6 +24,7 @@ namespace HackManchesterLIVE
             finishTimeLbl.Visible = false;
             startDateLbl.Visible = false;
             finishDateLbl.Visible = false;
+            editShiftBtn.Visible = false;
         }
 
         private void homeBTN_Click(object sender, EventArgs e)
@@ -40,10 +41,15 @@ namespace HackManchesterLIVE
             startDateLbl.Visible = true;
             finishDateLbl.Visible = true;
 
-            startTimeLbl.Text += addShifts.startDateTb.Text;
+            startTimeLbl.Text += addShifts.startTimeTb.Text;
             finishTimeLbl.Text += addShifts.finishTimeTb.Text;
             startDateLbl.Text += addShifts.startDateTb.Text;
             finishDateLbl.Text += addShifts.finishDateTb;
+        }
+
+        private void editShiftBtn_Click(object sender, EventArgs e)
+        {
+            startTimeLbl.Text = addShifts.startTimeTb.Text;
         }
     }
 }
