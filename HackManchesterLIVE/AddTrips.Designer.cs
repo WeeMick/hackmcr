@@ -64,7 +64,7 @@
             this.depDateTb.Location = new System.Drawing.Point(39, 216);
             this.depDateTb.Mask = "00/00/0000";
             this.depDateTb.Name = "depDateTb";
-            this.depDateTb.Size = new System.Drawing.Size(287, 34);
+            this.depDateTb.Size = new System.Drawing.Size(287, 39);
             this.depDateTb.TabIndex = 1;
             this.depDateTb.ValidatingType = typeof(System.DateTime);
             // 
@@ -73,7 +73,7 @@
             this.arrDateTb.Location = new System.Drawing.Point(39, 389);
             this.arrDateTb.Mask = "00/00/0000";
             this.arrDateTb.Name = "arrDateTb";
-            this.arrDateTb.Size = new System.Drawing.Size(287, 34);
+            this.arrDateTb.Size = new System.Drawing.Size(287, 39);
             this.arrDateTb.TabIndex = 2;
             this.arrDateTb.ValidatingType = typeof(System.DateTime);
             // 
@@ -82,7 +82,7 @@
             this.DepTimeTb.Location = new System.Drawing.Point(39, 294);
             this.DepTimeTb.Mask = "00:00";
             this.DepTimeTb.Name = "DepTimeTb";
-            this.DepTimeTb.Size = new System.Drawing.Size(287, 34);
+            this.DepTimeTb.Size = new System.Drawing.Size(287, 39);
             this.DepTimeTb.TabIndex = 3;
             this.DepTimeTb.ValidatingType = typeof(System.DateTime);
             // 
@@ -91,7 +91,7 @@
             this.arrTimeTb.Location = new System.Drawing.Point(39, 481);
             this.arrTimeTb.Mask = "00:00";
             this.arrTimeTb.Name = "arrTimeTb";
-            this.arrTimeTb.Size = new System.Drawing.Size(287, 34);
+            this.arrTimeTb.Size = new System.Drawing.Size(287, 39);
             this.arrTimeTb.TabIndex = 4;
             this.arrTimeTb.ValidatingType = typeof(System.DateTime);
             // 
@@ -124,7 +124,7 @@
             this.AddTripTitleLbl.ForeColor = System.Drawing.Color.White;
             this.AddTripTitleLbl.Location = new System.Drawing.Point(131, 58);
             this.AddTripTitleLbl.Name = "AddTripTitleLbl";
-            this.AddTripTitleLbl.Size = new System.Drawing.Size(223, 46);
+            this.AddTripTitleLbl.Size = new System.Drawing.Size(264, 54);
             this.AddTripTitleLbl.TabIndex = 0;
             this.AddTripTitleLbl.Text = "Plan Your Trip";
             // 
@@ -134,7 +134,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(38, 176);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 28);
+            this.label2.Size = new System.Drawing.Size(179, 32);
             this.label2.TabIndex = 6;
             this.label2.Text = "Departure Date";
             // 
@@ -144,7 +144,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(34, 263);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 28);
+            this.label3.Size = new System.Drawing.Size(182, 32);
             this.label3.TabIndex = 7;
             this.label3.Text = "Departure Time";
             // 
@@ -154,7 +154,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(38, 358);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(306, 28);
+            this.label4.Size = new System.Drawing.Size(372, 32);
             this.label4.TabIndex = 8;
             this.label4.Text = "Arrival Date (Local to Destination)";
             // 
@@ -164,16 +164,34 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(37, 450);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(307, 28);
+            this.label5.Size = new System.Drawing.Size(375, 32);
             this.label5.TabIndex = 9;
             this.label5.Text = "Arrival Time (Local to Destination)";
             // 
             // destTb
             // 
+            this.destTb.AutoCompleteCustomSource.AddRange(new string[] {
+            "Hong Kong",
+            "Rome",
+            "Dubai",
+            "Istanbul",
+            "Tokyo",
+            "Beijing",
+            "Munich",
+            "Moscow",
+            "Astana",
+            "New York",
+            "Mexico City",
+            "Toronto",
+            "Los Angeles",
+            "Florida",
+            "Washington",
+            "San Francisco"});
             this.destTb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.destTb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.destTb.Location = new System.Drawing.Point(39, 113);
             this.destTb.Name = "destTb";
-            this.destTb.Size = new System.Drawing.Size(287, 34);
+            this.destTb.Size = new System.Drawing.Size(287, 39);
             this.destTb.TabIndex = 10;
             // 
             // label6
@@ -182,13 +200,13 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(34, 82);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 28);
+            this.label6.Size = new System.Drawing.Size(137, 32);
             this.label6.TabIndex = 11;
             this.label6.Text = "Destination";
             // 
             // AddTrips
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 607);
             this.Controls.Add(this.label6);
@@ -206,9 +224,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AddTrips";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddTrips";
             this.Load += new System.EventHandler(this.AddTrips_Load);
             this.panel1.ResumeLayout(false);

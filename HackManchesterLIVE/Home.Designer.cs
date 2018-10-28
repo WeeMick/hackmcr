@@ -35,7 +35,6 @@
             this.profileComBox = new System.Windows.Forms.ComboBox();
             this.welcomeLbl = new System.Windows.Forms.Label();
             this.tipsLbl = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.addTripsBtn = new System.Windows.Forms.Button();
             this.viewTripsBtn = new System.Windows.Forms.Button();
             this.bottel2PicBox = new System.Windows.Forms.PictureBox();
@@ -43,6 +42,7 @@
             this.bottel4PicBox = new System.Windows.Forms.PictureBox();
             this.bottelPicBox = new System.Windows.Forms.PictureBox();
             this.profilePicBox = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bottel2PicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottel3PicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottel4PicBox)).BeginInit();
@@ -103,7 +103,7 @@
             this.profileComBox.Location = new System.Drawing.Point(228, 76);
             this.profileComBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.profileComBox.Name = "profileComBox";
-            this.profileComBox.Size = new System.Drawing.Size(153, 39);
+            this.profileComBox.Size = new System.Drawing.Size(153, 46);
             this.profileComBox.TabIndex = 5;
             this.profileComBox.Text = "Profile";
             this.profileComBox.SelectedIndexChanged += new System.EventHandler(this.profileComBox_SelectedIndexChanged_1);
@@ -127,15 +127,6 @@
             this.tipsLbl.Size = new System.Drawing.Size(214, 100);
             this.tipsLbl.TabIndex = 7;
             this.tipsLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(347, 464);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 19);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "4";
             // 
             // addTripsBtn
             // 
@@ -221,9 +212,18 @@
             this.profilePicBox.TabStop = false;
             this.profilePicBox.Click += new System.EventHandler(this.profilePicBox_Click_1);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(262, 468);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(19, 21);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "4";
+            // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 607);
             this.Controls.Add(this.viewTripsBtn);
@@ -268,11 +268,11 @@
         private System.Windows.Forms.ComboBox profileComBox;
         public System.Windows.Forms.Label welcomeLbl;
         public System.Windows.Forms.Label tipsLbl;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox bottel4PicBox;
         private System.Windows.Forms.PictureBox bottel3PicBox;
         private System.Windows.Forms.PictureBox bottel2PicBox;
         private System.Windows.Forms.Button addTripsBtn;
         private System.Windows.Forms.Button viewTripsBtn;
+        private System.Windows.Forms.Label label1;
     }
 }
