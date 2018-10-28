@@ -61,6 +61,10 @@ namespace HackManchesterLIVE
                 Users newUser = new Users(nameTb.Text, Convert.ToInt32(ageUpDown.Value), emailTb.Text, passwordTb.Text);
                 appData.addUser(newUser);
                 appData.addToDict(newUser, newUser.getEmail());
+                Authentication auth = new Authentication();
+                auth.username = emailTb.Text;
+                auth.password = passwordTb.Text;
+
 
 
                 if (home == null)
