@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HackManchesterLIVE
 {
-    public partial class UserProfile : Form
+    public partial class UserProfile : BaseForm
     {
         private Label titleLbl;
         private Label genderLbl;

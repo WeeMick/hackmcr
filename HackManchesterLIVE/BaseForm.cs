@@ -25,20 +25,17 @@ namespace HackManchesterLIVE
 
         }
 
-        public void setBackColor()
-        {
-            
-        }
-
         private void BaseForm_Paint(object sender, PaintEventArgs e)
         {
-         
-
-            
 
             if (checkTime(dusk.ToString("HH:mm")))
                 {
                 LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.Black, Color.Silver, 90f);
+                e.Graphics.FillRectangle(brush, this.ClientRectangle);
+            }
+            else
+            {
+                LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.Blue, Color.White, 90f);
                 e.Graphics.FillRectangle(brush, this.ClientRectangle);
             }
         }
