@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HackManchesterLIVE
 {
-    public partial class Login : Form
+    public partial class Login : BaseForm
     {
 
         public Home home;
@@ -46,6 +46,11 @@ namespace HackManchesterLIVE
 
 
             
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

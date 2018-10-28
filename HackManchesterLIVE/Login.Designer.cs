@@ -45,7 +45,7 @@
             this.titleLbl.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLbl.Location = new System.Drawing.Point(130, 28);
             this.titleLbl.Name = "titleLbl";
-            this.titleLbl.Size = new System.Drawing.Size(143, 62);
+            this.titleLbl.Size = new System.Drawing.Size(113, 50);
             this.titleLbl.TabIndex = 0;
             this.titleLbl.Text = "Login";
             // 
@@ -54,7 +54,7 @@
             this.emailLbl.AutoSize = true;
             this.emailLbl.Location = new System.Drawing.Point(33, 180);
             this.emailLbl.Name = "emailLbl";
-            this.emailLbl.Size = new System.Drawing.Size(72, 32);
+            this.emailLbl.Size = new System.Drawing.Size(58, 25);
             this.emailLbl.TabIndex = 1;
             this.emailLbl.Text = "Email";
             // 
@@ -63,7 +63,7 @@
             this.passwordLbl.AutoSize = true;
             this.passwordLbl.Location = new System.Drawing.Point(33, 256);
             this.passwordLbl.Name = "passwordLbl";
-            this.passwordLbl.Size = new System.Drawing.Size(112, 32);
+            this.passwordLbl.Size = new System.Drawing.Size(91, 25);
             this.passwordLbl.TabIndex = 2;
             this.passwordLbl.Text = "Password";
             // 
@@ -71,14 +71,14 @@
             // 
             this.emailTb.Location = new System.Drawing.Point(129, 177);
             this.emailTb.Name = "emailTb";
-            this.emailTb.Size = new System.Drawing.Size(207, 39);
+            this.emailTb.Size = new System.Drawing.Size(207, 33);
             this.emailTb.TabIndex = 3;
             // 
             // passwordTb
             // 
             this.passwordTb.Location = new System.Drawing.Point(129, 256);
             this.passwordTb.Name = "passwordTb";
-            this.passwordTb.Size = new System.Drawing.Size(207, 39);
+            this.passwordTb.Size = new System.Drawing.Size(207, 33);
             this.passwordTb.TabIndex = 4;
             // 
             // emailErrLbl
@@ -86,7 +86,7 @@
             this.emailErrLbl.AutoSize = true;
             this.emailErrLbl.Location = new System.Drawing.Point(134, 216);
             this.emailErrLbl.Name = "emailErrLbl";
-            this.emailErrLbl.Size = new System.Drawing.Size(0, 32);
+            this.emailErrLbl.Size = new System.Drawing.Size(0, 25);
             this.emailErrLbl.TabIndex = 5;
             // 
             // passwordErrorLbl
@@ -94,7 +94,7 @@
             this.passwordErrorLbl.AutoSize = true;
             this.passwordErrorLbl.Location = new System.Drawing.Point(134, 292);
             this.passwordErrorLbl.Name = "passwordErrorLbl";
-            this.passwordErrorLbl.Size = new System.Drawing.Size(0, 32);
+            this.passwordErrorLbl.Size = new System.Drawing.Size(0, 25);
             this.passwordErrorLbl.TabIndex = 6;
             // 
             // loginBtn
@@ -119,7 +119,7 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 615);
             this.Controls.Add(this.backBtn);
@@ -135,6 +135,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
