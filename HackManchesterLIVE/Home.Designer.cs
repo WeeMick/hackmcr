@@ -51,9 +51,10 @@
             // addShifsBtn
             // 
             this.addShifsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.addShifsBtn.Location = new System.Drawing.Point(32, 132);
+            this.addShifsBtn.Location = new System.Drawing.Point(28, 152);
+            this.addShifsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addShifsBtn.Name = "addShifsBtn";
-            this.addShifsBtn.Size = new System.Drawing.Size(328, 49);
+            this.addShifsBtn.Size = new System.Drawing.Size(336, 46);
             this.addShifsBtn.TabIndex = 0;
             this.addShifsBtn.Text = "Add Shifts";
             this.addShifsBtn.UseVisualStyleBackColor = true;
@@ -62,9 +63,10 @@
             // viewShiftsBtn
             // 
             this.viewShiftsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.viewShiftsBtn.Location = new System.Drawing.Point(32, 205);
+            this.viewShiftsBtn.Location = new System.Drawing.Point(28, 222);
+            this.viewShiftsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.viewShiftsBtn.Name = "viewShiftsBtn";
-            this.viewShiftsBtn.Size = new System.Drawing.Size(328, 49);
+            this.viewShiftsBtn.Size = new System.Drawing.Size(336, 44);
             this.viewShiftsBtn.TabIndex = 1;
             this.viewShiftsBtn.Text = "View Shifts";
             this.viewShiftsBtn.UseVisualStyleBackColor = true;
@@ -73,9 +75,10 @@
             // todaysTipsBtn
             // 
             this.todaysTipsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.todaysTipsBtn.Location = new System.Drawing.Point(32, 283);
+            this.todaysTipsBtn.Location = new System.Drawing.Point(28, 290);
+            this.todaysTipsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.todaysTipsBtn.Name = "todaysTipsBtn";
-            this.todaysTipsBtn.Size = new System.Drawing.Size(328, 49);
+            this.todaysTipsBtn.Size = new System.Drawing.Size(336, 46);
             this.todaysTipsBtn.TabIndex = 2;
             this.todaysTipsBtn.Text = "Todays Tips";
             this.todaysTipsBtn.UseVisualStyleBackColor = true;
@@ -89,9 +92,10 @@
             this.profileComBox.Items.AddRange(new object[] {
             "Manage Account",
             "Logout"});
-            this.profileComBox.Location = new System.Drawing.Point(251, 55);
+            this.profileComBox.Location = new System.Drawing.Point(255, 53);
+            this.profileComBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.profileComBox.Name = "profileComBox";
-            this.profileComBox.Size = new System.Drawing.Size(133, 46);
+            this.profileComBox.Size = new System.Drawing.Size(119, 39);
             this.profileComBox.TabIndex = 5;
             this.profileComBox.Text = "Profile";
             this.profileComBox.SelectedIndexChanged += new System.EventHandler(this.profileComBox_SelectedIndexChanged_1);
@@ -99,36 +103,37 @@
             // welcomeLbl
             // 
             this.welcomeLbl.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.welcomeLbl.Location = new System.Drawing.Point(25, 9);
+            this.welcomeLbl.Location = new System.Drawing.Point(22, 7);
             this.welcomeLbl.Name = "welcomeLbl";
-            this.welcomeLbl.Size = new System.Drawing.Size(288, 37);
+            this.welcomeLbl.Size = new System.Drawing.Size(256, 30);
             this.welcomeLbl.TabIndex = 6;
             this.welcomeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.welcomeLbl.Click += new System.EventHandler(this.welcomeLbl_Click);
             // 
             // tipsLbl
             // 
-            this.tipsLbl.Location = new System.Drawing.Point(12, 432);
+            this.tipsLbl.Location = new System.Drawing.Point(25, 421);
             this.tipsLbl.Name = "tipsLbl";
-            this.tipsLbl.Size = new System.Drawing.Size(276, 118);
+            this.tipsLbl.Size = new System.Drawing.Size(245, 94);
             this.tipsLbl.TabIndex = 7;
             this.tipsLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(175, 366);
+            this.label1.Location = new System.Drawing.Point(324, 391);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 20);
+            this.label1.Size = new System.Drawing.Size(16, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "4";
             // 
             // bottel2PicBox
             // 
             this.bottel2PicBox.Image = global::HackManchesterLIVE.Properties.Resources.water_bottles_2;
-            this.bottel2PicBox.Location = new System.Drawing.Point(307, 432);
+            this.bottel2PicBox.Location = new System.Drawing.Point(314, 430);
+            this.bottel2PicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bottel2PicBox.Name = "bottel2PicBox";
-            this.bottel2PicBox.Size = new System.Drawing.Size(67, 118);
+            this.bottel2PicBox.Size = new System.Drawing.Size(60, 94);
             this.bottel2PicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bottel2PicBox.TabIndex = 11;
             this.bottel2PicBox.TabStop = false;
@@ -136,9 +141,10 @@
             // bottel3PicBox
             // 
             this.bottel3PicBox.Image = global::HackManchesterLIVE.Properties.Resources.water_bottles_css4;
-            this.bottel3PicBox.Location = new System.Drawing.Point(307, 432);
+            this.bottel3PicBox.Location = new System.Drawing.Point(314, 430);
+            this.bottel3PicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bottel3PicBox.Name = "bottel3PicBox";
-            this.bottel3PicBox.Size = new System.Drawing.Size(67, 118);
+            this.bottel3PicBox.Size = new System.Drawing.Size(60, 94);
             this.bottel3PicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bottel3PicBox.TabIndex = 10;
             this.bottel3PicBox.TabStop = false;
@@ -146,9 +152,10 @@
             // bottel4PicBox
             // 
             this.bottel4PicBox.Image = global::HackManchesterLIVE.Properties.Resources.water_bottles_css5;
-            this.bottel4PicBox.Location = new System.Drawing.Point(307, 432);
+            this.bottel4PicBox.Location = new System.Drawing.Point(314, 430);
+            this.bottel4PicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bottel4PicBox.Name = "bottel4PicBox";
-            this.bottel4PicBox.Size = new System.Drawing.Size(67, 118);
+            this.bottel4PicBox.Size = new System.Drawing.Size(60, 94);
             this.bottel4PicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bottel4PicBox.TabIndex = 9;
             this.bottel4PicBox.TabStop = false;
@@ -156,9 +163,10 @@
             // bottelPicBox
             // 
             this.bottelPicBox.Image = ((System.Drawing.Image)(resources.GetObject("bottelPicBox.Image")));
-            this.bottelPicBox.Location = new System.Drawing.Point(307, 432);
+            this.bottelPicBox.Location = new System.Drawing.Point(314, 430);
+            this.bottelPicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bottelPicBox.Name = "bottelPicBox";
-            this.bottelPicBox.Size = new System.Drawing.Size(67, 118);
+            this.bottelPicBox.Size = new System.Drawing.Size(60, 94);
             this.bottelPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bottelPicBox.TabIndex = 4;
             this.bottelPicBox.TabStop = false;
@@ -166,9 +174,10 @@
             // profilePicBox
             // 
             this.profilePicBox.Image = ((System.Drawing.Image)(resources.GetObject("profilePicBox.Image")));
-            this.profilePicBox.Location = new System.Drawing.Point(331, 2);
+            this.profilePicBox.Location = new System.Drawing.Point(327, 2);
+            this.profilePicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.profilePicBox.Name = "profilePicBox";
-            this.profilePicBox.Size = new System.Drawing.Size(53, 48);
+            this.profilePicBox.Size = new System.Drawing.Size(47, 47);
             this.profilePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.profilePicBox.TabIndex = 3;
             this.profilePicBox.TabStop = false;
@@ -176,7 +185,7 @@
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 615);
             this.Controls.Add(this.bottel2PicBox);
@@ -191,6 +200,7 @@
             this.Controls.Add(this.todaysTipsBtn);
             this.Controls.Add(this.viewShiftsBtn);
             this.Controls.Add(this.addShifsBtn);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Home";
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load_1);

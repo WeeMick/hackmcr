@@ -109,12 +109,22 @@ namespace HackManchesterLIVE
 
         private int checkAllTips()
         {
+            Boolean ct8 = checkTime(tip8timeLbl.Text);
+            Boolean ct7 = checkTime(tip7timeLbl.Text);
             Boolean ct6 = checkTime(tip6timeLbl.Text);
             Boolean ct5 = checkTime(tip5timeLbl.Text);
             Boolean ct4 = checkTime(tip4timeLbl.Text);
             Boolean ct3 = checkTime(tip3timeLbl.Text);
             Boolean ct2 = checkTime(tip2timeLbl.Text);
             Boolean ct1 = checkTime(tip1timeLbl.Text);
+            if (ct8 == true)
+            {
+                return 8;
+            }
+            if (ct7 == true)
+            {
+                return 7;
+            }
             if (ct6 == true)
             {
                 return 6;
@@ -153,103 +163,67 @@ namespace HackManchesterLIVE
             if (i > 0)
             {
 
-                tip1Lbl.Hide();
-                tip1timeLbl.Hide();
-                tip2Lbl.Hide();
-                tip2timeLbl.Hide();
-                tip3Lbl.Hide();
-                tip3timeLbl.Hide();
-                tip4Lbl.Hide();
-                tip4timeLbl.Hide();
-                tip5Lbl.Hide();
-                tip5timeLbl.Hide();
-                tip6Lbl.Hide();
-                tip6timeLbl.Hide();
+                tip1Lbl.ForeColor = Color.Red;
+                tip1timeLbl.ForeColor = Color.Red;
+                tip2Lbl.ForeColor = Color.Red;
+                tip2timeLbl.ForeColor = Color.Red;
+                tip3Lbl.ForeColor = Color.Red;
+                tip3timeLbl.ForeColor = Color.Red;
+                tip4Lbl.ForeColor = Color.Red;
+                tip4timeLbl.ForeColor = Color.Red;
+                tip5Lbl.ForeColor = Color.Red;
+                tip5timeLbl.ForeColor = Color.Red;
+                tip6Lbl.ForeColor = Color.Red;
+                tip6timeLbl.ForeColor = Color.Red;
+                tip7Lbl.ForeColor = Color.Red;
+                tip7timeLbl.ForeColor = Color.Red;
+                tip8Lbl.ForeColor = Color.Red;
+                tip8timeLbl.ForeColor = Color.Red;
+
             }
 
-            if (i == 5)
+            if (i >= 7)
             {
-                tip1Lbl.Text = tip6Lbl.Text;
-                tip1timeLbl.Text = tip6timeLbl.Text;
-                tip1Lbl.Show();
-                tip1timeLbl.Show();
+                tip8Lbl.ForeColor = Color.White;
+                tip8timeLbl.ForeColor = Color.White;
             }
-            else if (i == 4)
+            if (i >= 6)
             {
-                tip1Lbl.Text = tip6Lbl.Text;
-                tip1timeLbl.Text = tip6timeLbl.Text;
-                tip2Lbl.Text = tip5Lbl.Text;
-                tip2timeLbl.Text = tip5timeLbl.Text;
-                tip1Lbl.Show();
-                tip2Lbl.Show();
-                tip1timeLbl.Show();
-                tip2timeLbl.Show();
+                tip7Lbl.ForeColor = Color.White;
+                tip7timeLbl.ForeColor = Color.White;
             }
-            else if (i == 3)
+            if (i >= 5)
             {
-                tip1Lbl.Text = tip4Lbl.Text;
-                tip1timeLbl.Text = tip4timeLbl.Text;
-                tip2Lbl.Text = tip5Lbl.Text;
-                tip2timeLbl.Text = tip5timeLbl.Text;
-                tip3Lbl.Text = tip6Lbl.Text;
-                tip3timeLbl.Text = tip6timeLbl.Text;
-                tip1Lbl.Show();
-                tip2Lbl.Show();
-                tip3Lbl.Show();
-                tip1timeLbl.Show();
-                tip2timeLbl.Show();
-                tip3timeLbl.Show();
+                tip6Lbl.ForeColor = Color.White;
+                tip6timeLbl.ForeColor = Color.White;
             }
 
-            else if (i == 2)
+            else if (i >= 4)
             {
-                tip1Lbl.Text = tip3Lbl.Text;
-                tip1timeLbl.Text = tip3timeLbl.Text;
-                tip2Lbl.Text = tip4Lbl.Text;
-                tip2timeLbl.Text = tip4timeLbl.Text;
-                tip3Lbl.Text = tip5Lbl.Text;
-                tip3timeLbl.Text = tip5timeLbl.Text;
-                tip4Lbl.Text = tip6Lbl.Text;
-                tip4timeLbl.Text = tip6timeLbl.Text;
-                tip1Lbl.Show();
-                tip2Lbl.Show();
-                tip3Lbl.Show();
-                tip4Lbl.Show();
-                tip1timeLbl.Show();
-                tip2timeLbl.Show();
-                tip3timeLbl.Show();
-                tip4timeLbl.Show();
+                tip5Lbl.ForeColor = Color.White;
+                tip5timeLbl.ForeColor = Color.White;
+            }
+            else if (i >= 3)
+            {
+                tip4Lbl.ForeColor = Color.White;
+                tip4timeLbl.ForeColor = Color.White;
             }
 
-            else if (i == 1)
+            else if (i >= 2)
             {
-                tip1Lbl.Text = tip2Lbl.Text;
-                tip1timeLbl.Text = tip2timeLbl.Text;
-                tip2Lbl.Text = tip3Lbl.Text;
-                tip2timeLbl.Text = tip3timeLbl.Text;
-                tip3Lbl.Text = tip4Lbl.Text;
-                tip3timeLbl.Text = tip4timeLbl.Text;
-                tip4Lbl.Text = tip5Lbl.Text;
-                tip4timeLbl.Text = tip5timeLbl.Text;
-                tip5Lbl.Text = tip6Lbl.Text;
-                tip5timeLbl.Text = tip6timeLbl.Text;
-                tip1Lbl.Show();
-                tip2Lbl.Show();
-                tip2Lbl.Show();
-                tip2Lbl.Show();
-                tip3Lbl.Show();
-                tip4Lbl.Show();
-                tip5Lbl.Show();
-                tip1timeLbl.Show();
-                tip1timeLbl.Show();
-                tip2timeLbl.Show();
-                tip3timeLbl.Show();
-                tip4timeLbl.Show();
-                tip5timeLbl.Show();
+                tip3Lbl.ForeColor = Color.White;
+                tip3timeLbl.ForeColor = Color.White;
+            }
+
+            else if (i >= 1)
+            {
+                tip2Lbl.ForeColor = Color.White;
+                tip2timeLbl.ForeColor = Color.White;
             }
             else
             {
-
+                tip1Lbl.ForeColor = Color.White;
+                tip1timeLbl.ForeColor = Color.White;
             }
         }
 
@@ -259,6 +233,22 @@ namespace HackManchesterLIVE
             int timeCheck = checkAllTips();
             changeTips(timeCheck);
             home.tipsLbl.Text = tip1Lbl.Text + " " + tip1timeLbl.Text;
+        }
+
+
+        int clickCounterAlarm1 = 0;
+
+        private void alarm1Btn_Click(object sender, EventArgs e)
+        {
+            clickCounterAlarm1++;
+            if (clickCounterAlarm1 % 2 == 0)
+            {
+                alarm1Btn.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.alarmGreen));
+                
+            }
+            else {
+                alarm1Btn.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.alaremRed));
+            }
         }
     }
 }
