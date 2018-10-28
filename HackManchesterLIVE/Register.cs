@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HackManchesterLIVE
 {
-    public partial class Register : Form
+    public partial class Register : BaseForm
     {
         public StartScreen startScreen;
         AppData appData = new AppData();
@@ -35,54 +35,45 @@ namespace HackManchesterLIVE
                 nameErrorLbl.Show();
                 nameErrorLbl.Text = "You must include a name";
             }
-            else
+            else if (emailTb.Text == "")
             {
                 nameErrorLbl.Hide();
-            }
-
-            if (emailTb.Text == "")
-            {
                 emailErrorLbl.Show();
                 emailErrorLbl.Text = "You must include an email";
             }
-            else
+            else if (passwordTb.Text == "")
             {
                 emailErrorLbl.Hide();
-            }
 
-            if (passwordTb.Text == "")
-            {
                 passwordErrorLbl.Show();
                 passwordErrorLbl.Text = "You must include a password";
             }
-            else
+            else if (!cPasswordTb.Text.Equals(passwordTb.Text))
             {
                 passwordErrorLbl.Hide();
-            }
-
-            if (!cPasswordTb.Text.Equals(passwordTb.Text))
-            {
                 cPasswordErrorLbl.Show();
                 cPasswordErrorLbl.Text = "The passwords do not match";
             }
             else
             {
                 cPasswordErrorLbl.Hide();
+                Users user1 = new Users(nameTb.Text, Convert.ToInt32(ageUpDown.Value), emailTb.Text, passwordTb.Text);
+                appData.addUser(user1);
+                appData.addToDict(user1, user1.getEmail());
+
+
+                if (home == null)
+                {
+                    home = new Home();
+                    home.FormClosed += delegate { home = null; };
+                }
+
+                home.Show();
+                home.welcomeLbl.Text = "Welcome " + nameTb.Text;
+                this.Hide();
             }
 
-            Users user1 = new Users(nameTb.Text, Convert.ToInt32(ageUpDown.Value), emailTb.Text, passwordTb.Text);
-            appData.addUser(user1);
-            appData.addToDict(user1, user1.getEmail());
-
-
-            if (home == null) {
-                home = new Home();
-                home.FormClosed += delegate { home = null; };
-            }
-
-            home.Show();
-            home.welcomeLbl.Text = "Welcome " + nameTb.Text;
-            this.Hide();
+            
         }
     }
 }
