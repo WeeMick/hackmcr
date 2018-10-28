@@ -34,6 +34,7 @@
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.homeBtn = new System.Windows.Forms.Button();
             this.AddTripTitleLbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.homeBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,6 +103,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(416, 111);
             this.panel1.TabIndex = 5;
+            // 
+            // homeBtn
+            // 
+            this.homeBtn.BackgroundImage = global::HackManchesterLIVE.Properties.Resources.homeButton;
+            this.homeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homeBtn.Location = new System.Drawing.Point(40, 61);
+            this.homeBtn.Name = "homeBtn";
+            this.homeBtn.Size = new System.Drawing.Size(44, 42);
+            this.homeBtn.TabIndex = 1;
+            this.homeBtn.UseVisualStyleBackColor = true;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
             // AddTripTitleLbl
             // 
@@ -173,22 +184,11 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Destination";
             // 
-            // homeBtn
-            // 
-            this.homeBtn.BackgroundImage = global::HackManchesterLIVE.Properties.Resources.homeButton;
-            this.homeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.homeBtn.Location = new System.Drawing.Point(40, 61);
-            this.homeBtn.Name = "homeBtn";
-            this.homeBtn.Size = new System.Drawing.Size(44, 42);
-            this.homeBtn.TabIndex = 1;
-            this.homeBtn.UseVisualStyleBackColor = true;
-            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
-            // 
             // AddTrips
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 615);
+            this.ClientSize = new System.Drawing.Size(386, 607);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
@@ -205,7 +205,6 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MinimumSize = new System.Drawing.Size(0, 0);
             this.Name = "AddTrips";
             this.Text = "AddTrips";
             this.Load += new System.EventHandler(this.AddTrips_Load);

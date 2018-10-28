@@ -297,7 +297,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 615);
+            this.ClientSize = new System.Drawing.Size(384, 607);
             this.Controls.Add(this.alarm2Btn);
             this.Controls.Add(this.alarm1Btn);
             this.Controls.Add(this.tip8timeLbl);
