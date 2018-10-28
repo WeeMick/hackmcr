@@ -91,33 +91,34 @@ namespace HackManchesterLIVE
 
         private void Home_Load_1(object sender, EventArgs e)
         {
-            if (label1.Text == "1")
-            { bottelPicBox.Visible = true;
-                bottel2PicBox.Visible = false;
-                bottel3PicBox.Visible = false;
-                bottel4PicBox.Visible = false;
-            }
-            else if (label1.Text == "2")
-            {
-                bottelPicBox.Visible = false;
-                bottel2PicBox.Visible = true;
-                bottel3PicBox.Visible = false;
-                bottel4PicBox.Visible = false;
-            }
-            else if (label1.Text == "3")
-            {
-                bottelPicBox.Visible = false;
-                bottel2PicBox.Visible = false;
-                bottel3PicBox.Visible = true;
-                bottel4PicBox.Visible = false;
-            }
-            else if (label1.Text == "4")
-            {
-                bottelPicBox.Visible = false;
-                bottel2PicBox.Visible = false;
-                bottel3PicBox.Visible = false;
-                bottel4PicBox.Visible =true;
-            }
+           // if (label1.Text == "1")
+           // {
+                bottelPicBox.Visible = true;
+               // bottel2PicBox.Visible = false;
+               // bottel3PicBox.Visible = false;
+               // bottel4PicBox.Visible = false;
+           // }
+           // else if (label1.Text == "2")
+           // {
+               // bottelPicBox.Visible = false;
+               // bottel2PicBox.Visible = true;
+               // bottel3PicBox.Visible = false;
+                //bottel4PicBox.Visible = false;
+            //}
+           // else if (label1.Text == "3")
+           // {
+              //  bottelPicBox.Visible = false;
+              //  bottel2PicBox.Visible = false;
+              //  bottel3PicBox.Visible = true;
+               // bottel4PicBox.Visible = false;
+          //  }
+          //  else if (label1.Text == "4")
+           // {
+             //   bottelPicBox.Visible = false;
+              //  bottel2PicBox.Visible = false;
+              //  bottel3PicBox.Visible = false;
+              //  bottel4PicBox.Visible =true;
+           // }
         }
 
         private void welcomeLbl_Click(object sender, EventArgs e)
