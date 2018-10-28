@@ -104,9 +104,9 @@
             // infoLbl
             // 
             this.infoLbl.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.infoLbl.Location = new System.Drawing.Point(11, 502);
+            this.infoLbl.Location = new System.Drawing.Point(25, 502);
             this.infoLbl.Name = "infoLbl";
-            this.infoLbl.Size = new System.Drawing.Size(96, 56);
+            this.infoLbl.Size = new System.Drawing.Size(96, 52);
             this.infoLbl.TabIndex = 46;
             // 
             // homeBtn
@@ -128,13 +128,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 607);
-            this.Controls.Add(this.infoLbl);
             this.Controls.Add(this.addShiftBtn);
             this.Controls.Add(this.finishDateTb);
             this.Controls.Add(this.startDateTb);
             this.Controls.Add(this.finishTimeTb);
             this.Controls.Add(this.startTimeTb);
             this.Controls.Add(this.homeBtn);
+            this.Controls.Add(this.infoLbl);
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "AddShifts";
             this.Text = "AddShifts";
