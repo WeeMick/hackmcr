@@ -32,10 +32,12 @@
             // 
             // BaseForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 615);
-            this.MaximumSize = new System.Drawing.Size(402, 654);
+            this.ClientSize = new System.Drawing.Size(512, 747);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(530, 794);
+            this.MinimumSize = new System.Drawing.Size(404, 662);
             this.Name = "BaseForm";
             this.Text = "BaseForm";
             this.Load += new System.EventHandler(this.BaseForm_Load);

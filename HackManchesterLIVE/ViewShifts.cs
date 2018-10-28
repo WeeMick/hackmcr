@@ -52,10 +52,10 @@ namespace HackManchesterLIVE
             //finishTimeLbl.Text = "Finish Time: ";
             //startDateLbl.Text = "Start Date: ";
             //finishDateLbl.Text = "Finish Date: ";
-            displayInfoLbl.Text = "Start Time: " +
+            /*displayInfoLbl.Text = "Start Time: " +
                                     "\nFinish Time: " +
                                     "\nStart Date: " +
-                                    "\nFinish Date: " ;
+                                    "\nFinish Date: " ;*/
         }
     }
 }

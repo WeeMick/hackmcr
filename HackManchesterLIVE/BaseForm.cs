@@ -27,17 +27,34 @@ namespace HackManchesterLIVE
 
         private void BaseForm_Paint(object sender, PaintEventArgs e)
         {
+            System.Drawing.Color col = System.Drawing.ColorTranslator.FromHtml("#000000");
+            System.Drawing.Color col2 = System.Drawing.ColorTranslator.FromHtml("#203A43");
+            System.Drawing.Color col3 = System.Drawing.ColorTranslator.FromHtml("#7AA1D2");
+            System.Drawing.Color col4 = System.Drawing.ColorTranslator.FromHtml("#3f4c6b");
+            
 
-            if (checkTime(dusk.ToString("HH:mm")))
-                {
-                LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.Black, Color.Silver, 90f);
-                e.Graphics.FillRectangle(brush, this.ClientRectangle);
-            }
-            else
-            {
-                LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.Blue, Color.White, 90f);
-                e.Graphics.FillRectangle(brush, this.ClientRectangle);
-            }
+            LinearGradientBrush linearGradientBrush =
+            new LinearGradientBrush(this.ClientRectangle, col, col2, 60F);
+
+            ColorBlend cblend = new ColorBlend(4);
+            cblend.Colors = new Color[4] { col, col2, col3, col4 };
+            cblend.Positions = new float[4] { 0f, 0.75F, 0.85f, 1f };
+
+            linearGradientBrush.InterpolationColors = cblend;
+
+            e.Graphics.FillRectangle(linearGradientBrush, this.ClientRectangle);
+
+
+            /** if (checkTime(dusk.ToString("HH:mm")))
+                 {
+                 LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.Black, Color.Silver, 90f);
+                 e.Graphics.FillRectangle(brush, this.ClientRectangle);
+             }
+             else
+             {
+                 LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.Blue, Color.White, 90f);
+                 e.Graphics.FillRectangle(brush, this.ClientRectangle);
+             }**/
         }
 
         private DateTime toTime(String time)

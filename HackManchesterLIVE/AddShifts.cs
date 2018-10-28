@@ -13,6 +13,8 @@ namespace HackManchesterLIVE
     public partial class AddShifts : BaseForm
     {
         public string passingData;
+
+        public Users currentUser;
         public AddShifts()
         {
             InitializeComponent();
@@ -89,6 +91,13 @@ namespace HackManchesterLIVE
             infoLbl.Visible = true;
             infoLbl.Text = "Start Time: " + startTimeTb.Text + "\nFinish Time: " + finishTimeTb.Text +
                 "\nStandard Date: " + startDateTb.Text + "\nFinishing Date: " + finishDateTb.Text;
+
+            currentUser.startShiftTime = startTimeTb.Text;
+            currentUser.finishShiftTime = finishTimeTb.Text;
+            currentUser.startShiftDate = startDateTb.Text;
+            currentUser.finishShiftDate = finishDateTb.Text;
+
+            currentUser.setType("ShiftWorker");
         }
     }
 }

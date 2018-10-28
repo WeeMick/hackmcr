@@ -35,6 +35,7 @@ namespace HackManchesterLIVE
                 addShifts = new AddShifts();
                 addShifts.FormClosed += delegate { addShifts = null; };
             }
+            addShifts.currentUser = currentUser;
             addShifts.Show();
             this.Hide();
         }

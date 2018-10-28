@@ -41,6 +41,8 @@
             this.bottel4PicBox = new System.Windows.Forms.PictureBox();
             this.bottelPicBox = new System.Windows.Forms.PictureBox();
             this.profilePicBox = new System.Windows.Forms.PictureBox();
+            this.addTripsBtn = new System.Windows.Forms.Button();
+            this.viewTripsBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bottel2PicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottel3PicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottel4PicBox)).BeginInit();
@@ -51,19 +53,21 @@
             // addShifsBtn
             // 
             this.addShifsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.addShifsBtn.Location = new System.Drawing.Point(28, 108);
+            this.addShifsBtn.ForeColor = System.Drawing.Color.Black;
+            this.addShifsBtn.Location = new System.Drawing.Point(28, 117);
             this.addShifsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addShifsBtn.Name = "addShifsBtn";
             this.addShifsBtn.Size = new System.Drawing.Size(336, 46);
             this.addShifsBtn.TabIndex = 0;
-            this.addShifsBtn.Text = "Add Shifts";
+            this.addShifsBtn.Text = "Add Shift";
             this.addShifsBtn.UseVisualStyleBackColor = true;
             this.addShifsBtn.Click += new System.EventHandler(this.addShifsBtn_Click);
             // 
             // viewShiftsBtn
             // 
             this.viewShiftsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.viewShiftsBtn.Location = new System.Drawing.Point(28, 219);
+            this.viewShiftsBtn.ForeColor = System.Drawing.Color.Black;
+            this.viewShiftsBtn.Location = new System.Drawing.Point(28, 167);
             this.viewShiftsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.viewShiftsBtn.Name = "viewShiftsBtn";
             this.viewShiftsBtn.Size = new System.Drawing.Size(336, 44);
@@ -75,7 +79,8 @@
             // todaysTipsBtn
             // 
             this.todaysTipsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.todaysTipsBtn.Location = new System.Drawing.Point(28, 323);
+            this.todaysTipsBtn.ForeColor = System.Drawing.Color.Black;
+            this.todaysTipsBtn.Location = new System.Drawing.Point(28, 343);
             this.todaysTipsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.todaysTipsBtn.Name = "todaysTipsBtn";
             this.todaysTipsBtn.Size = new System.Drawing.Size(336, 46);
@@ -102,6 +107,7 @@
             // 
             // welcomeLbl
             // 
+            this.welcomeLbl.BackColor = System.Drawing.Color.Transparent;
             this.welcomeLbl.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.welcomeLbl.Location = new System.Drawing.Point(22, 7);
             this.welcomeLbl.Name = "welcomeLbl";
@@ -112,6 +118,7 @@
             // 
             // tipsLbl
             // 
+            this.tipsLbl.BackColor = System.Drawing.Color.Transparent;
             this.tipsLbl.Location = new System.Drawing.Point(25, 421);
             this.tipsLbl.Name = "tipsLbl";
             this.tipsLbl.Size = new System.Drawing.Size(245, 94);
@@ -129,6 +136,7 @@
             // 
             // bottel2PicBox
             // 
+            this.bottel2PicBox.BackColor = System.Drawing.Color.Transparent;
             this.bottel2PicBox.Image = global::HackManchesterLIVE.Properties.Resources.water_bottles_2;
             this.bottel2PicBox.Location = new System.Drawing.Point(314, 430);
             this.bottel2PicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -183,11 +191,37 @@
             this.profilePicBox.TabStop = false;
             this.profilePicBox.Click += new System.EventHandler(this.profilePicBox_Click_1);
             // 
+            // addTripsBtn
+            // 
+            this.addTripsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.addTripsBtn.ForeColor = System.Drawing.Color.Black;
+            this.addTripsBtn.Location = new System.Drawing.Point(28, 227);
+            this.addTripsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addTripsBtn.Name = "addTripsBtn";
+            this.addTripsBtn.Size = new System.Drawing.Size(336, 46);
+            this.addTripsBtn.TabIndex = 12;
+            this.addTripsBtn.Text = "Add Trips";
+            this.addTripsBtn.UseVisualStyleBackColor = true;
+            // 
+            // viewTripsBtn
+            // 
+            this.viewTripsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.viewTripsBtn.ForeColor = System.Drawing.Color.Black;
+            this.viewTripsBtn.Location = new System.Drawing.Point(28, 277);
+            this.viewTripsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.viewTripsBtn.Name = "viewTripsBtn";
+            this.viewTripsBtn.Size = new System.Drawing.Size(336, 46);
+            this.viewTripsBtn.TabIndex = 13;
+            this.viewTripsBtn.Text = "View Trip";
+            this.viewTripsBtn.UseVisualStyleBackColor = true;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 615);
+            this.Controls.Add(this.viewTripsBtn);
+            this.Controls.Add(this.addTripsBtn);
             this.Controls.Add(this.bottel2PicBox);
             this.Controls.Add(this.bottel3PicBox);
             this.Controls.Add(this.bottel4PicBox);
@@ -200,6 +234,7 @@
             this.Controls.Add(this.todaysTipsBtn);
             this.Controls.Add(this.viewShiftsBtn);
             this.Controls.Add(this.addShifsBtn);
+            this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Home";
             this.Text = "Home";
@@ -228,5 +263,7 @@
         private System.Windows.Forms.PictureBox bottel4PicBox;
         private System.Windows.Forms.PictureBox bottel3PicBox;
         private System.Windows.Forms.PictureBox bottel2PicBox;
+        private System.Windows.Forms.Button addTripsBtn;
+        private System.Windows.Forms.Button viewTripsBtn;
     }
 }
