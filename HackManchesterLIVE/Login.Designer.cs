@@ -42,7 +42,9 @@
             // titleLbl
             // 
             this.titleLbl.AutoSize = true;
+            this.titleLbl.BackColor = System.Drawing.Color.Transparent;
             this.titleLbl.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLbl.ForeColor = System.Drawing.Color.White;
             this.titleLbl.Location = new System.Drawing.Point(130, 28);
             this.titleLbl.Name = "titleLbl";
             this.titleLbl.Size = new System.Drawing.Size(143, 62);
@@ -52,6 +54,8 @@
             // emailLbl
             // 
             this.emailLbl.AutoSize = true;
+            this.emailLbl.BackColor = System.Drawing.Color.Transparent;
+            this.emailLbl.ForeColor = System.Drawing.Color.White;
             this.emailLbl.Location = new System.Drawing.Point(33, 180);
             this.emailLbl.Name = "emailLbl";
             this.emailLbl.Size = new System.Drawing.Size(72, 32);
@@ -61,6 +65,8 @@
             // passwordLbl
             // 
             this.passwordLbl.AutoSize = true;
+            this.passwordLbl.BackColor = System.Drawing.Color.Transparent;
+            this.passwordLbl.ForeColor = System.Drawing.Color.White;
             this.passwordLbl.Location = new System.Drawing.Point(33, 256);
             this.passwordLbl.Name = "passwordLbl";
             this.passwordLbl.Size = new System.Drawing.Size(112, 32);
@@ -69,6 +75,7 @@
             // 
             // emailTb
             // 
+            this.emailTb.ForeColor = System.Drawing.Color.White;
             this.emailTb.Location = new System.Drawing.Point(129, 177);
             this.emailTb.Name = "emailTb";
             this.emailTb.Size = new System.Drawing.Size(207, 39);
@@ -76,6 +83,7 @@
             // 
             // passwordTb
             // 
+            this.passwordTb.ForeColor = System.Drawing.Color.White;
             this.passwordTb.Location = new System.Drawing.Point(129, 256);
             this.passwordTb.Name = "passwordTb";
             this.passwordTb.Size = new System.Drawing.Size(207, 39);
@@ -85,7 +93,7 @@
             // 
             this.emailErrLbl.AutoSize = true;
             this.emailErrLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailErrLbl.ForeColor = System.Drawing.Color.Red;
+            this.emailErrLbl.ForeColor = System.Drawing.Color.White;
             this.emailErrLbl.Location = new System.Drawing.Point(134, 216);
             this.emailErrLbl.Name = "emailErrLbl";
             this.emailErrLbl.Size = new System.Drawing.Size(0, 23);
@@ -95,7 +103,7 @@
             // 
             this.passwordErrorLbl.AutoSize = true;
             this.passwordErrorLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.passwordErrorLbl.ForeColor = System.Drawing.Color.Red;
+            this.passwordErrorLbl.ForeColor = System.Drawing.Color.White;
             this.passwordErrorLbl.Location = new System.Drawing.Point(134, 292);
             this.passwordErrorLbl.Name = "passwordErrorLbl";
             this.passwordErrorLbl.Size = new System.Drawing.Size(0, 23);
@@ -103,22 +111,26 @@
             // 
             // loginBtn
             // 
+            this.loginBtn.BackColor = System.Drawing.Color.Transparent;
+            this.loginBtn.ForeColor = System.Drawing.Color.Black;
             this.loginBtn.Location = new System.Drawing.Point(222, 334);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(114, 48);
             this.loginBtn.TabIndex = 7;
             this.loginBtn.Text = "Login";
-            this.loginBtn.UseVisualStyleBackColor = true;
+            this.loginBtn.UseVisualStyleBackColor = false;
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // backBtn
             // 
+            this.backBtn.BackColor = System.Drawing.Color.Transparent;
+            this.backBtn.ForeColor = System.Drawing.Color.Black;
             this.backBtn.Location = new System.Drawing.Point(53, 334);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(114, 48);
             this.backBtn.TabIndex = 8;
             this.backBtn.Text = "Back";
-            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.UseVisualStyleBackColor = false;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
             // Login
@@ -138,6 +150,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);

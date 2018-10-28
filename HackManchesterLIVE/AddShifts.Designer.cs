@@ -41,10 +41,10 @@
             // 
             this.finishDateTb.BackColor = System.Drawing.SystemColors.ControlLight;
             this.finishDateTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.finishDateTb.Location = new System.Drawing.Point(29, 472);
+            this.finishDateTb.Location = new System.Drawing.Point(25, 502);
             this.finishDateTb.Multiline = true;
             this.finishDateTb.Name = "finishDateTb";
-            this.finishDateTb.Size = new System.Drawing.Size(328, 49);
+            this.finishDateTb.Size = new System.Drawing.Size(336, 52);
             this.finishDateTb.TabIndex = 43;
             this.finishDateTb.Text = "Finish Date";
             this.finishDateTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -54,10 +54,10 @@
             // 
             this.startDateTb.BackColor = System.Drawing.SystemColors.ControlLight;
             this.startDateTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startDateTb.Location = new System.Drawing.Point(29, 395);
+            this.startDateTb.Location = new System.Drawing.Point(26, 420);
             this.startDateTb.Multiline = true;
             this.startDateTb.Name = "startDateTb";
-            this.startDateTb.Size = new System.Drawing.Size(328, 49);
+            this.startDateTb.Size = new System.Drawing.Size(335, 52);
             this.startDateTb.TabIndex = 42;
             this.startDateTb.Text = "Start Date";
             this.startDateTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -67,10 +67,10 @@
             // 
             this.finishTimeTb.BackColor = System.Drawing.SystemColors.ControlLight;
             this.finishTimeTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.finishTimeTb.Location = new System.Drawing.Point(29, 321);
+            this.finishTimeTb.Location = new System.Drawing.Point(26, 341);
             this.finishTimeTb.Multiline = true;
             this.finishTimeTb.Name = "finishTimeTb";
-            this.finishTimeTb.Size = new System.Drawing.Size(328, 49);
+            this.finishTimeTb.Size = new System.Drawing.Size(335, 52);
             this.finishTimeTb.TabIndex = 44;
             this.finishTimeTb.Text = "Finish Time";
             this.finishTimeTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -81,10 +81,10 @@
             this.startTimeTb.BackColor = System.Drawing.SystemColors.ControlLight;
             this.startTimeTb.Cursor = System.Windows.Forms.Cursors.Default;
             this.startTimeTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startTimeTb.Location = new System.Drawing.Point(29, 249);
+            this.startTimeTb.Location = new System.Drawing.Point(26, 265);
             this.startTimeTb.Multiline = true;
             this.startTimeTb.Name = "startTimeTb";
-            this.startTimeTb.Size = new System.Drawing.Size(328, 49);
+            this.startTimeTb.Size = new System.Drawing.Size(335, 52);
             this.startTimeTb.TabIndex = 41;
             this.startTimeTb.Text = "Start Time";
             this.startTimeTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -99,7 +99,7 @@
             this.homeBtn.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.homeBtn.Location = new System.Drawing.Point(2, 2);
             this.homeBtn.Name = "homeBtn";
-            this.homeBtn.Size = new System.Drawing.Size(97, 70);
+            this.homeBtn.Size = new System.Drawing.Size(85, 74);
             this.homeBtn.TabIndex = 40;
             this.homeBtn.UseVisualStyleBackColor = false;
             this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
@@ -107,9 +107,9 @@
             // addShiftBtn
             // 
             this.addShiftBtn.Font = new System.Drawing.Font("Segoe UI", 28.2F);
-            this.addShiftBtn.Location = new System.Drawing.Point(29, 118);
+            this.addShiftBtn.Location = new System.Drawing.Point(26, 125);
             this.addShiftBtn.Name = "addShiftBtn";
-            this.addShiftBtn.Size = new System.Drawing.Size(328, 71);
+            this.addShiftBtn.Size = new System.Drawing.Size(334, 75);
             this.addShiftBtn.TabIndex = 45;
             this.addShiftBtn.Text = "Add Shift";
             this.addShiftBtn.UseVisualStyleBackColor = true;
@@ -118,14 +118,14 @@
             // infoLbl
             // 
             this.infoLbl.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.infoLbl.Location = new System.Drawing.Point(12, 205);
+            this.infoLbl.Location = new System.Drawing.Point(11, 218);
             this.infoLbl.Name = "infoLbl";
-            this.infoLbl.Size = new System.Drawing.Size(360, 316);
+            this.infoLbl.Size = new System.Drawing.Size(362, 336);
             this.infoLbl.TabIndex = 46;
             // 
             // AddShifts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 607);
             this.Controls.Add(this.infoLbl);
@@ -135,7 +135,9 @@
             this.Controls.Add(this.finishTimeTb);
             this.Controls.Add(this.startTimeTb);
             this.Controls.Add(this.homeBtn);
+            this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "AddShifts";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddShifts";
             this.Load += new System.EventHandler(this.AddShifts_Load);
             this.ResumeLayout(false);

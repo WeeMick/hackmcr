@@ -324,6 +324,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Tips";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Current Time";
             this.Load += new System.EventHandler(this.Tips_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Tips_paint);

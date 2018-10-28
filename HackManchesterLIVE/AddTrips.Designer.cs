@@ -109,9 +109,9 @@
             // 
             this.homeBtn.BackgroundImage = global::HackManchesterLIVE.Properties.Resources.homeButton;
             this.homeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.homeBtn.Location = new System.Drawing.Point(40, 61);
+            this.homeBtn.Location = new System.Drawing.Point(40, 58);
             this.homeBtn.Name = "homeBtn";
-            this.homeBtn.Size = new System.Drawing.Size(44, 42);
+            this.homeBtn.Size = new System.Drawing.Size(58, 50);
             this.homeBtn.TabIndex = 1;
             this.homeBtn.UseVisualStyleBackColor = true;
             this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
@@ -120,11 +120,11 @@
             // 
             this.AddTripTitleLbl.AutoSize = true;
             this.AddTripTitleLbl.BackColor = System.Drawing.Color.Transparent;
-            this.AddTripTitleLbl.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddTripTitleLbl.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.AddTripTitleLbl.ForeColor = System.Drawing.Color.White;
-            this.AddTripTitleLbl.Location = new System.Drawing.Point(148, 66);
+            this.AddTripTitleLbl.Location = new System.Drawing.Point(131, 58);
             this.AddTripTitleLbl.Name = "AddTripTitleLbl";
-            this.AddTripTitleLbl.Size = new System.Drawing.Size(160, 32);
+            this.AddTripTitleLbl.Size = new System.Drawing.Size(223, 46);
             this.AddTripTitleLbl.TabIndex = 0;
             this.AddTripTitleLbl.Text = "Plan Your Trip";
             // 
@@ -208,6 +208,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AddTrips";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddTrips";
             this.Load += new System.EventHandler(this.AddTrips_Load);
             this.panel1.ResumeLayout(false);

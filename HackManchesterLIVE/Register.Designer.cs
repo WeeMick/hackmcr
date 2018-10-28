@@ -51,7 +51,9 @@
             // titleLbl
             // 
             this.titleLbl.AutoSize = true;
+            this.titleLbl.BackColor = System.Drawing.Color.Transparent;
             this.titleLbl.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLbl.ForeColor = System.Drawing.Color.White;
             this.titleLbl.Location = new System.Drawing.Point(108, 20);
             this.titleLbl.Name = "titleLbl";
             this.titleLbl.Size = new System.Drawing.Size(195, 62);
@@ -61,6 +63,8 @@
             // nameLbl
             // 
             this.nameLbl.AutoSize = true;
+            this.nameLbl.BackColor = System.Drawing.Color.Transparent;
+            this.nameLbl.ForeColor = System.Drawing.Color.White;
             this.nameLbl.Location = new System.Drawing.Point(12, 82);
             this.nameLbl.Name = "nameLbl";
             this.nameLbl.Size = new System.Drawing.Size(79, 32);
@@ -70,6 +74,8 @@
             // ageLbl
             // 
             this.ageLbl.AutoSize = true;
+            this.ageLbl.BackColor = System.Drawing.Color.Transparent;
+            this.ageLbl.ForeColor = System.Drawing.Color.White;
             this.ageLbl.Location = new System.Drawing.Point(12, 150);
             this.ageLbl.Name = "ageLbl";
             this.ageLbl.Size = new System.Drawing.Size(57, 32);
@@ -79,6 +85,8 @@
             // emailLbl
             // 
             this.emailLbl.AutoSize = true;
+            this.emailLbl.BackColor = System.Drawing.Color.Transparent;
+            this.emailLbl.ForeColor = System.Drawing.Color.White;
             this.emailLbl.Location = new System.Drawing.Point(12, 209);
             this.emailLbl.Name = "emailLbl";
             this.emailLbl.Size = new System.Drawing.Size(72, 32);
@@ -88,6 +96,8 @@
             // passwordLbl
             // 
             this.passwordLbl.AutoSize = true;
+            this.passwordLbl.BackColor = System.Drawing.Color.Transparent;
+            this.passwordLbl.ForeColor = System.Drawing.Color.White;
             this.passwordLbl.Location = new System.Drawing.Point(12, 268);
             this.passwordLbl.Name = "passwordLbl";
             this.passwordLbl.Size = new System.Drawing.Size(112, 32);
@@ -97,6 +107,8 @@
             // cPasswordLbl
             // 
             this.cPasswordLbl.AutoSize = true;
+            this.cPasswordLbl.BackColor = System.Drawing.Color.Transparent;
+            this.cPasswordLbl.ForeColor = System.Drawing.Color.White;
             this.cPasswordLbl.Location = new System.Drawing.Point(12, 334);
             this.cPasswordLbl.Name = "cPasswordLbl";
             this.cPasswordLbl.Size = new System.Drawing.Size(112, 64);
@@ -230,6 +242,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             ((System.ComponentModel.ISupportInitialize)(this.ageUpDown)).EndInit();
             this.ResumeLayout(false);
