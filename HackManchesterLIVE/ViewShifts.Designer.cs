@@ -106,7 +106,6 @@
             this.shiftInfoLbl.TabIndex = 46;
             this.shiftInfoLbl.Text = "Shift Information";
             this.shiftInfoLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.shiftInfoLbl.Click += new System.EventHandler(this.shiftInfoLbl_Click);
             // 
             // countdownLbl
             // 

@@ -42,28 +42,6 @@ namespace HackManchesterLIVE
             this.Hide();
         }
 
-        private void shiftInfoLbl_Click(object sender, EventArgs e)
-        {
-        //    startTimeLbl.Visible = true;
-        //    finishTimeLbl.Visible = true;
-        //    startDateLbl.Visible = true;
-        //    finishDateLbl.Visible = true;
-        //    editShiftBtn.Visible = true;
-        //    countdownLbl.Visible = true;
-        }
-
-        private void editShiftBtn_Click(object sender, EventArgs e)
-        {
-            startTimeLbl.Text = "Start Time: " + addShifts.startTimeTb.Text;
-            finishTimeLbl.Text = "Finish Time: ";
-            startDateLbl.Text = "Start Date: ";
-            finishDateLbl.Text = "Finish Date: ";
-            //displayInfoLbl.Text = "Start Time: " +
-            //                        "\nFinish Time: " +
-            //                        "\nStart Date: " +
-            //                        "\nFinish Date: " ;
-        }
-
         private void removeShiftBtn_Click(object sender, EventArgs e)
         {
             startDateLbl.Text = "Start Date: " + "";
