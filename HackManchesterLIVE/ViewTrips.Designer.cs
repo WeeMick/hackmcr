@@ -34,10 +34,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.trip1destLbl = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.arrTimeLbl = new System.Windows.Forms.Label();
-            this.arrDateLbl = new System.Windows.Forms.Label();
-            this.DepTimeLbl = new System.Windows.Forms.Label();
-            this.DepDateLbl = new System.Windows.Forms.Label();
+            //this.arrTimeLbl = new System.Windows.Forms.Label();
             this.arrTimeLbl = new System.Windows.Forms.Label();
             this.arrDateLbl = new System.Windows.Forms.Label();
             this.DepTimeLbl = new System.Windows.Forms.Label();

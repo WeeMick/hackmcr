@@ -81,7 +81,7 @@ namespace HackManchesterLIVE
 
         private void profilePicBox_Click(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void profileComBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -134,7 +134,7 @@ namespace HackManchesterLIVE
         private void profileComBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             profileComBox.Visible = false;
-            if (profileComBox.SelectedItem.ToString() == "Manage Account")
+            if (profileComBox.SelectedItem.ToString() == "User Data")
             {
                 if (userProfile == null)
                 {

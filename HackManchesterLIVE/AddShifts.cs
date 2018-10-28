@@ -90,17 +90,13 @@ namespace HackManchesterLIVE
 
         private void addShiftBtn_Click(object sender, EventArgs e)
         {
-            //Shifts shifts = new Shifts(startTimeTb.Text, finishTimeTb.Text, startDateTb.Text, finishDateTb.Text);
-            //ViewShifts vs = new ViewShifts();
-           // vs.startTimeLbl.Text += "    " + startTimeTb.Text;
-            //vs.finishTimeLbl.Text += "     " + finishTimeTb.Text;
-            //vs.startDateLbl.Text += " " + startDateTb.Text;
-            //vs.finishDateLbl.Text += " " + finishDateTb.Text;
-            //vs.Show();
-
-            //infoLbl.Visible = true;
-            //infoLbl.Text = "Start Time: " + startTimeTb.Text + "\nFinish Time: " + finishTimeTb.Text +
-             //   "\nStandard Date: " + startDateTb.Text + "\nFinishing Date: " + finishDateTb.Text;
+            infoLbl.Visible = true;
+            infoLbl.Text = "Start Time: " + startTimeTb.Text + "\nFinish Time: " + finishTimeTb.Text +
+               "\nStandard Date: " + startDateTb.Text + "\nFinishing Date: " + finishDateTb.Text;
+            startDateTb.Visible = false;
+            startTimeTb.Visible = false;
+            finishDateTb.Visible = false;
+            finishTimeTb.Visible = false;
 
             if (viewShifts == null) {
                 viewShifts = new ViewShifts();

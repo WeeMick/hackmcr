@@ -43,6 +43,7 @@
             this.bottelPicBox = new System.Windows.Forms.PictureBox();
             this.profilePicBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.h1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bottel2PicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottel3PicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottel4PicBox)).BeginInit();
@@ -112,7 +113,7 @@
             // 
             this.welcomeLbl.BackColor = System.Drawing.Color.Transparent;
             this.welcomeLbl.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.welcomeLbl.Location = new System.Drawing.Point(-10, 5);
+            this.welcomeLbl.Location = new System.Drawing.Point(5, 5);
             this.welcomeLbl.Name = "welcomeLbl";
             this.welcomeLbl.Size = new System.Drawing.Size(258, 62);
             this.welcomeLbl.TabIndex = 6;
@@ -224,11 +225,22 @@
             this.label1.Text = "4";
             this.label1.Visible = false;
             // 
+            // h1
+            // 
+            this.h1.BackColor = System.Drawing.Color.Transparent;
+            this.h1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.h1.Location = new System.Drawing.Point(24, 519);
+            this.h1.Name = "h1";
+            this.h1.Size = new System.Drawing.Size(243, 44);
+            this.h1.TabIndex = 14;
+            this.h1.Text = "Remember to stay hydrated!";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 607);
+            this.Controls.Add(this.h1);
             this.Controls.Add(this.viewTripsBtn);
             this.Controls.Add(this.addTripsBtn);
             this.Controls.Add(this.bottel2PicBox);
@@ -275,5 +287,6 @@
         private System.Windows.Forms.Button addTripsBtn;
         private System.Windows.Forms.Button viewTripsBtn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label h1;
     }
 }
