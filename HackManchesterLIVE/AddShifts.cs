@@ -12,6 +12,7 @@ namespace HackManchesterLIVE
 {   
     public partial class AddShifts : Form
     {
+        public string passingData;
         public AddShifts()
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace HackManchesterLIVE
         private void startTimeTb_Enter(object sender, EventArgs e)
         {
             startTimeTb.Text = "";
-            TimeSpan timeSpan = new TimeSpan(2, 14, 5);
+            TimeSpan timeSpan = new TimeSpan(22, 14, 5);
 
             startTimeTb.Text = timeSpan.ToString();
             if (startTimeTb.Enabled == false)
@@ -44,8 +45,7 @@ namespace HackManchesterLIVE
         private void finishTimeTb_Enter(object sender, EventArgs e)
         {
             finishTimeTb.Text = "";
-            TimeSpan timeSpan = new TimeSpan(2, 10, 5);
-
+            TimeSpan timeSpan = new TimeSpan(6, 10, 5);
             finishTimeTb.Text = timeSpan.ToString();
             if (finishTimeTb.Enabled == false)
             {
@@ -57,7 +57,7 @@ namespace HackManchesterLIVE
         {
             startDateTb.Text = "";
             DateTime currentDate = DateTime.Now;
-            startDateTb.Text = currentDate.ToString();
+            startDateTb.Text = currentDate.ToString("dd/MM/yyyy");
             if (startDateTb.Enabled == false)
             {
                 startDateTb.Text = currentDate.ToString();
@@ -67,17 +67,23 @@ namespace HackManchesterLIVE
         private void finishDateTb_Enter(object sender, EventArgs e)
         {
             finishDateTb.Text = "";
-            DateTime currentDate = DateTime.Now;
-            finishDateTb.Text = currentDate.ToString();
+            DateTime currentDate = new DateTime();
+            finishDateTb.Text = currentDate.ToString("20/11/2019");
             if (finishDateTb.Enabled == false)
             {
                 finishDateTb.Text = currentDate.ToString();
             }
         }
 
-        private void addShiftLbl_Click(object sender, EventArgs e)
+        private void addShiftBtn_Click(object sender, EventArgs e)
         {
-            //adds and stores the shift information
+            //Shifts shifts = new Shifts(startTimeTb.Text, finishTimeTb.Text, startDateTb.Text, finishDateTb.Text);
+            ViewShifts vs = new ViewShifts();
+            vs.startTimeLbl.Text += "    " + startTimeTb.Text;
+            vs.finishTimeLbl.Text += "     " + finishTimeTb.Text;
+            vs.startDateLbl.Text += "    " + startDateTb.Text;
+            vs.finishDateLbl.Text += "    " + finishDateTb.Text;
+            vs.Show();
         }
     }
 }

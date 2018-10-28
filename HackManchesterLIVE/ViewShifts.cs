@@ -12,7 +12,7 @@ namespace HackManchesterLIVE
 {
     public partial class ViewShifts : Form   
     {
-        public AddShifts addShifts = new AddShifts();
+        public AddShifts addShifts;
         public ViewShifts()
         {
             InitializeComponent();
@@ -20,6 +20,7 @@ namespace HackManchesterLIVE
 
         private void ViewShifts_Load(object sender, EventArgs e)
         {
+            addShifts = new AddShifts();
             startTimeLbl.Visible = false;
             finishTimeLbl.Visible = false;
             startDateLbl.Visible = false;
@@ -41,15 +42,10 @@ namespace HackManchesterLIVE
             startDateLbl.Visible = true;
             finishDateLbl.Visible = true;
 
-            startTimeLbl.Text += addShifts.startTimeTb.Text;
-            finishTimeLbl.Text += addShifts.finishTimeTb.Text;
-            startDateLbl.Text += addShifts.startDateTb.Text;
-            finishDateLbl.Text += addShifts.finishDateTb;
-        }
-
-        private void editShiftBtn_Click(object sender, EventArgs e)
-        {
-            startTimeLbl.Text = addShifts.startTimeTb.Text;
+            //startTimeLbl.Text += addShifts.passingData;
+            //finishTimeLbl.Text += addShifts.passingData;
+            //startDateLbl.Text += addShifts.passingData;
+            //finishDateLbl.Text += addShifts.passingData;
         }
     }
 }

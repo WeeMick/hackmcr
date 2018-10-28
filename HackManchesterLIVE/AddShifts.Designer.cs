@@ -32,14 +32,14 @@
             this.startDateTb = new System.Windows.Forms.TextBox();
             this.finishTimeTb = new System.Windows.Forms.TextBox();
             this.startTimeTb = new System.Windows.Forms.TextBox();
-            this.addShiftLbl = new System.Windows.Forms.Label();
             this.homeBtn = new System.Windows.Forms.Button();
+            this.addShiftBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // finishDateTb
             // 
             this.finishDateTb.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.finishDateTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finishDateTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finishDateTb.Location = new System.Drawing.Point(29, 472);
             this.finishDateTb.Multiline = true;
             this.finishDateTb.Name = "finishDateTb";
@@ -52,7 +52,7 @@
             // startDateTb
             // 
             this.startDateTb.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.startDateTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startDateTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startDateTb.Location = new System.Drawing.Point(29, 395);
             this.startDateTb.Multiline = true;
             this.startDateTb.Name = "startDateTb";
@@ -65,7 +65,7 @@
             // finishTimeTb
             // 
             this.finishTimeTb.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.finishTimeTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finishTimeTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finishTimeTb.Location = new System.Drawing.Point(29, 321);
             this.finishTimeTb.Multiline = true;
             this.finishTimeTb.Name = "finishTimeTb";
@@ -79,7 +79,7 @@
             // 
             this.startTimeTb.BackColor = System.Drawing.SystemColors.ControlLight;
             this.startTimeTb.Cursor = System.Windows.Forms.Cursors.Default;
-            this.startTimeTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startTimeTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startTimeTb.Location = new System.Drawing.Point(29, 249);
             this.startTimeTb.Multiline = true;
             this.startTimeTb.Name = "startTimeTb";
@@ -88,20 +88,6 @@
             this.startTimeTb.Text = "Start Time";
             this.startTimeTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.startTimeTb.Enter += new System.EventHandler(this.startTimeTb_Enter);
-            // 
-            // addShiftLbl
-            // 
-            this.addShiftLbl.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.addShiftLbl.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addShiftLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.addShiftLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.addShiftLbl.Location = new System.Drawing.Point(29, 110);
-            this.addShiftLbl.Name = "addShiftLbl";
-            this.addShiftLbl.Size = new System.Drawing.Size(328, 66);
-            this.addShiftLbl.TabIndex = 39;
-            this.addShiftLbl.Text = "Add shift";
-            this.addShiftLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.addShiftLbl.Click += new System.EventHandler(this.addShiftLbl_Click);
             // 
             // homeBtn
             // 
@@ -116,16 +102,27 @@
             this.homeBtn.UseVisualStyleBackColor = false;
             this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
+            // addShiftBtn
+            // 
+            this.addShiftBtn.Font = new System.Drawing.Font("Segoe UI", 28.2F);
+            this.addShiftBtn.Location = new System.Drawing.Point(29, 118);
+            this.addShiftBtn.Name = "addShiftBtn";
+            this.addShiftBtn.Size = new System.Drawing.Size(328, 71);
+            this.addShiftBtn.TabIndex = 45;
+            this.addShiftBtn.Text = "Add Shift";
+            this.addShiftBtn.UseVisualStyleBackColor = true;
+            this.addShiftBtn.Click += new System.EventHandler(this.addShiftBtn_Click);
+            // 
             // AddShifts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 607);
+            this.Controls.Add(this.addShiftBtn);
             this.Controls.Add(this.finishDateTb);
             this.Controls.Add(this.startDateTb);
             this.Controls.Add(this.finishTimeTb);
             this.Controls.Add(this.startTimeTb);
-            this.Controls.Add(this.addShiftLbl);
             this.Controls.Add(this.homeBtn);
             this.Name = "AddShifts";
             this.Text = "AddShifts";
@@ -141,7 +138,7 @@
         public System.Windows.Forms.TextBox startDateTb;
         public System.Windows.Forms.TextBox finishTimeTb;
         public System.Windows.Forms.TextBox startTimeTb;
-        public System.Windows.Forms.Label addShiftLbl;
         public System.Windows.Forms.Button homeBtn;
+        private System.Windows.Forms.Button addShiftBtn;
     }
 }
