@@ -50,6 +50,7 @@
             this.tip8timeLbl = new System.Windows.Forms.Label();
             this.alarm1Btn = new System.Windows.Forms.Button();
             this.alarm2Btn = new System.Windows.Forms.Button();
+            this.dateLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // homeBtn
@@ -76,7 +77,7 @@
             this.todayLbl.AutoSize = true;
             this.todayLbl.BackColor = System.Drawing.Color.Transparent;
             this.todayLbl.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.todayLbl.Location = new System.Drawing.Point(109, 65);
+            this.todayLbl.Location = new System.Drawing.Point(111, 51);
             this.todayLbl.Name = "todayLbl";
             this.todayLbl.Size = new System.Drawing.Size(179, 41);
             this.todayLbl.TabIndex = 2;
@@ -86,7 +87,7 @@
             // 
             this.currentTimeLbl.AutoSize = true;
             this.currentTimeLbl.BackColor = System.Drawing.Color.Transparent;
-            this.currentTimeLbl.Location = new System.Drawing.Point(258, 22);
+            this.currentTimeLbl.Location = new System.Drawing.Point(262, 13);
             this.currentTimeLbl.Name = "currentTimeLbl";
             this.currentTimeLbl.Size = new System.Drawing.Size(124, 28);
             this.currentTimeLbl.TabIndex = 3;
@@ -97,7 +98,7 @@
             this.tip1Lbl.AutoSize = true;
             this.tip1Lbl.BackColor = System.Drawing.Color.Transparent;
             this.tip1Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip1Lbl.Location = new System.Drawing.Point(29, 128);
+            this.tip1Lbl.Location = new System.Drawing.Point(29, 146);
             this.tip1Lbl.Name = "tip1Lbl";
             this.tip1Lbl.Size = new System.Drawing.Size(80, 23);
             this.tip1Lbl.TabIndex = 4;
@@ -108,7 +109,7 @@
             this.tip2Lbl.AutoSize = true;
             this.tip2Lbl.BackColor = System.Drawing.Color.Transparent;
             this.tip2Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip2Lbl.Location = new System.Drawing.Point(29, 178);
+            this.tip2Lbl.Location = new System.Drawing.Point(29, 196);
             this.tip2Lbl.Name = "tip2Lbl";
             this.tip2Lbl.Size = new System.Drawing.Size(127, 23);
             this.tip2Lbl.TabIndex = 5;
@@ -119,7 +120,7 @@
             this.tip3Lbl.AutoSize = true;
             this.tip3Lbl.BackColor = System.Drawing.Color.Transparent;
             this.tip3Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip3Lbl.Location = new System.Drawing.Point(29, 233);
+            this.tip3Lbl.Location = new System.Drawing.Point(29, 239);
             this.tip3Lbl.Name = "tip3Lbl";
             this.tip3Lbl.Size = new System.Drawing.Size(183, 23);
             this.tip3Lbl.TabIndex = 6;
@@ -130,7 +131,7 @@
             this.tip4Lbl.AutoSize = true;
             this.tip4Lbl.BackColor = System.Drawing.Color.Transparent;
             this.tip4Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip4Lbl.Location = new System.Drawing.Point(29, 282);
+            this.tip4Lbl.Location = new System.Drawing.Point(29, 287);
             this.tip4Lbl.Name = "tip4Lbl";
             this.tip4Lbl.Size = new System.Drawing.Size(148, 23);
             this.tip4Lbl.TabIndex = 7;
@@ -163,7 +164,7 @@
             this.tip1timeLbl.AutoSize = true;
             this.tip1timeLbl.BackColor = System.Drawing.Color.Transparent;
             this.tip1timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip1timeLbl.Location = new System.Drawing.Point(223, 128);
+            this.tip1timeLbl.Location = new System.Drawing.Point(228, 146);
             this.tip1timeLbl.Name = "tip1timeLbl";
             this.tip1timeLbl.Size = new System.Drawing.Size(50, 23);
             this.tip1timeLbl.TabIndex = 10;
@@ -174,7 +175,7 @@
             this.tip2timeLbl.AutoSize = true;
             this.tip2timeLbl.BackColor = System.Drawing.Color.Transparent;
             this.tip2timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip2timeLbl.Location = new System.Drawing.Point(223, 178);
+            this.tip2timeLbl.Location = new System.Drawing.Point(228, 196);
             this.tip2timeLbl.Name = "tip2timeLbl";
             this.tip2timeLbl.Size = new System.Drawing.Size(50, 23);
             this.tip2timeLbl.TabIndex = 11;
@@ -185,7 +186,7 @@
             this.tip3timeLbl.AutoSize = true;
             this.tip3timeLbl.BackColor = System.Drawing.Color.Transparent;
             this.tip3timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip3timeLbl.Location = new System.Drawing.Point(223, 233);
+            this.tip3timeLbl.Location = new System.Drawing.Point(228, 239);
             this.tip3timeLbl.Name = "tip3timeLbl";
             this.tip3timeLbl.Size = new System.Drawing.Size(50, 23);
             this.tip3timeLbl.TabIndex = 12;
@@ -196,7 +197,7 @@
             this.tip4timeLbl.AutoSize = true;
             this.tip4timeLbl.BackColor = System.Drawing.Color.Transparent;
             this.tip4timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip4timeLbl.Location = new System.Drawing.Point(223, 282);
+            this.tip4timeLbl.Location = new System.Drawing.Point(228, 287);
             this.tip4timeLbl.Name = "tip4timeLbl";
             this.tip4timeLbl.Size = new System.Drawing.Size(50, 23);
             this.tip4timeLbl.TabIndex = 13;
@@ -207,7 +208,7 @@
             this.tip5timeLbl.AutoSize = true;
             this.tip5timeLbl.BackColor = System.Drawing.Color.Transparent;
             this.tip5timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip5timeLbl.Location = new System.Drawing.Point(223, 328);
+            this.tip5timeLbl.Location = new System.Drawing.Point(228, 328);
             this.tip5timeLbl.Name = "tip5timeLbl";
             this.tip5timeLbl.Size = new System.Drawing.Size(50, 23);
             this.tip5timeLbl.TabIndex = 14;
@@ -218,7 +219,7 @@
             this.tip6timeLbl.AutoSize = true;
             this.tip6timeLbl.BackColor = System.Drawing.Color.Transparent;
             this.tip6timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip6timeLbl.Location = new System.Drawing.Point(223, 374);
+            this.tip6timeLbl.Location = new System.Drawing.Point(228, 374);
             this.tip6timeLbl.Name = "tip6timeLbl";
             this.tip6timeLbl.Size = new System.Drawing.Size(50, 23);
             this.tip6timeLbl.TabIndex = 15;
@@ -229,7 +230,7 @@
             this.tip7Lbl.AutoSize = true;
             this.tip7Lbl.BackColor = System.Drawing.Color.Transparent;
             this.tip7Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip7Lbl.Location = new System.Drawing.Point(29, 424);
+            this.tip7Lbl.Location = new System.Drawing.Point(29, 423);
             this.tip7Lbl.Name = "tip7Lbl";
             this.tip7Lbl.Size = new System.Drawing.Size(176, 23);
             this.tip7Lbl.TabIndex = 16;
@@ -240,7 +241,7 @@
             this.tip7timeLbl.AutoSize = true;
             this.tip7timeLbl.BackColor = System.Drawing.Color.Transparent;
             this.tip7timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip7timeLbl.Location = new System.Drawing.Point(223, 424);
+            this.tip7timeLbl.Location = new System.Drawing.Point(228, 423);
             this.tip7timeLbl.Name = "tip7timeLbl";
             this.tip7timeLbl.Size = new System.Drawing.Size(50, 23);
             this.tip7timeLbl.TabIndex = 17;
@@ -251,7 +252,7 @@
             this.tip8Lbl.AutoSize = true;
             this.tip8Lbl.BackColor = System.Drawing.Color.Transparent;
             this.tip8Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip8Lbl.Location = new System.Drawing.Point(29, 471);
+            this.tip8Lbl.Location = new System.Drawing.Point(29, 467);
             this.tip8Lbl.Name = "tip8Lbl";
             this.tip8Lbl.Size = new System.Drawing.Size(51, 23);
             this.tip8Lbl.TabIndex = 18;
@@ -262,7 +263,7 @@
             this.tip8timeLbl.AutoSize = true;
             this.tip8timeLbl.BackColor = System.Drawing.Color.Transparent;
             this.tip8timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip8timeLbl.Location = new System.Drawing.Point(223, 471);
+            this.tip8timeLbl.Location = new System.Drawing.Point(228, 467);
             this.tip8timeLbl.Name = "tip8timeLbl";
             this.tip8timeLbl.Size = new System.Drawing.Size(50, 23);
             this.tip8timeLbl.TabIndex = 19;
@@ -274,7 +275,7 @@
             this.alarm1Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.alarm1Btn.FlatAppearance.BorderSize = 0;
             this.alarm1Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.alarm1Btn.Location = new System.Drawing.Point(324, 119);
+            this.alarm1Btn.Location = new System.Drawing.Point(301, 135);
             this.alarm1Btn.Name = "alarm1Btn";
             this.alarm1Btn.Size = new System.Drawing.Size(43, 41);
             this.alarm1Btn.TabIndex = 20;
@@ -287,17 +288,28 @@
             this.alarm2Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.alarm2Btn.FlatAppearance.BorderSize = 0;
             this.alarm2Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.alarm2Btn.Location = new System.Drawing.Point(324, 460);
+            this.alarm2Btn.Location = new System.Drawing.Point(301, 456);
             this.alarm2Btn.Name = "alarm2Btn";
             this.alarm2Btn.Size = new System.Drawing.Size(43, 41);
             this.alarm2Btn.TabIndex = 21;
             this.alarm2Btn.UseVisualStyleBackColor = true;
+            // 
+            // dateLbl
+            // 
+            this.dateLbl.AutoSize = true;
+            this.dateLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLbl.Location = new System.Drawing.Point(149, 92);
+            this.dateLbl.Name = "dateLbl";
+            this.dateLbl.Size = new System.Drawing.Size(96, 23);
+            this.dateLbl.TabIndex = 22;
+            this.dateLbl.Text = "28/10/2018";
             // 
             // Tips
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 607);
+            this.Controls.Add(this.dateLbl);
             this.Controls.Add(this.alarm2Btn);
             this.Controls.Add(this.alarm1Btn);
             this.Controls.Add(this.tip8timeLbl);
@@ -357,6 +369,7 @@
         public System.Windows.Forms.Label tip8timeLbl;
         private System.Windows.Forms.Button alarm1Btn;
         private System.Windows.Forms.Button alarm2Btn;
+        private System.Windows.Forms.Label dateLbl;
     }
 
    

@@ -74,7 +74,7 @@
             this.viewShiftsBtn.Name = "viewShiftsBtn";
             this.viewShiftsBtn.Size = new System.Drawing.Size(331, 47);
             this.viewShiftsBtn.TabIndex = 1;
-            this.viewShiftsBtn.Text = "View Shifts";
+            this.viewShiftsBtn.Text = "Manage Shifts";
             this.viewShiftsBtn.UseVisualStyleBackColor = false;
             this.viewShiftsBtn.Click += new System.EventHandler(this.viewShiftsBtn_Click);
             // 
@@ -161,8 +161,9 @@
             this.viewTripsBtn.Name = "viewTripsBtn";
             this.viewTripsBtn.Size = new System.Drawing.Size(331, 49);
             this.viewTripsBtn.TabIndex = 13;
-            this.viewTripsBtn.Text = "View Trip";
+            this.viewTripsBtn.Text = "Manage Trips";
             this.viewTripsBtn.UseVisualStyleBackColor = false;
+            this.viewTripsBtn.Click += new System.EventHandler(this.viewTripsBtn_Click);
             // 
             // bottel2PicBox
             // 
@@ -245,7 +246,6 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Home";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.bottel2PicBox)).EndInit();

@@ -21,6 +21,7 @@ namespace HackManchesterLIVE
         public Register register;
         public StartScreen startScreen;
         public UserProfile userProfile;
+        public ViewTrips viewTrips;
         public Home()
         {
             InitializeComponent();
@@ -169,6 +170,16 @@ namespace HackManchesterLIVE
             addTrips.currentUser = currentUser;
             addTrips.Show();
             this.Hide();
+        }
+
+        private void viewTripsBtn_Click(object sender, EventArgs e)
+        {
+            if (viewTrips == null) {
+                viewTrips = new ViewTrips();
+                viewTrips.FormClosed += delegate { viewTrips = null; };
+            }
+
+            viewTrips.Show();
         }
     }
 }

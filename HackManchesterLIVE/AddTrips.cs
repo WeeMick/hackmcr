@@ -14,6 +14,7 @@ namespace HackManchesterLIVE
     {
         public Home home;
         public Users currentUser;
+        public ViewTrips viewTrips;
         public AddTrips()
         {
             InitializeComponent();
@@ -33,11 +34,29 @@ namespace HackManchesterLIVE
             }
             home.Show();
             home.currentUser = currentUser;
+            home.viewTrips = viewTrips;
             this.Hide();
         }
 
+        int tripAddCounter = 0;
+
         private void AddTripBtn_Click(object sender, EventArgs e)
         {
+            tripAddCounter++;
+            if (viewTrips == null) {
+                viewTrips = new ViewTrips();
+                viewTrips.FormClosed += delegate { viewTrips = null; };
+            }
+            if (tripAddCounter == 1)
+            {
+                viewTrips.trip1destLbl.Text = destTb.Text;
+                viewTrips.DepDateLbl.Text = "Departure date: " + depDateTb.Text;
+                viewTrips.DepTimeLbl.Text = "Departure time: " + DepTimeTb.Text;
+                viewTrips.arrDateLbl.Text = "Arrival date: " + arrDateTb.Text;
+                viewTrips.arrTimeLbl.Text = "Arrival time: " + arrTimeTb.Text;
+            }
+            
+
             currentUser.destination = destTb.Text;
             
             currentUser.DepartureDate = depDateTb.Text;

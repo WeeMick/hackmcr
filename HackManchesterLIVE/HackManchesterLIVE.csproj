@@ -155,6 +155,9 @@
     <EmbeddedResource Include="Tips.resx">
       <DependentUpon>Tips.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewTrips.resx">
+      <DependentUpon>ViewTrips.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

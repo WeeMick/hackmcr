@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace HackManchesterLIVE
 {
-    public partial class ViewTrips : Form
+    public partial class ViewTrips : BaseForm
     {
         public ViewTrips()
         {
             InitializeComponent();
+        }
+
+        private void ViewTrips_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
