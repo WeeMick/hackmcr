@@ -32,10 +32,10 @@
             this.startDateLbl = new System.Windows.Forms.Label();
             this.finishTimeLbl = new System.Windows.Forms.Label();
             this.startTimeLbl = new System.Windows.Forms.Label();
-            this.editShiftBtn = new System.Windows.Forms.Button();
+            this.removeShiftBtn = new System.Windows.Forms.Button();
             this.shiftInfoLbl = new System.Windows.Forms.Label();
-            this.homeBTN = new System.Windows.Forms.Button();
             this.countdownLbl = new System.Windows.Forms.Label();
+            this.homeBTN = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // finishDateLbl
@@ -82,18 +82,18 @@
             this.startTimeLbl.TabIndex = 42;
             this.startTimeLbl.Text = "Start Time:";
             // 
-            // editShiftBtn
+            // removeShiftBtn
             // 
-            this.editShiftBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.editShiftBtn.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.editShiftBtn.ForeColor = System.Drawing.Color.Black;
-            this.editShiftBtn.Location = new System.Drawing.Point(12, 482);
-            this.editShiftBtn.Name = "editShiftBtn";
-            this.editShiftBtn.Size = new System.Drawing.Size(360, 46);
-            this.editShiftBtn.TabIndex = 39;
-            this.editShiftBtn.Text = "Edit shift";
-            this.editShiftBtn.UseVisualStyleBackColor = false;
-            this.editShiftBtn.Click += new System.EventHandler(this.editShiftBtn_Click);
+            this.removeShiftBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.removeShiftBtn.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.removeShiftBtn.ForeColor = System.Drawing.Color.Black;
+            this.removeShiftBtn.Location = new System.Drawing.Point(12, 482);
+            this.removeShiftBtn.Name = "removeShiftBtn";
+            this.removeShiftBtn.Size = new System.Drawing.Size(360, 46);
+            this.removeShiftBtn.TabIndex = 39;
+            this.removeShiftBtn.Text = "Remove shift";
+            this.removeShiftBtn.UseVisualStyleBackColor = false;
+            this.removeShiftBtn.Click += new System.EventHandler(this.removeShiftBtn_Click);
             // 
             // shiftInfoLbl
             // 
@@ -107,6 +107,17 @@
             this.shiftInfoLbl.Text = "Shift Information";
             this.shiftInfoLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.shiftInfoLbl.Click += new System.EventHandler(this.shiftInfoLbl_Click);
+            // 
+            // countdownLbl
+            // 
+            this.countdownLbl.BackColor = System.Drawing.Color.Transparent;
+            this.countdownLbl.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.countdownLbl.ForeColor = System.Drawing.Color.White;
+            this.countdownLbl.Location = new System.Drawing.Point(12, 556);
+            this.countdownLbl.Name = "countdownLbl";
+            this.countdownLbl.Size = new System.Drawing.Size(359, 39);
+            this.countdownLbl.TabIndex = 47;
+            this.countdownLbl.Text = "Countdown";
             // 
             // homeBTN
             // 
@@ -122,17 +133,6 @@
             this.homeBTN.UseVisualStyleBackColor = false;
             this.homeBTN.Click += new System.EventHandler(this.homeBTN_Click);
             // 
-            // countdownLbl
-            // 
-            this.countdownLbl.BackColor = System.Drawing.Color.Transparent;
-            this.countdownLbl.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.countdownLbl.ForeColor = System.Drawing.Color.White;
-            this.countdownLbl.Location = new System.Drawing.Point(12, 556);
-            this.countdownLbl.Name = "countdownLbl";
-            this.countdownLbl.Size = new System.Drawing.Size(359, 39);
-            this.countdownLbl.TabIndex = 47;
-            this.countdownLbl.Text = "Countdown";
-            // 
             // ViewShifts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -145,10 +145,10 @@
             this.Controls.Add(this.startDateLbl);
             this.Controls.Add(this.finishTimeLbl);
             this.Controls.Add(this.startTimeLbl);
-            this.Controls.Add(this.editShiftBtn);
+            this.Controls.Add(this.removeShiftBtn);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ViewShifts";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewShifts";
             this.Load += new System.EventHandler(this.ViewShifts_Load);
             this.ResumeLayout(false);
@@ -157,7 +157,7 @@
 
         #endregion
         private System.Windows.Forms.Button homeBTN;
-        private System.Windows.Forms.Button editShiftBtn;
+        private System.Windows.Forms.Button removeShiftBtn;
         private System.Windows.Forms.Label shiftInfoLbl;
         public System.Windows.Forms.Label startTimeLbl;
         public System.Windows.Forms.Label finishDateLbl;

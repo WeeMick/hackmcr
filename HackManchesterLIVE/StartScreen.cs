@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace HackManchesterLIVE
 {
-    public partial class StartScreen : BaseForm
+    public partial class StartScreen : Form
     {
 
         public Users currentUser;
@@ -60,8 +60,8 @@ namespace HackManchesterLIVE
 
         private void StartScreen_Paint(object sender, PaintEventArgs e)
         {
-            LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.Black, Color.Silver, 90f);
-            e.Graphics.FillRectangle(brush,this.ClientRectangle);
+            //LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.Black, Color.Silver, 90f);
+            //e.Graphics.FillRectangle(brush,this.ClientRectangle);
         }
     }
 }
