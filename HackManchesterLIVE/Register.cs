@@ -19,7 +19,18 @@ namespace HackManchesterLIVE
         public Register()
         {
             InitializeComponent();
-            
+            titleLbl.BackColor = Color.Transparent;
+
+            ageLbl.BackColor = Color.Transparent;
+            emailLbl.BackColor = Color.Transparent;
+            passwordLbl.BackColor = Color.Transparent;
+            cPasswordLbl.BackColor = Color.Transparent;
+            nameLbl.BackColor = Color.Transparent;
+            nameErrorLbl.BackColor = Color.Transparent;
+            emailErrorLbl.BackColor = Color.Transparent;
+            passwordErrorLbl.BackColor = Color.Transparent;
+            cPasswordErrorLbl.BackColor = Color.Transparent;
+
         }
 
         private void backBtn_Click(object sender, EventArgs e)
@@ -79,5 +90,7 @@ namespace HackManchesterLIVE
 
             
         }
+
+     
     }
 }

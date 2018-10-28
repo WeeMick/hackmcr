@@ -84,17 +84,21 @@
             // emailErrLbl
             // 
             this.emailErrLbl.AutoSize = true;
+            this.emailErrLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailErrLbl.ForeColor = System.Drawing.Color.Red;
             this.emailErrLbl.Location = new System.Drawing.Point(134, 216);
             this.emailErrLbl.Name = "emailErrLbl";
-            this.emailErrLbl.Size = new System.Drawing.Size(0, 25);
+            this.emailErrLbl.Size = new System.Drawing.Size(0, 17);
             this.emailErrLbl.TabIndex = 5;
             // 
             // passwordErrorLbl
             // 
             this.passwordErrorLbl.AutoSize = true;
+            this.passwordErrorLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.passwordErrorLbl.ForeColor = System.Drawing.Color.Red;
             this.passwordErrorLbl.Location = new System.Drawing.Point(134, 292);
             this.passwordErrorLbl.Name = "passwordErrorLbl";
-            this.passwordErrorLbl.Size = new System.Drawing.Size(0, 25);
+            this.passwordErrorLbl.Size = new System.Drawing.Size(0, 17);
             this.passwordErrorLbl.TabIndex = 6;
             // 
             // loginBtn

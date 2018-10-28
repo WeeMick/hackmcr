@@ -66,6 +66,7 @@
             this.nameLbl.Size = new System.Drawing.Size(62, 25);
             this.nameLbl.TabIndex = 2;
             this.nameLbl.Text = "Name";
+        
             // 
             // ageLbl
             // 
@@ -75,6 +76,7 @@
             this.ageLbl.Size = new System.Drawing.Size(45, 25);
             this.ageLbl.TabIndex = 3;
             this.ageLbl.Text = "Age";
+          
             // 
             // emailLbl
             // 
@@ -84,6 +86,7 @@
             this.emailLbl.Size = new System.Drawing.Size(58, 25);
             this.emailLbl.TabIndex = 4;
             this.emailLbl.Text = "Email";
+      
             // 
             // passwordLbl
             // 
@@ -93,6 +96,7 @@
             this.passwordLbl.Size = new System.Drawing.Size(91, 25);
             this.passwordLbl.TabIndex = 5;
             this.passwordLbl.Text = "Password";
+        
             // 
             // cPasswordLbl
             // 
@@ -102,6 +106,7 @@
             this.cPasswordLbl.Size = new System.Drawing.Size(91, 50);
             this.cPasswordLbl.TabIndex = 6;
             this.cPasswordLbl.Text = "Confirm\r\nPassword";
+        
             // 
             // nameTb
             // 
@@ -168,33 +173,41 @@
             // nameErrorLbl
             // 
             this.nameErrorLbl.AutoSize = true;
+            this.nameErrorLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.nameErrorLbl.ForeColor = System.Drawing.Color.Red;
             this.nameErrorLbl.Location = new System.Drawing.Point(124, 122);
             this.nameErrorLbl.Name = "nameErrorLbl";
-            this.nameErrorLbl.Size = new System.Drawing.Size(0, 25);
+            this.nameErrorLbl.Size = new System.Drawing.Size(0, 17);
             this.nameErrorLbl.TabIndex = 14;
             // 
             // emailErrorLbl
             // 
             this.emailErrorLbl.AutoSize = true;
+            this.emailErrorLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.emailErrorLbl.ForeColor = System.Drawing.Color.Red;
             this.emailErrorLbl.Location = new System.Drawing.Point(124, 240);
             this.emailErrorLbl.Name = "emailErrorLbl";
-            this.emailErrorLbl.Size = new System.Drawing.Size(0, 25);
+            this.emailErrorLbl.Size = new System.Drawing.Size(0, 17);
             this.emailErrorLbl.TabIndex = 15;
             // 
             // passwordErrorLbl
             // 
             this.passwordErrorLbl.AutoSize = true;
+            this.passwordErrorLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.passwordErrorLbl.ForeColor = System.Drawing.Color.Red;
             this.passwordErrorLbl.Location = new System.Drawing.Point(124, 304);
             this.passwordErrorLbl.Name = "passwordErrorLbl";
-            this.passwordErrorLbl.Size = new System.Drawing.Size(0, 25);
+            this.passwordErrorLbl.Size = new System.Drawing.Size(0, 17);
             this.passwordErrorLbl.TabIndex = 16;
             // 
             // cPasswordErrorLbl
             // 
             this.cPasswordErrorLbl.AutoSize = true;
+            this.cPasswordErrorLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.cPasswordErrorLbl.ForeColor = System.Drawing.Color.Red;
             this.cPasswordErrorLbl.Location = new System.Drawing.Point(124, 370);
             this.cPasswordErrorLbl.Name = "cPasswordErrorLbl";
-            this.cPasswordErrorLbl.Size = new System.Drawing.Size(0, 25);
+            this.cPasswordErrorLbl.Size = new System.Drawing.Size(0, 17);
             this.cPasswordErrorLbl.TabIndex = 17;
             // 
             // Register

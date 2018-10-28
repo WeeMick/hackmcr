@@ -18,6 +18,12 @@ namespace HackManchesterLIVE
         public Login()
         {
             InitializeComponent();
+            titleLbl.BackColor = Color.Transparent;
+            emailLbl.BackColor = Color.Transparent;
+            passwordLbl.BackColor = Color.Transparent;
+            emailErrLbl.BackColor = Color.Transparent;
+            passwordErrorLbl.BackColor = Color.Transparent;
+
         }
 
         private void backBtn_Click(object sender, EventArgs e)
