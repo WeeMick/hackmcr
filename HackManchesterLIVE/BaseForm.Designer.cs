@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(384, 607);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BaseForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BaseForm";
             this.Load += new System.EventHandler(this.BaseForm_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.BaseForm_Paint);
