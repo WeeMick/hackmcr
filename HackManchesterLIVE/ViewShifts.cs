@@ -13,6 +13,8 @@ namespace HackManchesterLIVE
     public partial class ViewShifts : BaseForm
     {
         public AddShifts addShifts;
+        public Users currentUser;
+        public Home mainPage;
         public ViewShifts()
         {
             InitializeComponent();
@@ -31,9 +33,14 @@ namespace HackManchesterLIVE
 
         private void homeBTN_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Home home = new Home();
-            home.Show();
+            if (mainPage == null) {
+                mainPage = new Home();
+                mainPage.FormClosed += delegate { mainPage = null; };
+            }
+
+            mainPage.currentUser = currentUser;
+            mainPage.Show();
+            this.Hide();
         }
 
         private void shiftInfoLbl_Click(object sender, EventArgs e)

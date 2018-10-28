@@ -49,6 +49,7 @@ namespace HackManchesterLIVE
                 viewShifts.FormClosed += delegate { viewShifts = null; };
             }
             viewShifts.Show();
+            viewShifts.currentUser = currentUser;
             this.Hide();
         }
 

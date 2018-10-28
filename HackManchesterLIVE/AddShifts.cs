@@ -15,6 +15,7 @@ namespace HackManchesterLIVE
         public string passingData;
 
         public Users currentUser;
+        public Home mainPage;
         public AddShifts()
         {
             InitializeComponent();
@@ -40,9 +41,16 @@ namespace HackManchesterLIVE
 
         private void homeBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Home home = new Home();
-            home.Show();
+            if (mainPage == null)
+            {
+                mainPage = new Home();
+                mainPage.FormClosed += delegate { mainPage = null; };
+                
+            }
+            this.Hide();
+            
+            mainPage.currentUser = currentUser;
+            mainPage.Show();
         }
 
         private void finishTimeTb_Enter(object sender, EventArgs e)
