@@ -76,7 +76,7 @@ namespace HackManchesterLIVE
                 tips = new Tips();
                 tips.FormClosed += delegate { tips = null; };
             }
-            tipsLbl.Text = tips.tip1Lbl.Text;
+            tipsLbl.Text = tips.tip1Lbl.Text + " and remeber to stay Hydrated!";
         }
 
         private void profilePicBox_Click(object sender, EventArgs e)

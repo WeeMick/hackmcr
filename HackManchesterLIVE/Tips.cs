@@ -68,10 +68,9 @@ namespace HackManchesterLIVE
         private void Tips_Load(object sender, EventArgs e)
         {
             //sets current Time on page (Should update regularly - need to find code)
-            currentTimeLbl.Text = "16:00";
-                
-                //getTimeString();
+            currentTimeLbl.Text = getTimeString();
             checkTips();
+            checkAllTips();
             checkUserTypeTips();
 
 
@@ -348,5 +347,109 @@ namespace HackManchesterLIVE
             }
 
             }
+
+        private void alarm2Btn_Click(object sender, EventArgs e)
+        {
+            clickCounterAlarm1++;
+            if (clickCounterAlarm1 % 2 == 0)
+            {
+                alarm2Btn.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.alarmGreen));
+
+            }
+            else
+            {
+                alarm2Btn.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.alaremRed));
+            }
         }
+
+        private void tickBtn1_Click(object sender, EventArgs e)
+        {
+            clickCounterAlarm1++;
+            if (clickCounterAlarm1 % 2 == 0)
+            {
+                tickBtn1.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.question));
+
+            }
+            else
+            {
+                tickBtn1.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.tick));
+            }
+
+        }
+
+        private void tickBtn2_Click(object sender, EventArgs e)
+        {
+            clickCounterAlarm1++;
+            if (clickCounterAlarm1 % 2 == 0)
+            {
+                tickBtn2.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.question));
+
+            }
+            else
+            {
+                tickBtn2.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.tick));
+            }
+
+        }
+
+        private void tickBtn3_Click(object sender, EventArgs e)
+        {
+            clickCounterAlarm1++;
+            if (clickCounterAlarm1 % 2 == 0)
+            {
+                tickBtn3.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.question));
+
+            }
+            else
+            {
+                tickBtn3.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.tick));
+            }
+
+        }
+
+        private void tickBtn4_Click(object sender, EventArgs e)
+        {
+            clickCounterAlarm1++;
+            if (clickCounterAlarm1 % 2 == 0)
+            {
+                tickBtn4.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.question));
+
+            }
+            else
+            {
+                tickBtn4.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.tick));
+            }
+
+        }
+
+        private void tickBtn5_Click(object sender, EventArgs e)
+        {
+            clickCounterAlarm1++;
+            if (clickCounterAlarm1 % 2 == 0)
+            {
+                tickBtn5.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.question));
+
+            }
+            else
+            {
+                tickBtn5.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.tick));
+            }
+
+        }
+
+        private void tickBtn6_Click(object sender, EventArgs e)
+        {
+            clickCounterAlarm1++;
+            if (clickCounterAlarm1 % 2 == 0)
+            {
+                tickBtn6.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.question));
+
+            }
+            else
+            {
+                tickBtn6.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.tick));
+            }
+
+        }
+    }
     }

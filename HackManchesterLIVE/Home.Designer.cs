@@ -52,7 +52,7 @@
             // 
             // addShifsBtn
             // 
-            this.addShifsBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.addShifsBtn.BackColor = System.Drawing.Color.LightSteelBlue;
             this.addShifsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.addShifsBtn.ForeColor = System.Drawing.Color.Black;
             this.addShifsBtn.Location = new System.Drawing.Point(28, 158);
@@ -66,7 +66,7 @@
             // 
             // viewShiftsBtn
             // 
-            this.viewShiftsBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.viewShiftsBtn.BackColor = System.Drawing.Color.LightSteelBlue;
             this.viewShiftsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.viewShiftsBtn.ForeColor = System.Drawing.Color.Black;
             this.viewShiftsBtn.Location = new System.Drawing.Point(28, 211);
@@ -80,7 +80,7 @@
             // 
             // todaysTipsBtn
             // 
-            this.todaysTipsBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.todaysTipsBtn.BackColor = System.Drawing.Color.LightSteelBlue;
             this.todaysTipsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.todaysTipsBtn.ForeColor = System.Drawing.Color.Black;
             this.todaysTipsBtn.Location = new System.Drawing.Point(28, 398);
@@ -103,7 +103,7 @@
             this.profileComBox.Location = new System.Drawing.Point(228, 76);
             this.profileComBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.profileComBox.Name = "profileComBox";
-            this.profileComBox.Size = new System.Drawing.Size(153, 46);
+            this.profileComBox.Size = new System.Drawing.Size(153, 39);
             this.profileComBox.TabIndex = 5;
             this.profileComBox.Text = "Profile";
             this.profileComBox.SelectedIndexChanged += new System.EventHandler(this.profileComBox_SelectedIndexChanged_1);
@@ -112,9 +112,9 @@
             // 
             this.welcomeLbl.BackColor = System.Drawing.Color.Transparent;
             this.welcomeLbl.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.welcomeLbl.Location = new System.Drawing.Point(24, 5);
+            this.welcomeLbl.Location = new System.Drawing.Point(-10, 5);
             this.welcomeLbl.Name = "welcomeLbl";
-            this.welcomeLbl.Size = new System.Drawing.Size(280, 62);
+            this.welcomeLbl.Size = new System.Drawing.Size(258, 62);
             this.welcomeLbl.TabIndex = 6;
             this.welcomeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.welcomeLbl.Click += new System.EventHandler(this.welcomeLbl_Click);
@@ -128,19 +128,9 @@
             this.tipsLbl.TabIndex = 7;
             this.tipsLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(347, 464);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 19);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "4";
-            this.label1.Visible = false;
-            // 
             // addTripsBtn
             // 
-            this.addTripsBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.addTripsBtn.BackColor = System.Drawing.Color.LightSteelBlue;
             this.addTripsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.addTripsBtn.ForeColor = System.Drawing.Color.Black;
             this.addTripsBtn.Location = new System.Drawing.Point(28, 275);
@@ -154,7 +144,7 @@
             // 
             // viewTripsBtn
             // 
-            this.viewTripsBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.viewTripsBtn.BackColor = System.Drawing.Color.LightSteelBlue;
             this.viewTripsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.viewTripsBtn.ForeColor = System.Drawing.Color.Black;
             this.viewTripsBtn.Location = new System.Drawing.Point(28, 328);
@@ -228,13 +218,14 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(262, 468);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 21);
+            this.label1.Size = new System.Drawing.Size(17, 19);
             this.label1.TabIndex = 8;
             this.label1.Text = "4";
+            this.label1.Visible = false;
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 607);
             this.Controls.Add(this.viewTripsBtn);
@@ -251,7 +242,6 @@
             this.Controls.Add(this.todaysTipsBtn);
             this.Controls.Add(this.viewShiftsBtn);
             this.Controls.Add(this.addShifsBtn);
-            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
