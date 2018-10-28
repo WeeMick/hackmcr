@@ -97,7 +97,7 @@ namespace HackManchesterLIVE
             {
 
                 direction = "east";
-
+                
             }
             else if (destination.Equals("New York") || destination.Equals("Mexico City") || destination.Equals("Toronto")
                 || destination.Equals("Los Angeles") || destination.Equals("Florida") || destination.Equals("Washington")

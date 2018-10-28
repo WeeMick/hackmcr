@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.titleLbl = new System.Windows.Forms.Label();
             this.emailLbl = new System.Windows.Forms.Label();
             this.passwordLbl = new System.Windows.Forms.Label();
             this.emailTb = new System.Windows.Forms.TextBox();
@@ -37,28 +36,19 @@
             this.passwordErrorLbl = new System.Windows.Forms.Label();
             this.loginBtn = new System.Windows.Forms.Button();
             this.backBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.titleLbl = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // titleLbl
-            // 
-            this.titleLbl.AutoSize = true;
-            this.titleLbl.BackColor = System.Drawing.Color.Transparent;
-            this.titleLbl.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLbl.ForeColor = System.Drawing.Color.White;
-            this.titleLbl.Location = new System.Drawing.Point(130, 28);
-            this.titleLbl.Name = "titleLbl";
-            this.titleLbl.Size = new System.Drawing.Size(143, 62);
-            this.titleLbl.TabIndex = 0;
-            this.titleLbl.Text = "Login";
             // 
             // emailLbl
             // 
             this.emailLbl.AutoSize = true;
             this.emailLbl.BackColor = System.Drawing.Color.Transparent;
             this.emailLbl.ForeColor = System.Drawing.Color.White;
-            this.emailLbl.Location = new System.Drawing.Point(33, 180);
+            this.emailLbl.Location = new System.Drawing.Point(12, 275);
             this.emailLbl.Name = "emailLbl";
-            this.emailLbl.Size = new System.Drawing.Size(72, 32);
+            this.emailLbl.Size = new System.Drawing.Size(86, 40);
             this.emailLbl.TabIndex = 1;
             this.emailLbl.Text = "Email";
             // 
@@ -67,26 +57,26 @@
             this.passwordLbl.AutoSize = true;
             this.passwordLbl.BackColor = System.Drawing.Color.Transparent;
             this.passwordLbl.ForeColor = System.Drawing.Color.White;
-            this.passwordLbl.Location = new System.Drawing.Point(33, 256);
+            this.passwordLbl.Location = new System.Drawing.Point(12, 357);
             this.passwordLbl.Name = "passwordLbl";
-            this.passwordLbl.Size = new System.Drawing.Size(112, 32);
+            this.passwordLbl.Size = new System.Drawing.Size(136, 40);
             this.passwordLbl.TabIndex = 2;
             this.passwordLbl.Text = "Password";
             // 
             // emailTb
             // 
             this.emailTb.ForeColor = System.Drawing.Color.White;
-            this.emailTb.Location = new System.Drawing.Point(129, 177);
+            this.emailTb.Location = new System.Drawing.Point(119, 275);
             this.emailTb.Name = "emailTb";
-            this.emailTb.Size = new System.Drawing.Size(207, 39);
+            this.emailTb.Size = new System.Drawing.Size(207, 45);
             this.emailTb.TabIndex = 3;
             // 
             // passwordTb
             // 
             this.passwordTb.ForeColor = System.Drawing.Color.White;
-            this.passwordTb.Location = new System.Drawing.Point(129, 256);
+            this.passwordTb.Location = new System.Drawing.Point(119, 352);
             this.passwordTb.Name = "passwordTb";
-            this.passwordTb.Size = new System.Drawing.Size(207, 39);
+            this.passwordTb.Size = new System.Drawing.Size(207, 45);
             this.passwordTb.TabIndex = 4;
             // 
             // emailErrLbl
@@ -96,7 +86,7 @@
             this.emailErrLbl.ForeColor = System.Drawing.Color.White;
             this.emailErrLbl.Location = new System.Drawing.Point(134, 216);
             this.emailErrLbl.Name = "emailErrLbl";
-            this.emailErrLbl.Size = new System.Drawing.Size(0, 23);
+            this.emailErrLbl.Size = new System.Drawing.Size(0, 28);
             this.emailErrLbl.TabIndex = 5;
             // 
             // passwordErrorLbl
@@ -106,14 +96,14 @@
             this.passwordErrorLbl.ForeColor = System.Drawing.Color.White;
             this.passwordErrorLbl.Location = new System.Drawing.Point(134, 292);
             this.passwordErrorLbl.Name = "passwordErrorLbl";
-            this.passwordErrorLbl.Size = new System.Drawing.Size(0, 23);
+            this.passwordErrorLbl.Size = new System.Drawing.Size(0, 28);
             this.passwordErrorLbl.TabIndex = 6;
             // 
             // loginBtn
             // 
             this.loginBtn.BackColor = System.Drawing.Color.Transparent;
             this.loginBtn.ForeColor = System.Drawing.Color.Black;
-            this.loginBtn.Location = new System.Drawing.Point(222, 334);
+            this.loginBtn.Location = new System.Drawing.Point(238, 452);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(114, 48);
             this.loginBtn.TabIndex = 7;
@@ -125,7 +115,7 @@
             // 
             this.backBtn.BackColor = System.Drawing.Color.Transparent;
             this.backBtn.ForeColor = System.Drawing.Color.Black;
-            this.backBtn.Location = new System.Drawing.Point(53, 334);
+            this.backBtn.Location = new System.Drawing.Point(67, 452);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(114, 48);
             this.backBtn.TabIndex = 8;
@@ -133,11 +123,33 @@
             this.backBtn.UseVisualStyleBackColor = false;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::HackManchesterLIVE.Properties.Resources.login;
+            this.pictureBox1.Location = new System.Drawing.Point(119, 85);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(176, 142);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // titleLbl
+            // 
+            this.titleLbl.AutoSize = true;
+            this.titleLbl.BackColor = System.Drawing.Color.Transparent;
+            this.titleLbl.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLbl.ForeColor = System.Drawing.Color.White;
+            this.titleLbl.Location = new System.Drawing.Point(126, 21);
+            this.titleLbl.Name = "titleLbl";
+            this.titleLbl.Size = new System.Drawing.Size(0, 74);
+            this.titleLbl.TabIndex = 0;
+            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 607);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.passwordErrorLbl);
@@ -147,20 +159,19 @@
             this.Controls.Add(this.passwordLbl);
             this.Controls.Add(this.emailLbl);
             this.Controls.Add(this.titleLbl);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label titleLbl;
         private System.Windows.Forms.Label emailLbl;
         private System.Windows.Forms.Label passwordLbl;
         private System.Windows.Forms.TextBox emailTb;
@@ -169,5 +180,7 @@
         private System.Windows.Forms.Label passwordErrorLbl;
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.Button backBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label titleLbl;
     }
 }
