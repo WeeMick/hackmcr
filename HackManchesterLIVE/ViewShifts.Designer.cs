@@ -35,7 +35,7 @@
             this.editShiftBtn = new System.Windows.Forms.Button();
             this.shiftInfoLbl = new System.Windows.Forms.Label();
             this.homeBTN = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.countdownLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // finishDateLbl
@@ -110,21 +110,21 @@
             this.homeBTN.UseVisualStyleBackColor = false;
             this.homeBTN.Click += new System.EventHandler(this.homeBTN_Click);
             // 
-            // label1
+            // countdownLbl
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.label1.Location = new System.Drawing.Point(13, 547);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(359, 42);
-            this.label1.TabIndex = 47;
-            this.label1.Text = "Countdown";
+            this.countdownLbl.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.countdownLbl.Location = new System.Drawing.Point(13, 547);
+            this.countdownLbl.Name = "countdownLbl";
+            this.countdownLbl.Size = new System.Drawing.Size(359, 42);
+            this.countdownLbl.TabIndex = 47;
+            this.countdownLbl.Text = "Countdown";
             // 
             // ViewShifts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 607);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.countdownLbl);
             this.Controls.Add(this.homeBTN);
             this.Controls.Add(this.shiftInfoLbl);
             this.Controls.Add(this.finishDateLbl);
@@ -147,6 +147,6 @@
         public System.Windows.Forms.Label finishDateLbl;
         public System.Windows.Forms.Label startDateLbl;
         public System.Windows.Forms.Label finishTimeLbl;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label countdownLbl;
     }
 }
