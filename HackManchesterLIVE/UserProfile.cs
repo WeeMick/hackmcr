@@ -58,7 +58,7 @@ namespace HackManchesterLIVE
             this.updatedDetailsConfirmationLbl.AutoSize = true;
             this.updatedDetailsConfirmationLbl.Location = new System.Drawing.Point(30, 142);
             this.updatedDetailsConfirmationLbl.Name = "updatedDetailsConfirmationLbl";
-            this.updatedDetailsConfirmationLbl.Size = new System.Drawing.Size(0, 25);
+            this.updatedDetailsConfirmationLbl.Size = new System.Drawing.Size(0, 32);
             this.updatedDetailsConfirmationLbl.TabIndex = 17;
             // 
             // backBtn
@@ -87,7 +87,7 @@ namespace HackManchesterLIVE
             this.wakeTimePicker.Location = new System.Drawing.Point(174, 272);
             this.wakeTimePicker.Name = "wakeTimePicker";
             this.wakeTimePicker.ShowUpDown = true;
-            this.wakeTimePicker.Size = new System.Drawing.Size(107, 33);
+            this.wakeTimePicker.Size = new System.Drawing.Size(107, 39);
             this.wakeTimePicker.TabIndex = 14;
             this.wakeTimePicker.Value = new System.DateTime(2018, 10, 28, 0, 23, 0, 0);
             // 
@@ -101,14 +101,14 @@ namespace HackManchesterLIVE
             131072});
             this.weightUpDown.Location = new System.Drawing.Point(174, 164);
             this.weightUpDown.Name = "weightUpDown";
-            this.weightUpDown.Size = new System.Drawing.Size(107, 33);
+            this.weightUpDown.Size = new System.Drawing.Size(107, 39);
             this.weightUpDown.TabIndex = 13;
             // 
             // heightUpDown
             // 
             this.heightUpDown.Location = new System.Drawing.Point(174, 117);
             this.heightUpDown.Name = "heightUpDown";
-            this.heightUpDown.Size = new System.Drawing.Size(107, 33);
+            this.heightUpDown.Size = new System.Drawing.Size(107, 39);
             this.heightUpDown.TabIndex = 12;
             // 
             // sleepDateTimePicker
@@ -117,20 +117,20 @@ namespace HackManchesterLIVE
             this.sleepDateTimePicker.Location = new System.Drawing.Point(174, 212);
             this.sleepDateTimePicker.Name = "sleepDateTimePicker";
             this.sleepDateTimePicker.ShowUpDown = true;
-            this.sleepDateTimePicker.Size = new System.Drawing.Size(107, 33);
+            this.sleepDateTimePicker.Size = new System.Drawing.Size(107, 39);
             this.sleepDateTimePicker.TabIndex = 11;
             this.sleepDateTimePicker.Value = new System.DateTime(2018, 10, 28, 0, 23, 0, 0);
             // 
             // genderListBox
             // 
             this.genderListBox.FormattingEnabled = true;
-            this.genderListBox.ItemHeight = 25;
+            this.genderListBox.ItemHeight = 32;
             this.genderListBox.Items.AddRange(new object[] {
             "Female",
             "Male"});
             this.genderListBox.Location = new System.Drawing.Point(174, 76);
             this.genderListBox.Name = "genderListBox";
-            this.genderListBox.Size = new System.Drawing.Size(107, 29);
+            this.genderListBox.Size = new System.Drawing.Size(107, 4);
             this.genderListBox.TabIndex = 8;
             // 
             // wakeTimeLbl
@@ -138,7 +138,7 @@ namespace HackManchesterLIVE
             this.wakeTimeLbl.AutoSize = true;
             this.wakeTimeLbl.Location = new System.Drawing.Point(34, 272);
             this.wakeTimeLbl.Name = "wakeTimeLbl";
-            this.wakeTimeLbl.Size = new System.Drawing.Size(140, 50);
+            this.wakeTimeLbl.Size = new System.Drawing.Size(177, 64);
             this.wakeTimeLbl.TabIndex = 7;
             this.wakeTimeLbl.Text = "Average Wake-\r\nup  Time";
             // 
@@ -147,7 +147,7 @@ namespace HackManchesterLIVE
             this.sleepTimeLbl.AutoSize = true;
             this.sleepTimeLbl.Location = new System.Drawing.Point(30, 212);
             this.sleepTimeLbl.Name = "sleepTimeLbl";
-            this.sleepTimeLbl.Size = new System.Drawing.Size(132, 50);
+            this.sleepTimeLbl.Size = new System.Drawing.Size(168, 64);
             this.sleepTimeLbl.TabIndex = 6;
             this.sleepTimeLbl.Text = "Average Sleep\r\nStart Time";
             // 
@@ -156,7 +156,7 @@ namespace HackManchesterLIVE
             this.heightLbl.AutoSize = true;
             this.heightLbl.Location = new System.Drawing.Point(30, 117);
             this.heightLbl.Name = "heightLbl";
-            this.heightLbl.Size = new System.Drawing.Size(68, 25);
+            this.heightLbl.Size = new System.Drawing.Size(87, 32);
             this.heightLbl.TabIndex = 3;
             this.heightLbl.Text = "Height";
             // 
@@ -165,7 +165,7 @@ namespace HackManchesterLIVE
             this.weightLbl.AutoSize = true;
             this.weightLbl.Location = new System.Drawing.Point(30, 166);
             this.weightLbl.Name = "weightLbl";
-            this.weightLbl.Size = new System.Drawing.Size(72, 25);
+            this.weightLbl.Size = new System.Drawing.Size(91, 32);
             this.weightLbl.TabIndex = 2;
             this.weightLbl.Text = "Weight";
             // 
@@ -174,7 +174,7 @@ namespace HackManchesterLIVE
             this.genderLbl.AutoSize = true;
             this.genderLbl.Location = new System.Drawing.Point(30, 76);
             this.genderLbl.Name = "genderLbl";
-            this.genderLbl.Size = new System.Drawing.Size(74, 25);
+            this.genderLbl.Size = new System.Drawing.Size(93, 32);
             this.genderLbl.TabIndex = 1;
             this.genderLbl.Text = "Gender";
             // 
@@ -184,14 +184,14 @@ namespace HackManchesterLIVE
             this.titleLbl.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLbl.Location = new System.Drawing.Point(81, 9);
             this.titleLbl.Name = "titleLbl";
-            this.titleLbl.Size = new System.Drawing.Size(210, 50);
+            this.titleLbl.Size = new System.Drawing.Size(265, 62);
             this.titleLbl.TabIndex = 0;
             this.titleLbl.Text = "User Profile";
             // 
             // UserProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
-            this.ClientSize = new System.Drawing.Size(386, 615);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.ClientSize = new System.Drawing.Size(384, 607);
             this.Controls.Add(this.updatedDetailsConfirmationLbl);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.updateDetailsBtn);
