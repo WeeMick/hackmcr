@@ -75,9 +75,10 @@
             // 
             this.todayLbl.AutoSize = true;
             this.todayLbl.BackColor = System.Drawing.Color.Transparent;
-            this.todayLbl.Location = new System.Drawing.Point(133, 55);
+            this.todayLbl.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.todayLbl.Location = new System.Drawing.Point(109, 65);
             this.todayLbl.Name = "todayLbl";
-            this.todayLbl.Size = new System.Drawing.Size(117, 28);
+            this.todayLbl.Size = new System.Drawing.Size(179, 41);
             this.todayLbl.TabIndex = 2;
             this.todayLbl.Text = "Today\'s Tips";
             // 

@@ -14,6 +14,7 @@ namespace HackManchesterLIVE
     public partial class Tips : Form
     {
         public Home home;
+        public Users currentUser;
         public Tips()
         {
             InitializeComponent();
@@ -64,7 +65,9 @@ namespace HackManchesterLIVE
         private void Tips_Load(object sender, EventArgs e)
         {
             //sets current Time on page (Should update regularly - need to find code)
-            currentTimeLbl.Text = getTimeString();
+            currentTimeLbl.Text = "16:00";
+                
+                //getTimeString();
             checkTips();
 
 
@@ -92,8 +95,9 @@ namespace HackManchesterLIVE
         private Boolean checkTime(String time)
         {
             DateTime t1 = toTime(time);
+            DateTime ctl1 = toTime(currentTimeLbl.Text);
 
-            if (t1.TimeOfDay < (DateTime.Now.TimeOfDay))
+            if (t1.TimeOfDay < (ctl1.TimeOfDay))
             {
                 return true; //returns true if time has passed
             }
@@ -163,59 +167,61 @@ namespace HackManchesterLIVE
             if (i > 0)
             {
 
-                tip1Lbl.ForeColor = Color.Red;
-                tip1timeLbl.ForeColor = Color.Red;
-                tip2Lbl.ForeColor = Color.Red;
-                tip2timeLbl.ForeColor = Color.Red;
-                tip3Lbl.ForeColor = Color.Red;
-                tip3timeLbl.ForeColor = Color.Red;
-                tip4Lbl.ForeColor = Color.Red;
-                tip4timeLbl.ForeColor = Color.Red;
-                tip5Lbl.ForeColor = Color.Red;
-                tip5timeLbl.ForeColor = Color.Red;
-                tip6Lbl.ForeColor = Color.Red;
-                tip6timeLbl.ForeColor = Color.Red;
-                tip7Lbl.ForeColor = Color.Red;
-                tip7timeLbl.ForeColor = Color.Red;
-                tip8Lbl.ForeColor = Color.Red;
-                tip8timeLbl.ForeColor = Color.Red;
+                tip1Lbl.ForeColor = Color.White;
+                tip1timeLbl.ForeColor = Color.White;
+                tip2Lbl.ForeColor = Color.White;
+                tip2timeLbl.ForeColor = Color.White;
+                tip3Lbl.ForeColor = Color.White;
+                tip3timeLbl.ForeColor = Color.White;
+                tip4Lbl.ForeColor = Color.White;
+                tip4timeLbl.ForeColor = Color.White;
+                tip5Lbl.ForeColor = Color.White;
+                tip5timeLbl.ForeColor = Color.White;
+                tip6Lbl.ForeColor = Color.White;
+                tip6timeLbl.ForeColor = Color.White;
+                tip7Lbl.ForeColor = Color.White;
+                tip7timeLbl.ForeColor = Color.White;
+                tip8Lbl.ForeColor = Color.White;
+                tip8timeLbl.ForeColor = Color.White;
 
             }
 
-            if (i >= 7)
+            if (i == 7)
             {
                 tip8Lbl.ForeColor = Color.White;
                 tip8timeLbl.ForeColor = Color.White;
             }
-            if (i >= 6)
+            if (i == 6)
             {
+                tip8Lbl.ForeColor = Color.White;
+                tip8timeLbl.ForeColor = Color.White;
                 tip7Lbl.ForeColor = Color.White;
                 tip7timeLbl.ForeColor = Color.White;
             }
-            if (i >= 5)
+            if (i == 5)
             {
                 tip6Lbl.ForeColor = Color.White;
                 tip6timeLbl.ForeColor = Color.White;
             }
 
-            else if (i >= 4)
+            else if (i == 4)
             {
                 tip5Lbl.ForeColor = Color.White;
                 tip5timeLbl.ForeColor = Color.White;
             }
-            else if (i >= 3)
+            else if (i == 3)
             {
                 tip4Lbl.ForeColor = Color.White;
                 tip4timeLbl.ForeColor = Color.White;
             }
 
-            else if (i >= 2)
+            else if (i == 2)
             {
                 tip3Lbl.ForeColor = Color.White;
                 tip3timeLbl.ForeColor = Color.White;
             }
 
-            else if (i >= 1)
+            else if (i == 1)
             {
                 tip2Lbl.ForeColor = Color.White;
                 tip2timeLbl.ForeColor = Color.White;

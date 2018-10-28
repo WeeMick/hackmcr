@@ -29,6 +29,10 @@ namespace HackManchesterLIVE
             isShiftWorker = false;
             }
 
+        public string getName()
+        {
+            return name;
+        }
         public string getEmail()
         {
             return email;

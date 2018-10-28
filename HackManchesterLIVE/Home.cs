@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace HackManchesterLIVE
 {
+    
     public partial class Home : Form
     {
+        public Users currentUser;
         public AddShifts addShifts;
         public ViewShifts viewShifts;
         public Tips tips;
@@ -56,12 +58,15 @@ namespace HackManchesterLIVE
                 tips.FormClosed += delegate { tips = null; };
             }
             tips.home = this;
+            tips.currentUser = currentUser;
             tips.Show();
             this.Hide();
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
+            
+            welcomeLbl.Text = currentUser.getName();
             if (tips == null)
             {
                 tips = new Tips();
