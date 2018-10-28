@@ -33,7 +33,7 @@ namespace HackManchesterLIVE
 
             System.Drawing.Color col4 = System.Drawing.ColorTranslator.FromHtml("#3498db");
             // System.Drawing.Color col5 = System.Drawing.ColorTranslator.FromHtml("#2c3e50");
-            if (DateTime.Now.TimeOfDay < toTime("06:00").TimeOfDay)
+            if (DateTime.Now.TimeOfDay > toTime("06:00").TimeOfDay)
             {
                 col = System.Drawing.ColorTranslator.FromHtml("#000000");
                 col2 = System.Drawing.ColorTranslator.FromHtml("#203A43");
@@ -291,25 +291,41 @@ namespace HackManchesterLIVE
             else if (userType.Equals("East"))
             {
                 tip1Lbl.Text = "Wake up Early";
+                tip1timeLbl.Text = "06:00";
                 tip2Lbl.Text = "See sunrise";
+                tip2timeLbl.Text = "06:30";
                 tip3Lbl.Text = "Early Breakfast (large)";
+                tip3timeLbl.Text = "07:00";
                 tip4Lbl.Text = "Early Lunch";
+                tip4timeLbl.Text = "11:00";
                 tip5Lbl.Text = "Exercise Early Afternoon";
+                tip5timeLbl.Text = "15:00";
                 tip6Lbl.Text = "Early Dinner";
+                tip6timeLbl.Text = "17:00";
                 tip7Lbl.Text = "Dim the lights";
+                tip7timeLbl.Text = "20:00";
                 tip8Lbl.Text = "Sleep Early";
+                tip8timeLbl.Text = "21:00";
 
             }
             else if (userType.Equals("West"))
             {
                 tip1Lbl.Text = "Sleep In late";
+                tip1timeLbl.Text = "08:00";
                 tip2Lbl.Text = "Eat late breakfast";
+                tip2timeLbl.Text = "10:00";
                 tip3Lbl.Text = "Stay hydrated";
+                tip3timeLbl.Text = "10:30";
                 tip4Lbl.Text = "Late lunch";
-                tip5Lbl.Text = "See the sunset";
-                tip6Lbl.Text = "Exercise Late";
+                tip4timeLbl.Text = "14:00";
+                tip5Lbl.Text = "Exercise Late";
+                tip5timeLbl.Text = "18:00";
+                tip6Lbl.Text = "See the sunset";
+                tip6timeLbl.Text = "19:34";
                 tip7Lbl.Text = "Bright lights";
+                tip7timeLbl.Text = "20:00";
                 tip8Lbl.Text = "Sleep late";
+                tip8timeLbl.Text = "00:00";
             }
             else  
             {

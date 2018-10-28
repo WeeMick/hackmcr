@@ -102,6 +102,12 @@
     <Compile Include="ViewShifts.Designer.cs">
       <DependentUpon>ViewShifts.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewTrips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTrips.Designer.cs">
+      <DependentUpon>ViewTrips.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddShifts.resx">
       <DependentUpon>AddShifts.cs</DependentUpon>
     </EmbeddedResource>

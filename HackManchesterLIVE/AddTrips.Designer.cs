@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.AddTripBtn = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.depDateTb = new System.Windows.Forms.MaskedTextBox();
+            this.arrDateTb = new System.Windows.Forms.MaskedTextBox();
+            this.DepTimeTb = new System.Windows.Forms.MaskedTextBox();
+            this.arrTimeTb = new System.Windows.Forms.MaskedTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.AddTripTitleLbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.destTb = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.homeBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -57,42 +57,43 @@
             this.AddTripBtn.TabIndex = 0;
             this.AddTripBtn.Text = "Add Trip";
             this.AddTripBtn.UseVisualStyleBackColor = false;
+            this.AddTripBtn.Click += new System.EventHandler(this.AddTripBtn_Click);
             // 
-            // maskedTextBox1
+            // depDateTb
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(39, 216);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(287, 34);
-            this.maskedTextBox1.TabIndex = 1;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.depDateTb.Location = new System.Drawing.Point(39, 216);
+            this.depDateTb.Mask = "00/00/0000";
+            this.depDateTb.Name = "depDateTb";
+            this.depDateTb.Size = new System.Drawing.Size(287, 34);
+            this.depDateTb.TabIndex = 1;
+            this.depDateTb.ValidatingType = typeof(System.DateTime);
             // 
-            // maskedTextBox2
+            // arrDateTb
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(39, 389);
-            this.maskedTextBox2.Mask = "00/00/0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(287, 34);
-            this.maskedTextBox2.TabIndex = 2;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            this.arrDateTb.Location = new System.Drawing.Point(39, 389);
+            this.arrDateTb.Mask = "00/00/0000";
+            this.arrDateTb.Name = "arrDateTb";
+            this.arrDateTb.Size = new System.Drawing.Size(287, 34);
+            this.arrDateTb.TabIndex = 2;
+            this.arrDateTb.ValidatingType = typeof(System.DateTime);
             // 
-            // maskedTextBox3
+            // DepTimeTb
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(39, 294);
-            this.maskedTextBox3.Mask = "00:00";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(287, 34);
-            this.maskedTextBox3.TabIndex = 3;
-            this.maskedTextBox3.ValidatingType = typeof(System.DateTime);
+            this.DepTimeTb.Location = new System.Drawing.Point(39, 294);
+            this.DepTimeTb.Mask = "00:00";
+            this.DepTimeTb.Name = "DepTimeTb";
+            this.DepTimeTb.Size = new System.Drawing.Size(287, 34);
+            this.DepTimeTb.TabIndex = 3;
+            this.DepTimeTb.ValidatingType = typeof(System.DateTime);
             // 
-            // maskedTextBox4
+            // arrTimeTb
             // 
-            this.maskedTextBox4.Location = new System.Drawing.Point(39, 481);
-            this.maskedTextBox4.Mask = "00:00";
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(287, 34);
-            this.maskedTextBox4.TabIndex = 4;
-            this.maskedTextBox4.ValidatingType = typeof(System.DateTime);
+            this.arrTimeTb.Location = new System.Drawing.Point(39, 481);
+            this.arrTimeTb.Mask = "00:00";
+            this.arrTimeTb.Name = "arrTimeTb";
+            this.arrTimeTb.Size = new System.Drawing.Size(287, 34);
+            this.arrTimeTb.TabIndex = 4;
+            this.arrTimeTb.ValidatingType = typeof(System.DateTime);
             // 
             // panel1
             // 
@@ -156,12 +157,13 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Arrival Time (Local to Destination)";
             // 
-            // textBox1
+            // destTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(287, 34);
-            this.textBox1.TabIndex = 10;
+            this.destTb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.destTb.Location = new System.Drawing.Point(39, 113);
+            this.destTb.Name = "destTb";
+            this.destTb.Size = new System.Drawing.Size(287, 34);
+            this.destTb.TabIndex = 10;
             // 
             // label6
             // 
@@ -190,16 +192,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 615);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.destTb);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.maskedTextBox4);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.arrTimeTb);
+            this.Controls.Add(this.DepTimeTb);
+            this.Controls.Add(this.arrDateTb);
+            this.Controls.Add(this.depDateTb);
             this.Controls.Add(this.AddTripBtn);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
@@ -219,17 +221,17 @@
         #endregion
 
         private System.Windows.Forms.Button AddTripBtn;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.MaskedTextBox depDateTb;
+        private System.Windows.Forms.MaskedTextBox arrDateTb;
+        private System.Windows.Forms.MaskedTextBox DepTimeTb;
+        private System.Windows.Forms.MaskedTextBox arrTimeTb;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label AddTripTitleLbl;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox destTb;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button homeBtn;
     }

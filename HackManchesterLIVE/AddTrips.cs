@@ -35,5 +35,66 @@ namespace HackManchesterLIVE
             home.currentUser = currentUser;
             this.Hide();
         }
+
+        private void AddTripBtn_Click(object sender, EventArgs e)
+        {
+            currentUser.destination = destTb.Text;
+            
+            currentUser.DepartureDate = depDateTb.Text;
+            currentUser.DepartureTime = DepTimeTb.Text;
+            currentUser.ArrivalDate = arrDateTb.Text;
+            currentUser.ArrivalTime = arrTimeTb.Text;
+
+            if (eastOrWest(currentUser.destination).Equals("east"))
+            {
+                currentUser.setType("East");
+            }
+            else if (eastOrWest(currentUser.destination).Equals("west"))
+            {
+                currentUser.setType("West");
+            }
+            else
+            {
+                currentUser.setType("Regular");
+            }
+
+
+
+            MessageBox.Show("Trip Added!");
+            destTb.Clear();
+            depDateTb.Clear();
+            DepTimeTb.Clear();
+            arrDateTb.Clear();
+            arrTimeTb.Clear();
+
+            }
+
+        public String eastOrWest(String destination)
+        {
+            String direction;
+            if (destination.Equals("Hong Kong") || destination.Equals("Rome") || destination.Equals("Dubai")
+                || destination.Equals("Istanbul") || destination.Equals("Tokyo") || destination.Equals("Beijing")
+                || destination.Equals("Munich") || destination.Equals("Moscow") || destination.Equals("Astana"))
+            {
+
+                direction = "east";
+
+            }
+            else if (destination.Equals("New York") || destination.Equals("Mexico City") || destination.Equals("Toronto")
+                || destination.Equals("Los Angeles") || destination.Equals("Florida") || destination.Equals("Washington")
+                || destination.Equals("San Francisco"))
+            {
+                direction = "west";
+
+            }
+            else
+            {
+                direction = "fail";
+            }
+
+            return direction;
+        }
+
+        }
     }
-}
+

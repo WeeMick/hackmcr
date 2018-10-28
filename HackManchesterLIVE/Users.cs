@@ -18,10 +18,18 @@ namespace HackManchesterLIVE
         public double weight;
         public DateTime sleepTime;
         public DateTime wakeTime;
+        //********ShiftWorkers*****//
         public String startShiftTime;
         public String finishShiftTime;
         public String startShiftDate;
         public String finishShiftDate;
+
+        //*******Travellers******//
+        public String destination;
+        public String DepartureDate;
+        public String ArrivalDate;
+        public String ArrivalTime;
+        public String DepartureTime;
         public string userType;
 
         public Users(string name, int age, string email, string password)
