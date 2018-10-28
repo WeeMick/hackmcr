@@ -12,7 +12,7 @@ namespace HackManchesterLIVE
 {
     public partial class Login : BaseForm
     {
-
+        public Users currentUser;
         public Home home;
         public StartScreen startScreen;
         public Login()
@@ -26,6 +26,8 @@ namespace HackManchesterLIVE
                     startScreen = new StartScreen();
                 startScreen.FormClosed += delegate { startScreen = null; };
             }
+
+            startScreen.currentUser = currentUser;
             startScreen.Show();
             this.Hide();
 
@@ -35,17 +37,41 @@ namespace HackManchesterLIVE
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-           
-
-
-            if (home == null) {
-                home = new Home();
-                home.FormClosed += delegate { home = null; };
+            if (String.IsNullOrEmpty(emailTb.Text))
+            {
+                emailErrLbl.Show();
+                passwordErrorLbl.Hide();
+                emailErrLbl.Text = "You must enter an email address";
             }
+            else if (String.IsNullOrEmpty(passwordTb.Text))
+            {
+                emailErrLbl.Hide();
+                passwordErrorLbl.Show();
+                passwordErrorLbl.Text = "You must enter a password";
+            }
+            else if (currentUser == null)
+            {
+                passwordErrorLbl.Text = "You are not registered on the system";
+            }
+            else if (currentUser.getEmail().Equals(emailTb.Text) && currentUser.getPassword().Equals(passwordTb.Text))
 
-            
-            home.Show();
-            this.Hide();
+            {
+
+                if (home == null)
+                {
+                    home = new Home();
+                    home.FormClosed += delegate { home = null; };
+                }
+
+                home.currentUser = currentUser;
+                home.Show();
+                this.Hide();
+            }
+        
+            else
+            {
+                passwordErrorLbl.Text = "Incorrect password entered";
+            }
 
 
             

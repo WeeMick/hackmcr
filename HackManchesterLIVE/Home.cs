@@ -148,6 +148,7 @@ namespace HackManchesterLIVE
                     startScreen = new StartScreen();
                     startScreen.FormClosed += delegate { tips = null; };
                 }
+                startScreen.currentUser = currentUser;
                 startScreen.Show();
                 this.Hide();
                 // startScreen.Show();

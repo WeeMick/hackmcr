@@ -14,6 +14,7 @@ namespace HackManchesterLIVE
     public partial class StartScreen : BaseForm
     {
 
+        public Users currentUser;
         public Register register;
         public Login login;
         public StartScreen()
@@ -30,6 +31,7 @@ namespace HackManchesterLIVE
                 login = new Login();
                 login.FormClosed += delegate { login = null; };
             }
+            login.currentUser = currentUser;
             login.startScreen = this;
             login.Show();
             this.Hide();
