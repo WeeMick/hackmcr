@@ -55,10 +55,14 @@ namespace HackManchesterLIVE
         {
             if (userDict.ContainsKey(user) && user.getPassword().Equals(password))
             {
+               
+                
                 return true;
+                
             }
             else
             {
+                
                 return false;
             }
         }

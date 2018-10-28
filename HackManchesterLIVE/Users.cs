@@ -19,6 +19,7 @@ namespace HackManchesterLIVE
         public double weight;
         public DateTime sleepTime;
         public DateTime wakeTime;
+        public string type;
 
         public Users(string name, int age, string email, string password)
             {
@@ -97,6 +98,15 @@ namespace HackManchesterLIVE
         public DateTime getWakeTime()
         {
             return wakeTime;
+        }
+
+        public void setType(string type)
+        {
+            this.type = type;
+        }
+        public string getType()
+        {
+            return type;
         }
 
 
