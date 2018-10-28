@@ -59,7 +59,9 @@ namespace HackManchesterLIVE
                 cPasswordErrorLbl.Hide();
                 Users user1 = new Users(nameTb.Text, Convert.ToInt32(ageUpDown.Value), emailTb.Text, passwordTb.Text);
                 appData.addUser(user1);
-                appData.addToDict(user1, user1.getEmail());
+                Authentication auth = new Authentication();
+                auth.username = emailTb.Text;
+                auth.password = passwordTb.Text;
 
 
                 if (home == null)

@@ -35,6 +35,9 @@ namespace HackManchesterLIVE
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
+           
+
+
             if (home == null) {
                 home = new Home();
                 home.FormClosed += delegate { home = null; };
