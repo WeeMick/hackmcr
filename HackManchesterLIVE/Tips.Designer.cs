@@ -33,7 +33,7 @@
             this.todayLbl = new System.Windows.Forms.Label();
             this.currentTimeLbl = new System.Windows.Forms.Label();
             this.tip1Lbl = new System.Windows.Forms.Label();
-            this.tip2lbl = new System.Windows.Forms.Label();
+            this.tip2Lbl = new System.Windows.Forms.Label();
             this.tip3Lbl = new System.Windows.Forms.Label();
             this.tip4Lbl = new System.Windows.Forms.Label();
             this.tip5Lbl = new System.Windows.Forms.Label();
@@ -48,6 +48,7 @@
             this.tip7timeLbl = new System.Windows.Forms.Label();
             this.tip8Lbl = new System.Windows.Forms.Label();
             this.tip8timeLbl = new System.Windows.Forms.Label();
+            this.alarm1Btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // homeBtn
@@ -91,27 +92,27 @@
             // 
             this.tip1Lbl.AutoSize = true;
             this.tip1Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip1Lbl.Location = new System.Drawing.Point(52, 128);
+            this.tip1Lbl.Location = new System.Drawing.Point(29, 128);
             this.tip1Lbl.Name = "tip1Lbl";
             this.tip1Lbl.Size = new System.Drawing.Size(80, 23);
             this.tip1Lbl.TabIndex = 4;
             this.tip1Lbl.Text = "Wake-Up";
             // 
-            // tip2lbl
+            // tip2Lbl
             // 
-            this.tip2lbl.AutoSize = true;
-            this.tip2lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip2lbl.Location = new System.Drawing.Point(52, 178);
-            this.tip2lbl.Name = "tip2lbl";
-            this.tip2lbl.Size = new System.Drawing.Size(127, 23);
-            this.tip2lbl.TabIndex = 5;
-            this.tip2lbl.Text = "See the Sunrise";
+            this.tip2Lbl.AutoSize = true;
+            this.tip2Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tip2Lbl.Location = new System.Drawing.Point(29, 178);
+            this.tip2Lbl.Name = "tip2Lbl";
+            this.tip2Lbl.Size = new System.Drawing.Size(127, 23);
+            this.tip2Lbl.TabIndex = 5;
+            this.tip2Lbl.Text = "See the Sunrise";
             // 
             // tip3Lbl
             // 
             this.tip3Lbl.AutoSize = true;
             this.tip3Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip3Lbl.Location = new System.Drawing.Point(52, 233);
+            this.tip3Lbl.Location = new System.Drawing.Point(29, 233);
             this.tip3Lbl.Name = "tip3Lbl";
             this.tip3Lbl.Size = new System.Drawing.Size(183, 23);
             this.tip3Lbl.TabIndex = 6;
@@ -121,7 +122,7 @@
             // 
             this.tip4Lbl.AutoSize = true;
             this.tip4Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip4Lbl.Location = new System.Drawing.Point(52, 282);
+            this.tip4Lbl.Location = new System.Drawing.Point(29, 282);
             this.tip4Lbl.Name = "tip4Lbl";
             this.tip4Lbl.Size = new System.Drawing.Size(148, 23);
             this.tip4Lbl.TabIndex = 7;
@@ -131,7 +132,7 @@
             // 
             this.tip5Lbl.AutoSize = true;
             this.tip5Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip5Lbl.Location = new System.Drawing.Point(52, 328);
+            this.tip5Lbl.Location = new System.Drawing.Point(29, 328);
             this.tip5Lbl.Name = "tip5Lbl";
             this.tip5Lbl.Size = new System.Drawing.Size(193, 23);
             this.tip5Lbl.TabIndex = 8;
@@ -141,7 +142,7 @@
             // 
             this.tip6Lbl.AutoSize = true;
             this.tip6Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip6Lbl.Location = new System.Drawing.Point(52, 374);
+            this.tip6Lbl.Location = new System.Drawing.Point(29, 374);
             this.tip6Lbl.Name = "tip6Lbl";
             this.tip6Lbl.Size = new System.Drawing.Size(121, 23);
             this.tip6Lbl.TabIndex = 9;
@@ -211,7 +212,7 @@
             // 
             this.tip7Lbl.AutoSize = true;
             this.tip7Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip7Lbl.Location = new System.Drawing.Point(52, 424);
+            this.tip7Lbl.Location = new System.Drawing.Point(29, 424);
             this.tip7Lbl.Name = "tip7Lbl";
             this.tip7Lbl.Size = new System.Drawing.Size(176, 23);
             this.tip7Lbl.TabIndex = 16;
@@ -231,7 +232,7 @@
             // 
             this.tip8Lbl.AutoSize = true;
             this.tip8Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip8Lbl.Location = new System.Drawing.Point(52, 471);
+            this.tip8Lbl.Location = new System.Drawing.Point(29, 471);
             this.tip8Lbl.Name = "tip8Lbl";
             this.tip8Lbl.Size = new System.Drawing.Size(51, 23);
             this.tip8Lbl.TabIndex = 18;
@@ -247,11 +248,23 @@
             this.tip8timeLbl.TabIndex = 19;
             this.tip8timeLbl.Text = "23:00";
             // 
+            // alarm1Btn
+            // 
+            this.alarm1Btn.BackgroundImage = global::HackManchesterLIVE.Properties.Resources.alarmGreen;
+            this.alarm1Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.alarm1Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.alarm1Btn.Location = new System.Drawing.Point(324, 119);
+            this.alarm1Btn.Name = "alarm1Btn";
+            this.alarm1Btn.Size = new System.Drawing.Size(43, 41);
+            this.alarm1Btn.TabIndex = 20;
+            this.alarm1Btn.UseVisualStyleBackColor = true;
+            // 
             // Tips
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 615);
+            this.Controls.Add(this.alarm1Btn);
             this.Controls.Add(this.tip8timeLbl);
             this.Controls.Add(this.tip8Lbl);
             this.Controls.Add(this.tip7timeLbl);
@@ -266,17 +279,19 @@
             this.Controls.Add(this.tip5Lbl);
             this.Controls.Add(this.tip4Lbl);
             this.Controls.Add(this.tip3Lbl);
-            this.Controls.Add(this.tip2lbl);
+            this.Controls.Add(this.tip2Lbl);
             this.Controls.Add(this.tip1Lbl);
             this.Controls.Add(this.currentTimeLbl);
             this.Controls.Add(this.todayLbl);
             this.Controls.Add(this.tomorrowBtn);
             this.Controls.Add(this.homeBtn);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Tips";
             this.Text = "Current Time";
             this.Load += new System.EventHandler(this.Tips_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Tips_paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,7 +304,7 @@
         public System.Windows.Forms.Label todayLbl;
         public System.Windows.Forms.Label currentTimeLbl;
         public System.Windows.Forms.Label tip1Lbl;
-        public System.Windows.Forms.Label tip2lbl;
+        public System.Windows.Forms.Label tip2Lbl;
         public System.Windows.Forms.Label tip3Lbl;
         public System.Windows.Forms.Label tip4Lbl;
         public System.Windows.Forms.Label tip5Lbl;
@@ -304,6 +319,7 @@
         public System.Windows.Forms.Label tip7timeLbl;
         public System.Windows.Forms.Label tip8Lbl;
         public System.Windows.Forms.Label tip8timeLbl;
+        private System.Windows.Forms.Button alarm1Btn;
     }
 
    
