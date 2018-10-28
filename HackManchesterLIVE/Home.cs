@@ -17,6 +17,7 @@ namespace HackManchesterLIVE
         public Tips tips;
         public Register register;
         public StartScreen startScreen;
+        public UserProfile userProfile;
         public Home()
         {
             InitializeComponent();
@@ -125,12 +126,12 @@ namespace HackManchesterLIVE
             profileComBox.Visible = false;
             if (profileComBox.SelectedItem.ToString() == "Manage Account")
             {
-                if (register == null)
+                if (userProfile == null)
                 {
-                    register = new Register();
-                    register.FormClosed += delegate { tips = null; };
+                    userProfile  = new UserProfile();
+                    userProfile.FormClosed += delegate { tips = null; };
                 }
-                register.Show();
+                userProfile.Show();
                 this.Hide();
                 //register.Show();
                 //this.Hide();

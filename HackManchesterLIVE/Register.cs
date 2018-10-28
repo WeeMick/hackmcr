@@ -69,8 +69,11 @@ namespace HackManchesterLIVE
             {
                 cPasswordErrorLbl.Hide();
             }
-            
-            appData.addUser(new Users(nameTb.Text, Convert.ToInt32(ageUpDown.Value), emailTb.Text, passwordTb.Text));
+
+            Users user1 = new Users(nameTb.Text, Convert.ToInt32(ageUpDown.Value), emailTb.Text, passwordTb.Text);
+            appData.addUser(user1);
+            appData.addToDict(user1, user1.getEmail());
+
 
             if (home == null) {
                 home = new Home();

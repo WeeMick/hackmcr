@@ -9,10 +9,11 @@ namespace HackManchesterLIVE
 
     public class Users
     {
-        public string name;
-        public int age;
-        public string email;
-        public string password;
+        string name;
+        int age;
+        string email;
+        string password;
+        Boolean isShiftWorker;
 
         public Users(string name, int age, string email, string password)
             {
@@ -20,7 +21,31 @@ namespace HackManchesterLIVE
             this.age = age;
             this.email = email;
             this.password = password;
-
+            isShiftWorker = false;
             }
+
+        public string getEmail()
+        {
+            return email;
+        }
+
+        public string getPassword()
+        {
+            return password;
+        }
+
+        public void setShiftWorker(Boolean isShiftWorker)
+        {
+            if (isShiftWorker == true)
+            {
+                this.isShiftWorker = true;
+            }
+            else
+            {
+                this.isShiftWorker = false;
+            }
+        }
+
+        
     }
 }

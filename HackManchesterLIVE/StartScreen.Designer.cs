@@ -37,11 +37,12 @@
             // titleLbl
             // 
             this.titleLbl.AutoSize = true;
-            this.titleLbl.Location = new System.Drawing.Point(84, 9);
+            this.titleLbl.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLbl.Location = new System.Drawing.Point(12, -1);
             this.titleLbl.Name = "titleLbl";
-            this.titleLbl.Size = new System.Drawing.Size(198, 25);
+            this.titleLbl.Size = new System.Drawing.Size(371, 50);
             this.titleLbl.TabIndex = 0;
-            this.titleLbl.Text = "Body-clock Calibrater ";
+            this.titleLbl.Text = "Hack Your Bodyclock ";
             // 
             // loginBtn
             // 
@@ -85,6 +86,8 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "StartScreen";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.StartScreen_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.StartScreen_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 
