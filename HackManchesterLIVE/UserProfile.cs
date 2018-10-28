@@ -21,11 +21,16 @@ namespace HackManchesterLIVE
         private ListBox genderListBox;
         private NumericUpDown heightUpDown;
         private NumericUpDown weightUpDown;
-        private DateTimePicker wakeTimePicker;
         private Button updateDetailsBtn;
         private Button backBtn;
-        private DateTimePicker sleepDateTimePicker;
         private Label updatedDetailsConfirmationLbl;
+        private Panel panel1;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
         public Home home;
 
         public UserProfile()
@@ -36,12 +41,9 @@ namespace HackManchesterLIVE
         private void InitializeComponent()
         {
             this.updatedDetailsConfirmationLbl = new System.Windows.Forms.Label();
-            this.backBtn = new System.Windows.Forms.Button();
             this.updateDetailsBtn = new System.Windows.Forms.Button();
-            this.wakeTimePicker = new System.Windows.Forms.DateTimePicker();
             this.weightUpDown = new System.Windows.Forms.NumericUpDown();
             this.heightUpDown = new System.Windows.Forms.NumericUpDown();
-            this.sleepDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.genderListBox = new System.Windows.Forms.ListBox();
             this.wakeTimeLbl = new System.Windows.Forms.Label();
             this.sleepTimeLbl = new System.Windows.Forms.Label();
@@ -49,8 +51,17 @@ namespace HackManchesterLIVE
             this.weightLbl = new System.Windows.Forms.Label();
             this.genderLbl = new System.Windows.Forms.Label();
             this.titleLbl = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.backBtn = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.weightUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.heightUpDown)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // updatedDetailsConfirmationLbl
@@ -61,24 +72,15 @@ namespace HackManchesterLIVE
             this.updatedDetailsConfirmationLbl.Size = new System.Drawing.Size(0, 40);
             this.updatedDetailsConfirmationLbl.TabIndex = 17;
             // 
-            // backBtn
-            // 
-            this.backBtn.Location = new System.Drawing.Point(24, 449);
-            this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(145, 57);
-            this.backBtn.TabIndex = 16;
-            this.backBtn.Text = "Back";
-            this.backBtn.UseVisualStyleBackColor = true;
-            this.backBtn.Click += new System.EventHandler(this.button2_Click);
-            // 
             // updateDetailsBtn
             // 
-            this.updateDetailsBtn.Location = new System.Drawing.Point(218, 449);
+            this.updateDetailsBtn.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.updateDetailsBtn.Location = new System.Drawing.Point(20, 521);
             this.updateDetailsBtn.Name = "updateDetailsBtn";
-            this.updateDetailsBtn.Size = new System.Drawing.Size(145, 57);
+            this.updateDetailsBtn.Size = new System.Drawing.Size(339, 57);
             this.updateDetailsBtn.TabIndex = 15;
             this.updateDetailsBtn.Text = "Update Details";
-            this.updateDetailsBtn.UseVisualStyleBackColor = true;
+            this.updateDetailsBtn.UseVisualStyleBackColor = false;
             this.updateDetailsBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // wakeTimePicker
@@ -99,16 +101,18 @@ namespace HackManchesterLIVE
             0,
             0,
             131072});
-            this.weightUpDown.Location = new System.Drawing.Point(243, 223);
+            this.weightUpDown.Location = new System.Drawing.Point(176, 223);
             this.weightUpDown.Name = "weightUpDown";
+            this.weightUpDown.Size = new System.Drawing.Size(174, 39);
             this.weightUpDown.Size = new System.Drawing.Size(107, 45);
             this.weightUpDown.TabIndex = 13;
             // 
             // heightUpDown
             // 
             this.heightUpDown.DecimalPlaces = 2;
-            this.heightUpDown.Location = new System.Drawing.Point(243, 171);
+            this.heightUpDown.Location = new System.Drawing.Point(176, 166);
             this.heightUpDown.Name = "heightUpDown";
+            this.heightUpDown.Size = new System.Drawing.Size(174, 39);
             this.heightUpDown.Size = new System.Drawing.Size(107, 45);
             this.heightUpDown.TabIndex = 12;
             // 
@@ -129,8 +133,9 @@ namespace HackManchesterLIVE
             this.genderListBox.Items.AddRange(new object[] {
             "Female",
             "Male"});
-            this.genderListBox.Location = new System.Drawing.Point(243, 119);
+            this.genderListBox.Location = new System.Drawing.Point(176, 112);
             this.genderListBox.Name = "genderListBox";
+            this.genderListBox.Size = new System.Drawing.Size(174, 36);
             this.genderListBox.Size = new System.Drawing.Size(107, 4);
             this.genderListBox.TabIndex = 8;
             // 
@@ -138,23 +143,27 @@ namespace HackManchesterLIVE
             // 
             this.wakeTimeLbl.AutoSize = true;
             this.wakeTimeLbl.BackColor = System.Drawing.Color.Transparent;
+            this.wakeTimeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wakeTimeLbl.ForeColor = System.Drawing.Color.White;
-            this.wakeTimeLbl.Location = new System.Drawing.Point(14, 366);
+            this.wakeTimeLbl.Location = new System.Drawing.Point(9, 302);
             this.wakeTimeLbl.Name = "wakeTimeLbl";
+            this.wakeTimeLbl.Size = new System.Drawing.Size(199, 23);
             this.wakeTimeLbl.Size = new System.Drawing.Size(211, 80);
             this.wakeTimeLbl.TabIndex = 7;
-            this.wakeTimeLbl.Text = "Average Wake-\r\nup  Time";
+            this.wakeTimeLbl.Text = "Daily Screen-Time Usage";
             // 
             // sleepTimeLbl
             // 
             this.sleepTimeLbl.AutoSize = true;
             this.sleepTimeLbl.BackColor = System.Drawing.Color.Transparent;
+            this.sleepTimeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sleepTimeLbl.ForeColor = System.Drawing.Color.White;
-            this.sleepTimeLbl.Location = new System.Drawing.Point(14, 279);
+            this.sleepTimeLbl.Location = new System.Drawing.Point(9, 343);
             this.sleepTimeLbl.Name = "sleepTimeLbl";
+            this.sleepTimeLbl.Size = new System.Drawing.Size(259, 23);
             this.sleepTimeLbl.Size = new System.Drawing.Size(198, 80);
             this.sleepTimeLbl.TabIndex = 6;
-            this.sleepTimeLbl.Text = "Average Sleep\r\nStart Time";
+            this.sleepTimeLbl.Text = "No. of Alarm shut-offs (morning)";
             // 
             // heightLbl
             // 
@@ -192,24 +201,124 @@ namespace HackManchesterLIVE
             // titleLbl
             // 
             this.titleLbl.AutoSize = true;
-            this.titleLbl.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLbl.Location = new System.Drawing.Point(68, 9);
+            this.titleLbl.BackColor = System.Drawing.Color.Transparent;
+            this.titleLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLbl.Location = new System.Drawing.Point(100, 21);
             this.titleLbl.Name = "titleLbl";
             this.titleLbl.Size = new System.Drawing.Size(346, 76);
+            this.titleLbl.Size = new System.Drawing.Size(190, 44);
             this.titleLbl.TabIndex = 0;
-            this.titleLbl.Text = "User Profile";
+            this.titleLbl.Text = "User Data";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel1.Controls.Add(this.titleLbl);
+            this.panel1.Controls.Add(this.backBtn);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(384, 87);
+            this.panel1.TabIndex = 18;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(271, 302);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 23);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "4h 12mins";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(307, 343);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(19, 23);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "3";
+            // 
+            // backBtn
+            // 
+            this.backBtn.BackgroundImage = global::HackManchesterLIVE.Properties.Resources.homeButton;
+            this.backBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backBtn.Location = new System.Drawing.Point(13, 8);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(58, 57);
+            this.backBtn.TabIndex = 16;
+            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(9, 390);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(239, 23);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Percentage of Tips Completed";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(297, 390);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 23);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "75%";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(9, 440);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(268, 23);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Daily Body Clock Adjustment Rate";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(297, 440);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 23);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "1hr";
             // 
             // UserProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 40F);
             this.ClientSize = new System.Drawing.Size(384, 607);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.updatedDetailsConfirmationLbl);
-            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.updateDetailsBtn);
-            this.Controls.Add(this.wakeTimePicker);
             this.Controls.Add(this.weightUpDown);
             this.Controls.Add(this.heightUpDown);
-            this.Controls.Add(this.sleepDateTimePicker);
             this.Controls.Add(this.genderListBox);
             this.Controls.Add(this.wakeTimeLbl);
             this.Controls.Add(this.sleepTimeLbl);
@@ -222,6 +331,8 @@ namespace HackManchesterLIVE
             this.Load += new System.EventHandler(this.UserProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.weightUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.heightUpDown)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

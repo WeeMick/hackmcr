@@ -39,7 +39,7 @@
             // 
             // finishDateTb
             // 
-            this.finishDateTb.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.finishDateTb.BackColor = System.Drawing.Color.LightSteelBlue;
             this.finishDateTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finishDateTb.Location = new System.Drawing.Point(25, 502);
             this.finishDateTb.Multiline = true;
@@ -52,7 +52,7 @@
             // 
             // startDateTb
             // 
-            this.startDateTb.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.startDateTb.BackColor = System.Drawing.Color.LightSteelBlue;
             this.startDateTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startDateTb.Location = new System.Drawing.Point(26, 420);
             this.startDateTb.Multiline = true;
@@ -65,7 +65,7 @@
             // 
             // finishTimeTb
             // 
-            this.finishTimeTb.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.finishTimeTb.BackColor = System.Drawing.Color.LightSteelBlue;
             this.finishTimeTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finishTimeTb.Location = new System.Drawing.Point(26, 341);
             this.finishTimeTb.Multiline = true;
@@ -78,7 +78,7 @@
             // 
             // startTimeTb
             // 
-            this.startTimeTb.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.startTimeTb.BackColor = System.Drawing.Color.LightSteelBlue;
             this.startTimeTb.Cursor = System.Windows.Forms.Cursors.Default;
             this.startTimeTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startTimeTb.Location = new System.Drawing.Point(26, 265);
@@ -92,21 +92,23 @@
             // 
             // addShiftBtn
             // 
+            this.addShiftBtn.BackColor = System.Drawing.Color.LightSteelBlue;
             this.addShiftBtn.Font = new System.Drawing.Font("Segoe UI", 28.2F);
             this.addShiftBtn.Location = new System.Drawing.Point(26, 125);
             this.addShiftBtn.Name = "addShiftBtn";
             this.addShiftBtn.Size = new System.Drawing.Size(334, 75);
             this.addShiftBtn.TabIndex = 45;
             this.addShiftBtn.Text = "Add Shift";
-            this.addShiftBtn.UseVisualStyleBackColor = true;
+            this.addShiftBtn.UseVisualStyleBackColor = false;
             this.addShiftBtn.Click += new System.EventHandler(this.addShiftBtn_Click);
             // 
             // infoLbl
             // 
+            this.infoLbl.BackColor = System.Drawing.Color.LightSteelBlue;
             this.infoLbl.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.infoLbl.Location = new System.Drawing.Point(11, 502);
+            this.infoLbl.Location = new System.Drawing.Point(18, 265);
             this.infoLbl.Name = "infoLbl";
-            this.infoLbl.Size = new System.Drawing.Size(96, 56);
+            this.infoLbl.Size = new System.Drawing.Size(350, 293);
             this.infoLbl.TabIndex = 46;
             // 
             // homeBtn

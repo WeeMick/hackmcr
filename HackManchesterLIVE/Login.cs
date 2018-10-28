@@ -57,6 +57,7 @@ namespace HackManchesterLIVE
             }
             else if (currentUser == null)
             {
+                passwordErrorLbl.Show();
                 passwordErrorLbl.Text = "You are not registered on the system";
             }
             else if (currentUser.getEmail().Equals(emailTb.Text) && currentUser.getPassword().Equals(passwordTb.Text))
@@ -76,6 +77,7 @@ namespace HackManchesterLIVE
         
             else
             {
+                passwordErrorLbl.Show();
                 passwordErrorLbl.Text = "Incorrect password entered";
             }
 

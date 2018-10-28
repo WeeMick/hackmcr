@@ -63,6 +63,7 @@
             this.aboutAppBtn.TabIndex = 2;
             this.aboutAppBtn.Text = "About App";
             this.aboutAppBtn.UseVisualStyleBackColor = true;
+            this.aboutAppBtn.Click += new System.EventHandler(this.aboutAppBtn_Click);
             // 
             // registerBtn
             // 
@@ -76,7 +77,7 @@
             // 
             // StartScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HackManchesterLIVE.Properties.Resources.earth;
             this.ClientSize = new System.Drawing.Size(384, 607);

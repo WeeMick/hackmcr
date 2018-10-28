@@ -63,5 +63,12 @@ namespace HackManchesterLIVE
             //LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.Black, Color.Silver, 90f);
             //e.Graphics.FillRectangle(brush,this.ClientRectangle);
         }
+
+        private void aboutAppBtn_Click(object sender, EventArgs e)
+        {
+            About about = new About();
+            this.Hide();
+            about.Show(); 
+        }
     }
 }

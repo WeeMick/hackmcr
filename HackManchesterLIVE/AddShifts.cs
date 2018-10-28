@@ -25,7 +25,7 @@ namespace HackManchesterLIVE
         private void AddShifts_Load(object sender, EventArgs e)
         {
             startTimeTb.Focus();
-            infoLbl.Visible = false;
+            //infoLbl.Visible = false;
         }
 
         private void startTimeTb_Enter(object sender, EventArgs e)
@@ -98,19 +98,19 @@ namespace HackManchesterLIVE
             //vs.finishDateLbl.Text += " " + finishDateTb.Text;
             //vs.Show();
 
-            infoLbl.Visible = true;
-            infoLbl.Text = "Start Time: " + startTimeTb.Text + "\nFinish Time: " + finishTimeTb.Text +
-                "\nStandard Date: " + startDateTb.Text + "\nFinishing Date: " + finishDateTb.Text;
+            //infoLbl.Visible = true;
+            //infoLbl.Text = "Start Time: " + startTimeTb.Text + "\nFinish Time: " + finishTimeTb.Text +
+             //   "\nStandard Date: " + startDateTb.Text + "\nFinishing Date: " + finishDateTb.Text;
 
             if (viewShifts == null) {
                 viewShifts = new ViewShifts();
                 viewShifts.FormClosed += delegate { viewShifts = null; };
 
             }
-            viewShifts.startTimeLbl.Text = startTimeTb.Text;
-            viewShifts.finishTimeLbl.Text = finishTimeTb.Text;
-            viewShifts.startDateLbl.Text = startDateTb.Text;
-            viewShifts.finishDateLbl.Text = finishDateTb.Text;
+            viewShifts.startTimeLbl.Text += "   " + startTimeTb.Text;
+            viewShifts.finishTimeLbl.Text += "   " + finishTimeTb.Text;
+            viewShifts.startDateLbl.Text += "   " + startDateTb.Text;
+            viewShifts.finishDateLbl.Text += "   " + finishDateTb.Text;
 
 
             currentUser.startShiftTime = startTimeTb.Text;
