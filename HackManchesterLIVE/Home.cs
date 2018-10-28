@@ -17,6 +17,7 @@ namespace HackManchesterLIVE
         public AddShifts addShifts;
         public ViewShifts viewShifts;
         public Tips tips;
+        public AddTrips addTrips;
         public Register register;
         public StartScreen startScreen;
         public UserProfile userProfile;
@@ -155,6 +156,18 @@ namespace HackManchesterLIVE
                 // startScreen.Show();
                 //this.Hide();
             }
+        }
+
+        private void addTripsBtn_Click(object sender, EventArgs e)
+        {
+            if (addTrips == null) {
+                addTrips = new AddTrips();
+                addTrips.FormClosed += delegate { addTrips = null; };
+            }
+
+            addTrips.currentUser = currentUser;
+            addTrips.Show();
+            this.Hide();
         }
     }
 }

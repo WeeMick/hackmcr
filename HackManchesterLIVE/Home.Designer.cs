@@ -36,13 +36,13 @@
             this.welcomeLbl = new System.Windows.Forms.Label();
             this.tipsLbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.addTripsBtn = new System.Windows.Forms.Button();
+            this.viewTripsBtn = new System.Windows.Forms.Button();
             this.bottel2PicBox = new System.Windows.Forms.PictureBox();
             this.bottel3PicBox = new System.Windows.Forms.PictureBox();
             this.bottel4PicBox = new System.Windows.Forms.PictureBox();
             this.bottelPicBox = new System.Windows.Forms.PictureBox();
             this.profilePicBox = new System.Windows.Forms.PictureBox();
-            this.addTripsBtn = new System.Windows.Forms.Button();
-            this.viewTripsBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bottel2PicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottel3PicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottel4PicBox)).BeginInit();
@@ -134,6 +134,31 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "4";
             // 
+            // addTripsBtn
+            // 
+            this.addTripsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.addTripsBtn.ForeColor = System.Drawing.Color.Black;
+            this.addTripsBtn.Location = new System.Drawing.Point(28, 227);
+            this.addTripsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addTripsBtn.Name = "addTripsBtn";
+            this.addTripsBtn.Size = new System.Drawing.Size(336, 46);
+            this.addTripsBtn.TabIndex = 12;
+            this.addTripsBtn.Text = "Add Trips";
+            this.addTripsBtn.UseVisualStyleBackColor = true;
+            this.addTripsBtn.Click += new System.EventHandler(this.addTripsBtn_Click);
+            // 
+            // viewTripsBtn
+            // 
+            this.viewTripsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.viewTripsBtn.ForeColor = System.Drawing.Color.Black;
+            this.viewTripsBtn.Location = new System.Drawing.Point(28, 277);
+            this.viewTripsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.viewTripsBtn.Name = "viewTripsBtn";
+            this.viewTripsBtn.Size = new System.Drawing.Size(336, 46);
+            this.viewTripsBtn.TabIndex = 13;
+            this.viewTripsBtn.Text = "View Trip";
+            this.viewTripsBtn.UseVisualStyleBackColor = true;
+            // 
             // bottel2PicBox
             // 
             this.bottel2PicBox.BackColor = System.Drawing.Color.Transparent;
@@ -190,30 +215,6 @@
             this.profilePicBox.TabIndex = 3;
             this.profilePicBox.TabStop = false;
             this.profilePicBox.Click += new System.EventHandler(this.profilePicBox_Click_1);
-            // 
-            // addTripsBtn
-            // 
-            this.addTripsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.addTripsBtn.ForeColor = System.Drawing.Color.Black;
-            this.addTripsBtn.Location = new System.Drawing.Point(28, 227);
-            this.addTripsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.addTripsBtn.Name = "addTripsBtn";
-            this.addTripsBtn.Size = new System.Drawing.Size(336, 46);
-            this.addTripsBtn.TabIndex = 12;
-            this.addTripsBtn.Text = "Add Trips";
-            this.addTripsBtn.UseVisualStyleBackColor = true;
-            // 
-            // viewTripsBtn
-            // 
-            this.viewTripsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.viewTripsBtn.ForeColor = System.Drawing.Color.Black;
-            this.viewTripsBtn.Location = new System.Drawing.Point(28, 277);
-            this.viewTripsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.viewTripsBtn.Name = "viewTripsBtn";
-            this.viewTripsBtn.Size = new System.Drawing.Size(336, 46);
-            this.viewTripsBtn.TabIndex = 13;
-            this.viewTripsBtn.Text = "View Trip";
-            this.viewTripsBtn.UseVisualStyleBackColor = true;
             // 
             // Home
             // 
