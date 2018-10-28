@@ -51,21 +51,7 @@ namespace HackManchesterLIVE
         }
 
 
-        public bool validLogin(Users user, string password)
-        {
-            if (userDict.ContainsKey(user) && user.getPassword().Equals(password))
-            {
-               
-                
-                return true;
-                
-            }
-            else
-            {
-                
-                return false;
-            }
-        }
+        
 
 
 
