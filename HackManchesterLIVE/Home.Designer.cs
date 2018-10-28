@@ -51,7 +51,7 @@
             // addShifsBtn
             // 
             this.addShifsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.addShifsBtn.Location = new System.Drawing.Point(28, 152);
+            this.addShifsBtn.Location = new System.Drawing.Point(28, 108);
             this.addShifsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addShifsBtn.Name = "addShifsBtn";
             this.addShifsBtn.Size = new System.Drawing.Size(336, 46);
@@ -63,7 +63,7 @@
             // viewShiftsBtn
             // 
             this.viewShiftsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.viewShiftsBtn.Location = new System.Drawing.Point(28, 222);
+            this.viewShiftsBtn.Location = new System.Drawing.Point(28, 219);
             this.viewShiftsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.viewShiftsBtn.Name = "viewShiftsBtn";
             this.viewShiftsBtn.Size = new System.Drawing.Size(336, 44);
@@ -75,7 +75,7 @@
             // todaysTipsBtn
             // 
             this.todaysTipsBtn.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.todaysTipsBtn.Location = new System.Drawing.Point(28, 290);
+            this.todaysTipsBtn.Location = new System.Drawing.Point(28, 323);
             this.todaysTipsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.todaysTipsBtn.Name = "todaysTipsBtn";
             this.todaysTipsBtn.Size = new System.Drawing.Size(336, 46);

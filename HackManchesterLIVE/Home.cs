@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace HackManchesterLIVE
 {
     
-    public partial class Home : Form
+    public partial class Home : BaseForm
     {
         public Users currentUser;
         public AddShifts addShifts;
