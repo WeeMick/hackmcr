@@ -36,8 +36,8 @@
             this.passwordErrorLbl = new System.Windows.Forms.Label();
             this.loginBtn = new System.Windows.Forms.Button();
             this.backBtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.titleLbl = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +65,7 @@
             // 
             // emailTb
             // 
-            this.emailTb.ForeColor = System.Drawing.Color.White;
+            this.emailTb.ForeColor = System.Drawing.Color.Black;
             this.emailTb.Location = new System.Drawing.Point(119, 275);
             this.emailTb.Name = "emailTb";
             this.emailTb.Size = new System.Drawing.Size(207, 45);
@@ -73,7 +73,7 @@
             // 
             // passwordTb
             // 
-            this.passwordTb.ForeColor = System.Drawing.Color.White;
+            this.passwordTb.ForeColor = System.Drawing.Color.Black;
             this.passwordTb.Location = new System.Drawing.Point(119, 352);
             this.passwordTb.Name = "passwordTb";
             this.passwordTb.Size = new System.Drawing.Size(207, 45);
@@ -123,16 +123,6 @@
             this.backBtn.UseVisualStyleBackColor = false;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::HackManchesterLIVE.Properties.Resources.login;
-            this.pictureBox1.Location = new System.Drawing.Point(119, 85);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(176, 142);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
             // titleLbl
             // 
             this.titleLbl.AutoSize = true;
@@ -143,6 +133,16 @@
             this.titleLbl.Name = "titleLbl";
             this.titleLbl.Size = new System.Drawing.Size(0, 74);
             this.titleLbl.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::HackManchesterLIVE.Properties.Resources.login;
+            this.pictureBox1.Location = new System.Drawing.Point(119, 74);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(207, 157);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 
@@ -159,7 +159,6 @@
             this.Controls.Add(this.passwordLbl);
             this.Controls.Add(this.emailLbl);
             this.Controls.Add(this.titleLbl);
-            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Login";

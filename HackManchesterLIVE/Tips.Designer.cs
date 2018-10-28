@@ -79,7 +79,7 @@
             this.todayLbl.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.todayLbl.Location = new System.Drawing.Point(111, 51);
             this.todayLbl.Name = "todayLbl";
-            this.todayLbl.Size = new System.Drawing.Size(179, 41);
+            this.todayLbl.Size = new System.Drawing.Size(209, 48);
             this.todayLbl.TabIndex = 2;
             this.todayLbl.Text = "Today\'s Tips";
             // 
@@ -89,7 +89,7 @@
             this.currentTimeLbl.BackColor = System.Drawing.Color.Transparent;
             this.currentTimeLbl.Location = new System.Drawing.Point(262, 13);
             this.currentTimeLbl.Name = "currentTimeLbl";
-            this.currentTimeLbl.Size = new System.Drawing.Size(124, 28);
+            this.currentTimeLbl.Size = new System.Drawing.Size(155, 32);
             this.currentTimeLbl.TabIndex = 3;
             this.currentTimeLbl.Text = "Current Time";
             // 
@@ -100,7 +100,7 @@
             this.tip1Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip1Lbl.Location = new System.Drawing.Point(29, 146);
             this.tip1Lbl.Name = "tip1Lbl";
-            this.tip1Lbl.Size = new System.Drawing.Size(80, 23);
+            this.tip1Lbl.Size = new System.Drawing.Size(98, 30);
             this.tip1Lbl.TabIndex = 4;
             this.tip1Lbl.Text = "Wake-Up";
             // 
@@ -111,7 +111,7 @@
             this.tip2Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip2Lbl.Location = new System.Drawing.Point(29, 196);
             this.tip2Lbl.Name = "tip2Lbl";
-            this.tip2Lbl.Size = new System.Drawing.Size(127, 23);
+            this.tip2Lbl.Size = new System.Drawing.Size(155, 30);
             this.tip2Lbl.TabIndex = 5;
             this.tip2Lbl.Text = "See the Sunrise";
             // 
@@ -122,7 +122,7 @@
             this.tip3Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip3Lbl.Location = new System.Drawing.Point(29, 239);
             this.tip3Lbl.Name = "tip3Lbl";
-            this.tip3Lbl.Size = new System.Drawing.Size(183, 23);
+            this.tip3Lbl.Size = new System.Drawing.Size(225, 30);
             this.tip3Lbl.TabIndex = 6;
             this.tip3Lbl.Text = "Have a Large Breakfast";
             // 
@@ -133,7 +133,7 @@
             this.tip4Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip4Lbl.Location = new System.Drawing.Point(29, 287);
             this.tip4Lbl.Name = "tip4Lbl";
-            this.tip4Lbl.Size = new System.Drawing.Size(148, 23);
+            this.tip4Lbl.Size = new System.Drawing.Size(181, 30);
             this.tip4Lbl.TabIndex = 7;
             this.tip4Lbl.Text = "Have a light lunch";
             // 
@@ -144,7 +144,7 @@
             this.tip5Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip5Lbl.Location = new System.Drawing.Point(29, 328);
             this.tip5Lbl.Name = "tip5Lbl";
-            this.tip5Lbl.Size = new System.Drawing.Size(193, 23);
+            this.tip5Lbl.Size = new System.Drawing.Size(237, 30);
             this.tip5Lbl.TabIndex = 8;
             this.tip5Lbl.Text = "Exercise Early Afternoon";
             // 
@@ -155,7 +155,7 @@
             this.tip6Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip6Lbl.Location = new System.Drawing.Point(29, 374);
             this.tip6Lbl.Name = "tip6Lbl";
-            this.tip6Lbl.Size = new System.Drawing.Size(121, 23);
+            this.tip6Lbl.Size = new System.Drawing.Size(148, 30);
             this.tip6Lbl.TabIndex = 9;
             this.tip6Lbl.Text = "See the sunset";
             // 
@@ -166,7 +166,7 @@
             this.tip1timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip1timeLbl.Location = new System.Drawing.Point(228, 146);
             this.tip1timeLbl.Name = "tip1timeLbl";
-            this.tip1timeLbl.Size = new System.Drawing.Size(50, 23);
+            this.tip1timeLbl.Size = new System.Drawing.Size(62, 30);
             this.tip1timeLbl.TabIndex = 10;
             this.tip1timeLbl.Text = "07:00";
             // 
@@ -177,7 +177,7 @@
             this.tip2timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip2timeLbl.Location = new System.Drawing.Point(228, 196);
             this.tip2timeLbl.Name = "tip2timeLbl";
-            this.tip2timeLbl.Size = new System.Drawing.Size(50, 23);
+            this.tip2timeLbl.Size = new System.Drawing.Size(62, 30);
             this.tip2timeLbl.TabIndex = 11;
             this.tip2timeLbl.Text = "08:00";
             // 
@@ -188,7 +188,7 @@
             this.tip3timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip3timeLbl.Location = new System.Drawing.Point(228, 239);
             this.tip3timeLbl.Name = "tip3timeLbl";
-            this.tip3timeLbl.Size = new System.Drawing.Size(50, 23);
+            this.tip3timeLbl.Size = new System.Drawing.Size(62, 30);
             this.tip3timeLbl.TabIndex = 12;
             this.tip3timeLbl.Text = "08:30";
             // 
@@ -199,7 +199,7 @@
             this.tip4timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip4timeLbl.Location = new System.Drawing.Point(228, 287);
             this.tip4timeLbl.Name = "tip4timeLbl";
-            this.tip4timeLbl.Size = new System.Drawing.Size(50, 23);
+            this.tip4timeLbl.Size = new System.Drawing.Size(62, 30);
             this.tip4timeLbl.TabIndex = 13;
             this.tip4timeLbl.Text = "12:00";
             // 
@@ -210,7 +210,7 @@
             this.tip5timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip5timeLbl.Location = new System.Drawing.Point(228, 328);
             this.tip5timeLbl.Name = "tip5timeLbl";
-            this.tip5timeLbl.Size = new System.Drawing.Size(50, 23);
+            this.tip5timeLbl.Size = new System.Drawing.Size(62, 30);
             this.tip5timeLbl.TabIndex = 14;
             this.tip5timeLbl.Text = "16:00";
             // 
@@ -221,7 +221,7 @@
             this.tip6timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip6timeLbl.Location = new System.Drawing.Point(228, 374);
             this.tip6timeLbl.Name = "tip6timeLbl";
-            this.tip6timeLbl.Size = new System.Drawing.Size(50, 23);
+            this.tip6timeLbl.Size = new System.Drawing.Size(62, 30);
             this.tip6timeLbl.TabIndex = 15;
             this.tip6timeLbl.Text = "18:34";
             // 
@@ -232,7 +232,7 @@
             this.tip7Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip7Lbl.Location = new System.Drawing.Point(29, 423);
             this.tip7Lbl.Name = "tip7Lbl";
-            this.tip7Lbl.Size = new System.Drawing.Size(176, 23);
+            this.tip7Lbl.Size = new System.Drawing.Size(214, 30);
             this.tip7Lbl.TabIndex = 16;
             this.tip7Lbl.Text = "No more Screen Time";
             // 
@@ -243,7 +243,7 @@
             this.tip7timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip7timeLbl.Location = new System.Drawing.Point(228, 423);
             this.tip7timeLbl.Name = "tip7timeLbl";
-            this.tip7timeLbl.Size = new System.Drawing.Size(50, 23);
+            this.tip7timeLbl.Size = new System.Drawing.Size(62, 30);
             this.tip7timeLbl.TabIndex = 17;
             this.tip7timeLbl.Text = "19:00";
             // 
@@ -254,7 +254,7 @@
             this.tip8Lbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip8Lbl.Location = new System.Drawing.Point(29, 467);
             this.tip8Lbl.Name = "tip8Lbl";
-            this.tip8Lbl.Size = new System.Drawing.Size(51, 23);
+            this.tip8Lbl.Size = new System.Drawing.Size(63, 30);
             this.tip8Lbl.TabIndex = 18;
             this.tip8Lbl.Text = "Sleep";
             // 
@@ -265,7 +265,7 @@
             this.tip8timeLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip8timeLbl.Location = new System.Drawing.Point(228, 467);
             this.tip8timeLbl.Name = "tip8timeLbl";
-            this.tip8timeLbl.Size = new System.Drawing.Size(50, 23);
+            this.tip8timeLbl.Size = new System.Drawing.Size(62, 30);
             this.tip8timeLbl.TabIndex = 19;
             this.tip8timeLbl.Text = "23:00";
             // 
@@ -297,16 +297,17 @@
             // dateLbl
             // 
             this.dateLbl.AutoSize = true;
+            this.dateLbl.BackColor = System.Drawing.Color.Transparent;
             this.dateLbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLbl.Location = new System.Drawing.Point(149, 92);
             this.dateLbl.Name = "dateLbl";
-            this.dateLbl.Size = new System.Drawing.Size(96, 23);
+            this.dateLbl.Size = new System.Drawing.Size(117, 30);
             this.dateLbl.TabIndex = 22;
             this.dateLbl.Text = "28/10/2018";
             // 
             // Tips
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 607);
             this.Controls.Add(this.dateLbl);

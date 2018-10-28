@@ -38,6 +38,10 @@
             this.arrDateLbl = new System.Windows.Forms.Label();
             this.DepTimeLbl = new System.Windows.Forms.Label();
             this.DepDateLbl = new System.Windows.Forms.Label();
+            this.arrTimeLbl = new System.Windows.Forms.Label();
+            this.arrDateLbl = new System.Windows.Forms.Label();
+            this.DepTimeLbl = new System.Windows.Forms.Label();
+            this.DepDateLbl = new System.Windows.Forms.Label();
             this.nextBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -52,7 +56,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(386, 76);
+            this.panel1.Size = new System.Drawing.Size(384, 81);
             this.panel1.TabIndex = 6;
             // 
             // homeBtn
@@ -72,7 +76,7 @@
             this.AddTripTitleLbl.BackColor = System.Drawing.Color.Transparent;
             this.AddTripTitleLbl.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.AddTripTitleLbl.ForeColor = System.Drawing.Color.White;
-            this.AddTripTitleLbl.Location = new System.Drawing.Point(119, 16);
+            this.AddTripTitleLbl.Location = new System.Drawing.Point(104, 17);
             this.AddTripTitleLbl.Name = "AddTripTitleLbl";
             this.AddTripTitleLbl.Size = new System.Drawing.Size(145, 46);
             this.AddTripTitleLbl.TabIndex = 0;
@@ -82,16 +86,16 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel2.Controls.Add(this.trip1destLbl);
-            this.panel2.Location = new System.Drawing.Point(74, 158);
+            this.panel2.Location = new System.Drawing.Point(65, 168);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(249, 81);
+            this.panel2.Size = new System.Drawing.Size(218, 86);
             this.panel2.TabIndex = 7;
             // 
             // trip1destLbl
             // 
             this.trip1destLbl.AutoSize = true;
             this.trip1destLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.trip1destLbl.Location = new System.Drawing.Point(19, 26);
+            this.trip1destLbl.Location = new System.Drawing.Point(17, 28);
             this.trip1destLbl.Name = "trip1destLbl";
             this.trip1destLbl.Size = new System.Drawing.Size(102, 32);
             this.trip1destLbl.TabIndex = 0;
@@ -104,9 +108,9 @@
             this.panel3.Controls.Add(this.arrDateLbl);
             this.panel3.Controls.Add(this.DepTimeLbl);
             this.panel3.Controls.Add(this.DepDateLbl);
-            this.panel3.Location = new System.Drawing.Point(74, 232);
+            this.panel3.Location = new System.Drawing.Point(65, 246);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(249, 210);
+            this.panel3.Size = new System.Drawing.Size(218, 223);
             this.panel3.TabIndex = 8;
             // 
             // arrTimeLbl
@@ -130,9 +134,9 @@
             // DepTimeLbl
             // 
             this.DepTimeLbl.AutoSize = true;
-            this.DepTimeLbl.Location = new System.Drawing.Point(28, 63);
+            this.DepTimeLbl.Location = new System.Drawing.Point(24, 67);
             this.DepTimeLbl.Name = "DepTimeLbl";
-            this.DepTimeLbl.Size = new System.Drawing.Size(46, 17);
+            this.DepTimeLbl.Size = new System.Drawing.Size(45, 19);
             this.DepTimeLbl.TabIndex = 1;
             this.DepTimeLbl.Text = "label1";
             // 
@@ -148,22 +152,23 @@
             // nextBtn
             // 
             this.nextBtn.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.nextBtn.Location = new System.Drawing.Point(74, 448);
+            this.nextBtn.Location = new System.Drawing.Point(65, 476);
             this.nextBtn.Name = "nextBtn";
-            this.nextBtn.Size = new System.Drawing.Size(249, 70);
+            this.nextBtn.Size = new System.Drawing.Size(218, 74);
             this.nextBtn.TabIndex = 9;
             this.nextBtn.Text = "See Next Trip";
             this.nextBtn.UseVisualStyleBackColor = false;
             // 
             // ViewTrips
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 607);
+            this.ClientSize = new System.Drawing.Size(384, 607);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.nextBtn);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ViewTrips";
             this.Text = "ViewTrips";
             this.Load += new System.EventHandler(this.ViewTrips_Load);
