@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HackManchesterLIVE
 {
-    public partial class ViewShifts : BaseForm   
+    public partial class ViewShifts : BaseForm
     {
         public AddShifts addShifts;
         public ViewShifts()
@@ -26,6 +26,7 @@ namespace HackManchesterLIVE
             startDateLbl.Visible = false;
             finishDateLbl.Visible = false;
             editShiftBtn.Visible = false;
+            countdownLbl.Visible = false;
         }
 
         private void homeBTN_Click(object sender, EventArgs e)
@@ -42,17 +43,15 @@ namespace HackManchesterLIVE
             startDateLbl.Visible = true;
             finishDateLbl.Visible = true;
             editShiftBtn.Visible = true;
+            countdownLbl.Visible = true;
         }
 
         private void editShiftBtn_Click(object sender, EventArgs e)
         {
-            if (startTimeLbl.Enabled == true)
-            {
-                startTimeLbl.Text = "mod";
-            }
-            else if (finishTimeLbl.Enabled == true) {
-                
-            }
+            startTimeLbl.Text = "Start Time: ";
+            finishTimeLbl.Text = "Finish Time: ";
+            startDateLbl.Text = "Start Date: ";
+            finishDateLbl.Text = "Finish Date: ";
         }
     }
 }

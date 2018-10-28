@@ -34,6 +34,7 @@
             this.startTimeTb = new System.Windows.Forms.TextBox();
             this.homeBtn = new System.Windows.Forms.Button();
             this.addShiftBtn = new System.Windows.Forms.Button();
+            this.infoLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // finishDateTb
@@ -114,11 +115,20 @@
             this.addShiftBtn.UseVisualStyleBackColor = true;
             this.addShiftBtn.Click += new System.EventHandler(this.addShiftBtn_Click);
             // 
+            // infoLbl
+            // 
+            this.infoLbl.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoLbl.Location = new System.Drawing.Point(12, 205);
+            this.infoLbl.Name = "infoLbl";
+            this.infoLbl.Size = new System.Drawing.Size(360, 316);
+            this.infoLbl.TabIndex = 46;
+            // 
             // AddShifts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 607);
+            this.Controls.Add(this.infoLbl);
             this.Controls.Add(this.addShiftBtn);
             this.Controls.Add(this.finishDateTb);
             this.Controls.Add(this.startDateTb);
@@ -141,5 +151,6 @@
         public System.Windows.Forms.TextBox startTimeTb;
         public System.Windows.Forms.Button homeBtn;
         private System.Windows.Forms.Button addShiftBtn;
+        private System.Windows.Forms.Label infoLbl;
     }
 }

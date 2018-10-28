@@ -13,13 +13,12 @@ namespace HackManchesterLIVE
         public int age;
         public string email;
         public string password;
-        public Boolean isShiftWorker;
         public string gender;
         public int height;
         public double weight;
         public DateTime sleepTime;
         public DateTime wakeTime;
-        public string type;
+        public string userType;
 
         public Users(string name, int age, string email, string password)
             {
@@ -27,7 +26,7 @@ namespace HackManchesterLIVE
             this.age = age;
             this.email = email;
             this.password = password;
-            isShiftWorker = false;
+            userType = "Regular";
             }
 
         public string getName()
@@ -44,16 +43,9 @@ namespace HackManchesterLIVE
             return password;
         }
 
-        public void setShiftWorker(Boolean isShiftWorker)
+        public void setType(String type)
         {
-            if (isShiftWorker == true)
-            {
-                this.isShiftWorker = true;
-            }
-            else
-            {
-                this.isShiftWorker = false;
-            }
+            userType = type;
         }
 
         public void setGender(string gender)
@@ -104,13 +96,9 @@ namespace HackManchesterLIVE
             return wakeTime;
         }
 
-        public void setType(string type)
-        {
-            this.type = type;
-        }
         public string getType()
         {
-            return type;
+            return userType;
         }
 
 
