@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.AddTripTitleLbl = new System.Windows.Forms.Label();
             this.homeBtn = new System.Windows.Forms.Button();
+            this.AddTripTitleLbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.trip1destLbl = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.DepDateLbl = new System.Windows.Forms.Label();
-            this.DepTimeLbl = new System.Windows.Forms.Label();
-            this.arrDateLbl = new System.Windows.Forms.Label();
             this.arrTimeLbl = new System.Windows.Forms.Label();
+            this.arrDateLbl = new System.Windows.Forms.Label();
+            this.DepTimeLbl = new System.Windows.Forms.Label();
+            this.DepDateLbl = new System.Windows.Forms.Label();
             this.nextBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -55,6 +55,17 @@
             this.panel1.Size = new System.Drawing.Size(386, 76);
             this.panel1.TabIndex = 6;
             // 
+            // homeBtn
+            // 
+            this.homeBtn.BackgroundImage = global::HackManchesterLIVE.Properties.Resources.homeButton;
+            this.homeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homeBtn.Location = new System.Drawing.Point(3, 12);
+            this.homeBtn.Name = "homeBtn";
+            this.homeBtn.Size = new System.Drawing.Size(58, 50);
+            this.homeBtn.TabIndex = 1;
+            this.homeBtn.UseVisualStyleBackColor = true;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
+            // 
             // AddTripTitleLbl
             // 
             this.AddTripTitleLbl.AutoSize = true;
@@ -66,16 +77,6 @@
             this.AddTripTitleLbl.Size = new System.Drawing.Size(145, 46);
             this.AddTripTitleLbl.TabIndex = 0;
             this.AddTripTitleLbl.Text = "My Trips";
-            // 
-            // homeBtn
-            // 
-            this.homeBtn.BackgroundImage = global::HackManchesterLIVE.Properties.Resources.homeButton;
-            this.homeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.homeBtn.Location = new System.Drawing.Point(3, 12);
-            this.homeBtn.Name = "homeBtn";
-            this.homeBtn.Size = new System.Drawing.Size(58, 50);
-            this.homeBtn.TabIndex = 1;
-            this.homeBtn.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -108,23 +109,14 @@
             this.panel3.Size = new System.Drawing.Size(249, 210);
             this.panel3.TabIndex = 8;
             // 
-            // DepDateLbl
+            // arrTimeLbl
             // 
-            this.DepDateLbl.AutoSize = true;
-            this.DepDateLbl.Location = new System.Drawing.Point(28, 21);
-            this.DepDateLbl.Name = "DepDateLbl";
-            this.DepDateLbl.Size = new System.Drawing.Size(46, 17);
-            this.DepDateLbl.TabIndex = 0;
-            this.DepDateLbl.Text = "label1";
-            // 
-            // DepTimeLbl
-            // 
-            this.DepTimeLbl.AutoSize = true;
-            this.DepTimeLbl.Location = new System.Drawing.Point(28, 63);
-            this.DepTimeLbl.Name = "DepTimeLbl";
-            this.DepTimeLbl.Size = new System.Drawing.Size(46, 17);
-            this.DepTimeLbl.TabIndex = 1;
-            this.DepTimeLbl.Text = "label1";
+            this.arrTimeLbl.AutoSize = true;
+            this.arrTimeLbl.Location = new System.Drawing.Point(28, 148);
+            this.arrTimeLbl.Name = "arrTimeLbl";
+            this.arrTimeLbl.Size = new System.Drawing.Size(46, 17);
+            this.arrTimeLbl.TabIndex = 3;
+            this.arrTimeLbl.Text = "label1";
             // 
             // arrDateLbl
             // 
@@ -135,14 +127,23 @@
             this.arrDateLbl.TabIndex = 2;
             this.arrDateLbl.Text = "label1";
             // 
-            // arrTimeLbl
+            // DepTimeLbl
             // 
-            this.arrTimeLbl.AutoSize = true;
-            this.arrTimeLbl.Location = new System.Drawing.Point(28, 148);
-            this.arrTimeLbl.Name = "arrTimeLbl";
-            this.arrTimeLbl.Size = new System.Drawing.Size(46, 17);
-            this.arrTimeLbl.TabIndex = 3;
-            this.arrTimeLbl.Text = "label1";
+            this.DepTimeLbl.AutoSize = true;
+            this.DepTimeLbl.Location = new System.Drawing.Point(28, 63);
+            this.DepTimeLbl.Name = "DepTimeLbl";
+            this.DepTimeLbl.Size = new System.Drawing.Size(46, 17);
+            this.DepTimeLbl.TabIndex = 1;
+            this.DepTimeLbl.Text = "label1";
+            // 
+            // DepDateLbl
+            // 
+            this.DepDateLbl.AutoSize = true;
+            this.DepDateLbl.Location = new System.Drawing.Point(28, 21);
+            this.DepDateLbl.Name = "DepDateLbl";
+            this.DepDateLbl.Size = new System.Drawing.Size(46, 17);
+            this.DepDateLbl.TabIndex = 0;
+            this.DepDateLbl.Text = "label1";
             // 
             // nextBtn
             // 

@@ -16,6 +16,7 @@ namespace HackManchesterLIVE
 
         public Users currentUser;
         public Home mainPage;
+        public ViewShifts viewShifts;
         public AddShifts()
         {
             InitializeComponent();
@@ -48,7 +49,8 @@ namespace HackManchesterLIVE
                 
             }
             this.Hide();
-            
+
+            mainPage.viewShifts = viewShifts;
             mainPage.currentUser = currentUser;
             mainPage.Show();
         }
@@ -89,16 +91,27 @@ namespace HackManchesterLIVE
         private void addShiftBtn_Click(object sender, EventArgs e)
         {
             //Shifts shifts = new Shifts(startTimeTb.Text, finishTimeTb.Text, startDateTb.Text, finishDateTb.Text);
-            ViewShifts vs = new ViewShifts();
-            vs.startTimeLbl.Text += "    " + startTimeTb.Text;
-            vs.finishTimeLbl.Text += "     " + finishTimeTb.Text;
-            vs.startDateLbl.Text += " " + startDateTb.Text;
-            vs.finishDateLbl.Text += " " + finishDateTb.Text;
+            //ViewShifts vs = new ViewShifts();
+           // vs.startTimeLbl.Text += "    " + startTimeTb.Text;
+            //vs.finishTimeLbl.Text += "     " + finishTimeTb.Text;
+            //vs.startDateLbl.Text += " " + startDateTb.Text;
+            //vs.finishDateLbl.Text += " " + finishDateTb.Text;
             //vs.Show();
 
             infoLbl.Visible = true;
             infoLbl.Text = "Start Time: " + startTimeTb.Text + "\nFinish Time: " + finishTimeTb.Text +
                 "\nStandard Date: " + startDateTb.Text + "\nFinishing Date: " + finishDateTb.Text;
+
+            if (viewShifts == null) {
+                viewShifts = new ViewShifts();
+                viewShifts.FormClosed += delegate { viewShifts = null; };
+
+            }
+            viewShifts.startTimeLbl.Text = startTimeTb.Text;
+            viewShifts.finishTimeLbl.Text = finishTimeTb.Text;
+            viewShifts.startDateLbl.Text = startDateTb.Text;
+            viewShifts.finishDateLbl.Text = finishDateTb.Text;
+
 
             currentUser.startShiftTime = startTimeTb.Text;
             currentUser.finishShiftTime = finishTimeTb.Text;

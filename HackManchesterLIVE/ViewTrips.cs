@@ -12,6 +12,8 @@ namespace HackManchesterLIVE
 {
     public partial class ViewTrips : BaseForm
     {
+        public Home home;
+        public Users currentUser;
         public ViewTrips()
         {
             InitializeComponent();
@@ -20,6 +22,19 @@ namespace HackManchesterLIVE
         private void ViewTrips_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void homeBtn_Click(object sender, EventArgs e)
+        {
+            if (home == null)
+            {
+                home = new Home();
+                home.FormClosed += delegate { home = null; };
+            }
+            home.currentUser = currentUser;
+            home.viewTrips = this;
+            this.Hide();
+            home.Show();
         }
     }
 }

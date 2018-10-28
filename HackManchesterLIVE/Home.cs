@@ -178,7 +178,7 @@ namespace HackManchesterLIVE
                 viewTrips = new ViewTrips();
                 viewTrips.FormClosed += delegate { viewTrips = null; };
             }
-
+            viewTrips.currentUser = currentUser;
             viewTrips.Show();
         }
     }

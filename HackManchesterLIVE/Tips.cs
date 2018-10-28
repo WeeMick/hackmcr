@@ -279,7 +279,7 @@ namespace HackManchesterLIVE
                 tip3timeLbl.Text = "18:00";
                 tip4Lbl.Text = "Keep Under Bright Light";
                 tip4timeLbl.Text = "19:00";
-                tip5Lbl.Text = "Have a snack";
+                tip5Lbl.Text = "Stay Hydrated";
                 tip5timeLbl.Text = "00:00";
                 tip6Lbl.Text = "Dim the Lights";
                 tip6timeLbl.Text = "05:00";

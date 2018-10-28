@@ -23,11 +23,10 @@ namespace HackManchesterLIVE
         private void ViewShifts_Load(object sender, EventArgs e)
         {
             addShifts = new AddShifts();
-            //startTimeLbl.Visible = false;
-            //finishTimeLbl.Visible = false;
-            //startDateLbl.Visible = false;
-            //finishDateLbl.Visible = false;
-            //editShiftBtn.Visible = false;
+          
+
+
+
             countdownLbl.Visible = false;
         }
 
