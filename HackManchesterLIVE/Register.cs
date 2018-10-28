@@ -66,10 +66,6 @@ namespace HackManchesterLIVE
                 auth.password = passwordTb.Text;
 
 
-                Authentication auth = new Authentication();
-                auth.username = nameTb.Text;
-                auth.password = passwordTb.Text;
-
                 if (home == null)
                 {
                     home = new Home();
