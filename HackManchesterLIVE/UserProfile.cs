@@ -106,6 +106,7 @@ namespace HackManchesterLIVE
             // 
             // heightUpDown
             // 
+            this.heightUpDown.DecimalPlaces = 2;
             this.heightUpDown.Location = new System.Drawing.Point(243, 171);
             this.heightUpDown.Name = "heightUpDown";
             this.heightUpDown.Size = new System.Drawing.Size(107, 39);
