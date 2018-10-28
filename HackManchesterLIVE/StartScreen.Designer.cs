@@ -37,17 +37,17 @@
             // titleLbl
             // 
             this.titleLbl.BackColor = System.Drawing.Color.Transparent;
-            this.titleLbl.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLbl.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLbl.ForeColor = System.Drawing.Color.White;
-            this.titleLbl.Location = new System.Drawing.Point(100, 27);
+            this.titleLbl.Location = new System.Drawing.Point(86, 44);
             this.titleLbl.Name = "titleLbl";
-            this.titleLbl.Size = new System.Drawing.Size(242, 138);
+            this.titleLbl.Size = new System.Drawing.Size(286, 138);
             this.titleLbl.TabIndex = 0;
             this.titleLbl.Text = "Hack Your Bodyclock ";
             // 
             // loginBtn
             // 
-            this.loginBtn.Location = new System.Drawing.Point(30, 180);
+            this.loginBtn.Location = new System.Drawing.Point(30, 218);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(328, 49);
             this.loginBtn.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // aboutAppBtn
             // 
-            this.aboutAppBtn.Location = new System.Drawing.Point(30, 307);
+            this.aboutAppBtn.Location = new System.Drawing.Point(30, 345);
             this.aboutAppBtn.Name = "aboutAppBtn";
             this.aboutAppBtn.Size = new System.Drawing.Size(328, 49);
             this.aboutAppBtn.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             // registerBtn
             // 
-            this.registerBtn.Location = new System.Drawing.Point(30, 243);
+            this.registerBtn.Location = new System.Drawing.Point(30, 281);
             this.registerBtn.Name = "registerBtn";
             this.registerBtn.Size = new System.Drawing.Size(328, 49);
             this.registerBtn.TabIndex = 3;
@@ -89,7 +89,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "StartScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "StartScreen";
             this.Load += new System.EventHandler(this.StartScreen_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.StartScreen_Paint);
             this.ResumeLayout(false);
