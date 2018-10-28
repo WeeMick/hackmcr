@@ -92,13 +92,14 @@
             // homeBtn
             // 
             this.homeBtn.BackColor = System.Drawing.Color.Transparent;
+            this.homeBtn.BackgroundImage = global::HackManchesterLIVE.Properties.Resources.homeButton;
             this.homeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homeBtn.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.homeBtn.Location = new System.Drawing.Point(2, 2);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.Size = new System.Drawing.Size(97, 70);
             this.homeBtn.TabIndex = 40;
-            this.homeBtn.Text = "Home";
             this.homeBtn.UseVisualStyleBackColor = false;
             this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 

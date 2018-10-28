@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HackManchesterLIVE
 {   
-    public partial class AddShifts : Form
+    public partial class AddShifts : BaseForm
     {
         public string passingData;
         public AddShifts()
@@ -81,8 +81,8 @@ namespace HackManchesterLIVE
             ViewShifts vs = new ViewShifts();
             vs.startTimeLbl.Text += "    " + startTimeTb.Text;
             vs.finishTimeLbl.Text += "     " + finishTimeTb.Text;
-            vs.startDateLbl.Text += "    " + startDateTb.Text;
-            vs.finishDateLbl.Text += "    " + finishDateTb.Text;
+            vs.startDateLbl.Text += " " + startDateTb.Text;
+            vs.finishDateLbl.Text += " " + finishDateTb.Text;
             vs.Show();
         }
     }
