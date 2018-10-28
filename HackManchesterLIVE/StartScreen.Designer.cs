@@ -39,9 +39,9 @@
             this.titleLbl.BackColor = System.Drawing.Color.Transparent;
             this.titleLbl.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLbl.ForeColor = System.Drawing.Color.White;
-            this.titleLbl.Location = new System.Drawing.Point(12, 9);
+            this.titleLbl.Location = new System.Drawing.Point(100, 27);
             this.titleLbl.Name = "titleLbl";
-            this.titleLbl.Size = new System.Drawing.Size(360, 138);
+            this.titleLbl.Size = new System.Drawing.Size(242, 138);
             this.titleLbl.TabIndex = 0;
             this.titleLbl.Text = "Hack Your Bodyclock ";
             // 
@@ -78,11 +78,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::HackManchesterLIVE.Properties.Resources.earth;
             this.ClientSize = new System.Drawing.Size(384, 607);
             this.Controls.Add(this.registerBtn);
             this.Controls.Add(this.aboutAppBtn);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.titleLbl);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "StartScreen";

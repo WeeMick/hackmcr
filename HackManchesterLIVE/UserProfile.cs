@@ -216,9 +216,9 @@ namespace HackManchesterLIVE
             this.Controls.Add(this.weightLbl);
             this.Controls.Add(this.genderLbl);
             this.Controls.Add(this.titleLbl);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "UserProfile";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.weightUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.heightUpDown)).EndInit();
             this.ResumeLayout(false);

@@ -128,6 +128,16 @@
             this.tipsLbl.TabIndex = 7;
             this.tipsLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(347, 464);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(17, 19);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "4";
+            this.label1.Visible = false;
+            // 
             // addTripsBtn
             // 
             this.addTripsBtn.BackColor = System.Drawing.SystemColors.Control;
@@ -159,7 +169,7 @@
             // 
             this.bottel2PicBox.BackColor = System.Drawing.Color.Transparent;
             this.bottel2PicBox.Image = global::HackManchesterLIVE.Properties.Resources.water_bottles_2;
-            this.bottel2PicBox.Location = new System.Drawing.Point(319, 486);
+            this.bottel2PicBox.Location = new System.Drawing.Point(317, 486);
             this.bottel2PicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bottel2PicBox.Name = "bottel2PicBox";
             this.bottel2PicBox.Size = new System.Drawing.Size(62, 116);
@@ -170,7 +180,7 @@
             // bottel3PicBox
             // 
             this.bottel3PicBox.Image = global::HackManchesterLIVE.Properties.Resources.water_bottles_css4;
-            this.bottel3PicBox.Location = new System.Drawing.Point(318, 487);
+            this.bottel3PicBox.Location = new System.Drawing.Point(316, 487);
             this.bottel3PicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bottel3PicBox.Name = "bottel3PicBox";
             this.bottel3PicBox.Size = new System.Drawing.Size(62, 116);
@@ -181,7 +191,7 @@
             // bottel4PicBox
             // 
             this.bottel4PicBox.Image = global::HackManchesterLIVE.Properties.Resources.water_bottles_css5;
-            this.bottel4PicBox.Location = new System.Drawing.Point(321, 484);
+            this.bottel4PicBox.Location = new System.Drawing.Point(319, 484);
             this.bottel4PicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bottel4PicBox.Name = "bottel4PicBox";
             this.bottel4PicBox.Size = new System.Drawing.Size(62, 116);
@@ -192,7 +202,7 @@
             // bottelPicBox
             // 
             this.bottelPicBox.Image = ((System.Drawing.Image)(resources.GetObject("bottelPicBox.Image")));
-            this.bottelPicBox.Location = new System.Drawing.Point(318, 484);
+            this.bottelPicBox.Location = new System.Drawing.Point(316, 484);
             this.bottelPicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bottelPicBox.Name = "bottelPicBox";
             this.bottelPicBox.Size = new System.Drawing.Size(62, 116);
@@ -245,7 +255,6 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Home";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.bottel2PicBox)).EndInit();

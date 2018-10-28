@@ -242,6 +242,7 @@
             this.Controls.Add(this.ageLbl);
             this.Controls.Add(this.nameLbl);
             this.Controls.Add(this.titleLbl);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Register";
